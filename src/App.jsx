@@ -12,7 +12,6 @@ const App = () => {
         }
       >
         <Header theme={theme} setTheme={setTheme} />
-        <Hero />
       </div>
     </>
   );

@@ -1,22 +1,19 @@
 import React from "react";
-import Section from "./Section";
+import { css } from "@emotion/react";
+import styled from "@emotion/styled";
+import "tailwindcss/tailwind.css";
 
 const Hero = () => {
   return (
-    <Section
-      className="pt-[12rem] lg:-mt-[9.3rem]"
-      crosses=""
-      crossesOffset="lg:translate-y-[5.25rem]"
-      customPaddings=""
-      id="hero"
+    <section
+      className="relative flex lg:top-0 justify-center align-center bg-n-7"
+      style={{
+        height: "100vh",
+        width: "100%",
+      }}
     >
-      <div className="container relative">
-        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
-          <h1 className="h1 mb-6">Connect the virtual</h1>
-          <span className="inline-block relative">Vytoflow</span>
-        </div>
-      </div>
-    </Section>
+      <h1>Welcome</h1>
+    </section>
   );
 };
 
