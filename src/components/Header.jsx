@@ -42,7 +42,7 @@ const Header = ({ theme, setTheme }) => {
                 /* work with text styles in this class */
                 className={`block relative font-code text-2xl text-n-1 transition-colors hover:text-cyan-800 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                }px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-sm lg:font-serif hover:underline hover:underline-offset-8 hover:text hover:decoration-4 ${
+                }px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-sm lg:font-serif hover:underline hover:underline-offset-8 hover:decoration-4 ${
                   item.url === pathname.hash
                     ? "z-2 lg:text-cyan-600"
                     : "lg:text-n-4"
