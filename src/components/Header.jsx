@@ -1,10 +1,6 @@
-import { vytoflowLogo } from "../assets";
+import { vytoflowLogo, searchDay, searchNight, night, day } from "../assets";
 import { navigation } from "../constants";
 import { useLocation } from "react-router-dom";
-import search_icon_light from "../assets/search-w.png";
-import search_icon_dark from "../assets/search-b.png";
-import toogle_light from "../assets/night.png";
-import toogle_dark from "../assets/day.png";
 
 const Header = ({ theme, setTheme }) => {
   const pathname = useLocation();
@@ -60,18 +56,18 @@ const Header = ({ theme, setTheme }) => {
         {/* div for search bar placeholder */}
         <div
           className="flex items-center bg-blue-50 px-4 py-0 rounded-2xl ml-2 "
-          style={{ marginTop: "-22px" }}
+          style={{ marginTop: "-24px" }}
         >
           <input
             type="text"
             placeholder=""
-            className="p-1 bg-transparent lg:max-w-44 lg:h-8 outline-0 text-sm font-sans h-10 "
+            className="p-1 bg-transparent lg:max-w-36 lg:h-7 outline-0 text-sm font-sans h-10 "
           />
           {/* Search icon*/}
           <img
-            src={theme == "black" ? search_icon_light : search_icon_dark}
+            src={theme == "light" ? searchDay : searchNight}
             alt="Search_Icon"
-            className="w-[0.8rem] cursor-pointer"
+            className="w-[1.4rem] cursor-pointer -mr-2"
           />
         </div>
         {/* theme */}
@@ -79,10 +75,10 @@ const Header = ({ theme, setTheme }) => {
           onClick={() => {
             toggle_mode();
           }}
-          src={theme == "light" ? toogle_light : toogle_dark}
+          src={theme == "light" ? night : day}
           alt=""
-          className="w-7 cursor-pointer lg:-mr-4 ml-1"
-          style={{ marginTop: "-24px" }}
+          className="w-6 cursor-pointer lg:-mr-4 ml-1"
+          style={{ marginTop: "-25px" }}
         />
       </div>
     </div>
