@@ -55,7 +55,7 @@ const Header = ({ theme, setTheme }) => {
         </nav>
         {/* div for search bar placeholder */}
         <div
-          className="flex items-center bg-blue-50 px-4 py-0 rounded-2xl ml-2 "
+          className="flex items-center bg-blue-50 px-4 py-0 rounded-2xl ml-2 text-black"
           style={{ marginTop: "-24px" }}
         >
           <input
