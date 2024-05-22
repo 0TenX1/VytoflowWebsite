@@ -10,14 +10,14 @@ const Header = ({ theme, setTheme }) => {
 
   return (
     /* Main Header div*/
-    <div className="flex flex-col">
+    <div className="flex  flex-col">
       <div
         className={
-          "fixed bg-transparent lg:top-3 -top-1 left-0 z-50 lg:w-full lg:h-[4.56rem] ${container}"
+          "fixed bg-transparent z-50 lg:top-0 -top-1 left-0 lg:w-full lg:h-[4.56rem] ${container}"
         }
       >
         {/* For vytoflow logo in Header*/}
-        <div className="flex items-center px-2 lg:px-8 xl:px-10 max-lg:py-4">
+        <div className="flex py-4  items-center px-2 lg:px-8 xl:px-10 max-lg:py-4">
           <a
             className="block w-[12rem] xl:mr-8 "
             href="#hero"
@@ -30,15 +30,15 @@ const Header = ({ theme, setTheme }) => {
               alt="Vytoflowtech"
             />
           </a>
-          {/* outer div/main div for items*/}
+          {/* main box for placing items*/}
           <nav
             className={
-              "hidden fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mr-auto lg:ml-64 justify-center lg:bg-transparent"
+              "hidden fixed top-[5rem] bottom-0 lg:static lg:flex lg:mr-auto lg:ml-auto justify-center lg:bg-transparent"
             }
           >
-            {/* Inner div for placing items and box */}
+            {/* Inner div for shaping box and placing items */}
             <div
-              className="relative rounded-2xl lg:right-12 h-8 backdrop-blur-sm lg:bg-blue-50 z-2 flex flex-col items-center justify-center m-auto lg:flex-row"
+              className="relative justify-center rounded-2xl h-8 backdrop-blur-sm lg:bg-blue-50 z-2 flex flex-col items-center mx-auto lg:flex-row"
               style={{ marginTop: "-20px" }}
             >
               {navigation.map((item) => (
