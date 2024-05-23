@@ -21,11 +21,11 @@ const Header = ({ theme, setTheme }) => {
           <a
             className="block w-[12rem] xl:mr-8 "
             href="#hero"
-            style={{ marginTop: "-0.8rem" }}
+            style={{ marginTop: "-1rem" }}
           >
             <img
               src={vytoflowLogo}
-              width={135}
+              width={165}
               height={80}
               alt="Vytoflowtech"
             />
@@ -33,12 +33,12 @@ const Header = ({ theme, setTheme }) => {
           {/* main box for placing items*/}
           <nav
             className={
-              "hidden fixed top-[5rem] bottom-0 lg:static lg:flex lg:mr-auto lg:ml-auto justify-center lg:bg-transparent"
+              "hidden fixed  top-[5rem] bottom-0 lg:static lg:flex lg:mr-auto lg:ml-auto justify-center lg:bg-transparent"
             }
           >
             {/* Inner div for shaping box and placing items */}
             <div
-              className="relative justify-center rounded-2xl h-8 backdrop-blur-sm lg:bg-blue-50 z-2 flex flex-col items-center mx-auto lg:flex-row"
+              className="relative justify-center  rounded-3xl h-10 backdrop-blur-sm lg:bg-blue-50 z-2 flex flex-col items-center mx-auto lg:flex-row"
               style={{ marginTop: "-20px" }}
             >
               {navigation.map((item) => (
@@ -61,13 +61,13 @@ const Header = ({ theme, setTheme }) => {
           </nav>
           {/* div for search bar placeholder */}
           <div
-            className="hidden lg:flex items-center bg-blue-50 px-4 py-0 rounded-2xl ml-2 text-black"
-            style={{ marginTop: "-24px" }}
+            className="hidden lg:flex items-center bg-blue-50 px-4 py-0 rounded-3xl ml-2 text-black"
+            style={{ marginTop: "-20px" }}
           >
             <input
               type="text"
               placeholder=""
-              className="p-1 bg-transparent lg:max-w-36 lg:h-8 outline-0 text-xs font-sans h-10 "
+              className="p-1 bg-transparent lg:max-w-36 lg:h-10 outline-0 text-xs font-sans h-10 "
             />
             {/* Search icon*/}
             <img
