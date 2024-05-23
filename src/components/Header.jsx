@@ -48,7 +48,7 @@ const Header = ({ theme, setTheme }) => {
                   /* work with text styles in this class */
                   className={`block relative font-code text-2xl text-n-1 transition-colors hover:text-cyan-800 ${
                     item.onlyMobile ? "lg:hidden" : ""
-                  }px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-sm lg:font-serif hover:underline hover:underline-offset-[0.78rem] hover:decoration-[0.19rem] ${
+                  }px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:underline hover:underline-offset-[0.70rem] hover:decoration-[0.19rem] ${
                     item.url === pathname.hash
                       ? "z-2 lg:text-cyan-600"
                       : "lg:text-n-4"
@@ -67,13 +67,13 @@ const Header = ({ theme, setTheme }) => {
             <input
               type="text"
               placeholder=""
-              className="p-1 bg-transparent lg:max-w-36 lg:h-10 outline-0 text-xs font-sans h-10 "
+              className="p-1 bg-transparent lg:max-w-36 lg:h-10 outline-0 text-[0.99rem] font-sans h-10 "
             />
             {/* Search icon*/}
             <img
               src={theme == "light" ? searchDay : searchNight}
               alt="Search_Icon"
-              className="hidden lg:flex w-[1.4rem] cursor-pointer -mr-2"
+              className="hidden lg:flex w-[1.8rem] cursor-pointer -mr-2"
             />
           </div>
           {/* theme */}
