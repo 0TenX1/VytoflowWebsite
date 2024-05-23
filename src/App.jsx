@@ -6,11 +6,7 @@ const App = () => {
   const [theme, setTheme] = useState("light");
   return (
     <>
-      <div
-        className={
-          "pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden ${theme} $container"
-        }
-      >
+      <div className={"overflow-hidden"}>
         <Header theme={theme} setTheme={setTheme} />
         <Hero />
       </div>

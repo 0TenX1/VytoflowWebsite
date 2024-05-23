@@ -67,7 +67,7 @@ const Header = ({ theme, setTheme }) => {
             <input
               type="text"
               placeholder=""
-              className="p-1 bg-transparent lg:max-w-36 lg:h-7 outline-0 text-xs font-sans h-10 "
+              className="p-1 bg-transparent lg:max-w-36 lg:h-8 outline-0 text-xs font-sans h-10 "
             />
             {/* Search icon*/}
             <img
