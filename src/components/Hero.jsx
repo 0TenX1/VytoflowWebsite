@@ -1,5 +1,11 @@
 import React from "react";
-import { gearBot, gearMid, gearFront, backClouds } from "../assets";
+import {
+  gearBot,
+  gearMid,
+  gearFront,
+  backClouds,
+  backClouds2,
+} from "../assets";
 
 const Hero = () => {
   return (
@@ -19,7 +25,7 @@ const Hero = () => {
           src={gearBot}
           width={230}
           height={34}
-          className="absolute bottom-[8rem] right-[-8.2rem] transform -translate-x-1/2 z-1 opacity-35"
+          className="absolute bottom-[8rem] right-[-0.9rem]  z-1 opacity-35"
         />
         <img
           src={gearMid}
@@ -37,13 +43,13 @@ const Hero = () => {
           src={backClouds}
           width={125}
           height={34}
-          className="absolute bottom-[-1.9rem] right-[-6.5rem] transform -translate-x-1/2 z-0 opacity-full"
+          className="absolute top-[-16rem] right-[3rem] transform -translate-x-1/2 z-0 opacity-70"
         />
         <img
-          src={backClouds}
+          src={backClouds2}
           width={125}
           height={34}
-          className="absolute bottom-[-1.9rem] transform z-0 opacity-full"
+          className="absolute bottom-[-7rem] left-[-1rem]  z-0 opacity-70"
         />
       </div>
     </section>
