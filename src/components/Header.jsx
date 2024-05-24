@@ -38,7 +38,7 @@ const Header = ({ theme, setTheme }) => {
           >
             {/* Inner div for shaping box and placing items */}
             <div
-              className="relative justify-center  rounded-3xl h-10 backdrop-blur-3xl lg:bg-blue-50 z-2 flex flex-col items-center mx-auto lg:flex-row"
+              className="relative bg-gradient-to-r from-slate-100 via-slate-50 to-slate-50 shadow-md justify-center rounded-3xl h-12 backdrop-blur-3xl lg:bg-blue-50 z-90 flex flex-col items-center mx-auto lg:flex-row"
               style={{ marginTop: "-20px" }}
             >
               {navigation.map((item) => (
@@ -48,7 +48,7 @@ const Header = ({ theme, setTheme }) => {
                   /* work with text styles in this class */
                   className={`block relative font-code text-2xl text-n-1 transition-colors hover:text-cyan-800 ${
                     item.onlyMobile ? "lg:hidden" : ""
-                  }px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:underline hover:underline-offset-[0.70rem] hover:decoration-[0.19rem] ${
+                  }px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:underline hover:underline-offset-[0.968rem] hover:decoration-[0.19rem] ${
                     item.url === pathname.hash
                       ? "z-2 lg:text-cyan-600"
                       : "lg:text-n-4"
@@ -61,8 +61,8 @@ const Header = ({ theme, setTheme }) => {
           </nav>
           {/* div for search bar placeholder */}
           <div
-            className="hidden lg:flex items-center backdrop-blur-3xl bg-blue-50 px-4 py-0 rounded-3xl ml-2 text-black"
-            style={{ marginTop: "-20px" }}
+            className="hidden lg:flex items-center backdrop-blur-3xl bg-gradient-to-r h-12 from-slate-100 via-slate-50 to-slate-50 shadow-md p-6 px-4 py-0 rounded-3xl ml-2 text-black"
+            style={{ marginTop: "-22px" }}
           >
             <input
               type="text"
@@ -83,7 +83,7 @@ const Header = ({ theme, setTheme }) => {
             }}
             src={theme == "light" ? night : day}
             alt=""
-            className="hidden lg:flex w-[2rem] cursor-pointer lg:-mr-4 ml-1"
+            className="hidden z-87  lg:flex w-[2rem] cursor-pointer lg:-mr-4 ml-1"
             style={{ marginTop: "-25px", marginRight: "-1.5rem" }}
           />
         </div>
