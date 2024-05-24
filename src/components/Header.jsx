@@ -17,11 +17,11 @@ const Header = ({ theme, setTheme }) => {
         }
       >
         {/* For vytoflow logo in Header*/}
-        <div className="flex py-4  items-center px-2 lg:px-8 xl:px-10 max-lg:py-4">
+        <div className="flex py-4 items-center px-2 lg:px-8 xl:px-10 max-lg:py-4">
           <a
-            className="block w-[12rem] xl:mr-8 "
+            className="block xl:mr-8 "
             href="#hero"
-            style={{ marginTop: "-1rem" }}
+            style={{ marginTop: "-1rem", marginLeft: "-1rem" }}
           >
             <img
               src={vytoflowLogo}
