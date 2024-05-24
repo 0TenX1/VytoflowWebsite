@@ -6,6 +6,7 @@ import day from "./day.svg";
 import gearBot from "./gearBot.svg";
 import gearMid from "./gearMid.svg";
 import gearFront from "./gearFront.svg";
+import backClouds from "./backClouds.svg";
 
 export {
   vytoflowLogo,
@@ -16,4 +17,5 @@ export {
   gearBot,
   gearMid,
   gearFront,
+  backClouds,
 };
