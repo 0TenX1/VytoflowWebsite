@@ -33,12 +33,12 @@ const Header = ({ theme, setTheme }) => {
           {/* main box for placing items*/}
           <nav
             className={
-              "hidden fixed  top-[5rem] bottom-0 lg:static lg:flex lg:mr-auto lg:ml-auto justify-center lg:bg-transparent"
+              "hidden fixed top-[5rem] bottom-0 lg:static lg:flex lg:mr-auto lg:ml-auto justify-center lg:bg-transparent"
             }
           >
             {/* Inner div for shaping box and placing items */}
             <div
-              className="relative justify-center  rounded-3xl h-10 backdrop-blur-sm lg:bg-blue-50 z-2 flex flex-col items-center mx-auto lg:flex-row"
+              className="relative justify-center  rounded-3xl h-10 backdrop-blur-3xl lg:bg-blue-50 z-2 flex flex-col items-center mx-auto lg:flex-row"
               style={{ marginTop: "-20px" }}
             >
               {navigation.map((item) => (
@@ -61,13 +61,13 @@ const Header = ({ theme, setTheme }) => {
           </nav>
           {/* div for search bar placeholder */}
           <div
-            className="hidden lg:flex items-center bg-blue-50 px-4 py-0 rounded-3xl ml-2 text-black"
+            className="hidden lg:flex items-center backdrop-blur-3xl bg-blue-50 px-4 py-0 rounded-3xl ml-2 text-black"
             style={{ marginTop: "-20px" }}
           >
             <input
               type="text"
               placeholder=""
-              className="p-1 bg-transparent lg:max-w-36 lg:h-10 outline-0 text-[0.99rem] font-sans h-10 "
+              className="p-1 bg-transparent backdrop-blur-3xl lg:max-w-36 lg:h-10 outline-0 text-[0.99rem] font-sans h-10 "
             />
             {/* Search icon*/}
             <img
