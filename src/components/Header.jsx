@@ -83,8 +83,8 @@ const Header = ({ theme, setTheme }) => {
             }}
             src={theme == "light" ? night : day}
             alt=""
-            className="hidden lg:flex w-6 cursor-pointer lg:-mr-4 ml-1"
-            style={{ marginTop: "-25px" }}
+            className="hidden lg:flex w-[2rem] cursor-pointer lg:-mr-4 ml-1"
+            style={{ marginTop: "-25px", marginRight: "-1.5rem" }}
           />
         </div>
         {/* Add border below header container for small devices */}
