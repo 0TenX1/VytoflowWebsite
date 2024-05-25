@@ -38,7 +38,7 @@ const Header = ({ theme, setTheme }) => {
           >
             {/* Inner div for shaping box and placing items */}
             <div
-              className="relative bg-gradient-to-r from-slate-100 via-slate-50 to-slate-50 shadow-md justify-center rounded-3xl h-12 backdrop-blur-3xl lg:bg-blue-50 z-90 flex flex-col items-center mx-auto lg:flex-row"
+              className="relative bg-gradient-to-r from-slate-100 via-slate-50 to-slate-50 shadow-md justify-center rounded-3xl h-12 backdrop-blur-3xl z-90 flex flex-col items-center mx-auto lg:flex-row"
               style={{ marginTop: "-20px" }}
             >
               {navigation.map((item) => (
