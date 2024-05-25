@@ -9,6 +9,7 @@ import {
   buildingsThree,
   buildingsTwo,
 } from "../assets";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -22,13 +23,13 @@ const Hero = () => {
           src={backClouds}
           width={95}
           height={34}
-          className="absolute top-[-14rem] right-[-8rem] transform -translate-x-1/2 z-2 "
+          className="absolute top-[-16rem] left-[-50rem] z-2 animate-move-left-to-right "
         />
         <img
           src={backClouds2}
           width={95}
           height={34}
-          className="absolute top-[-9rem] left-[-7rem]  z-5 "
+          className="absolute top-[-9rem] left-[-7rem] z-5 animate-move-left-to-right "
         />
       </div>
 
@@ -45,7 +46,7 @@ const Hero = () => {
       <img
         src={buildingsThree}
         alt=""
-        className="absolute z-1 transform top-[-5rem]   opacity-20"
+        className="absolute z-1 transform top-[-5rem]  opacity-20"
       />
     </section>
   );

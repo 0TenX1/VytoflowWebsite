@@ -81,6 +81,15 @@ export default {
         "benefit-card-5": "url(assets/benefits/card-5.svg)",
         "benefit-card-6": "url(assets/benefits/card-6.svg)",
       },
+      keyframes: {
+        "move-left-to-right": {
+          "0%": { transform: "translateX(-500%)" },
+          "100%": { transform: "translateX(2000%)" },
+        },
+      },
+      animation: {
+        "move-left-to-right": "move-left-to-right 60s linear infinite",
+      },
     },
   },
   plugins: [

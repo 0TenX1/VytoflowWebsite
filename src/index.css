@@ -7,6 +7,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .parallax {
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.parallax-bg {
+    position: absolute;
+    top: -14rem;
+    left: -7rem;
+    width: 95px;
+    height: 34px;
+    background-image: url('../src/assets/buildingsOne.svg');
+    /* Use your image path */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
 :root {
     --font-sora: "Sora", sans-serif;
     --font-code: "Source Code Pro", monospace;
