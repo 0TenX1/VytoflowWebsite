@@ -83,8 +83,8 @@ export default {
       },
       keyframes: {
         "move-left-to-right": {
-          "0%": { transform: "translateX(-500%)" },
-          "100%": { transform: "translateX(2000%)" },
+          "0%": { transform: "translateX(-10%)" },
+          "100%": { transform: "translateX(3500%)" },
         },
       },
       animation: {
