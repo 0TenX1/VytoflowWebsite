@@ -45,7 +45,7 @@ const Hero = () => {
       <img
         src={buildingsThree}
         alt=""
-        className="absolute z-0 transform  opacity-20"
+        className="absolute z-0 transform top-[-5rem]  opacity-20"
       />
     </section>
   );
