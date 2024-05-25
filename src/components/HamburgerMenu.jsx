@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './styles.css'; // Import your CSS file for styling
 
-function HamburgerMenu() {
+const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -8,22 +9,21 @@ function HamburgerMenu() {
   };
 
   return (
-    <div className="relative lg:hidden">
-      <div className="cursor-pointer" onClick={toggleMenu}>
-        <div className={`hamburger ${isOpen ? 'open' : ''}`}>
-          <div className="bar1 h-1 w-6 bg-black mb-1"></div>
-          <div className="bar2 h-1 w-6 bg-black mb-1"></div>
-          <div className="bar3 h-1 w-6 bg-black"></div>
-        </div>
+    <div className="hamburger-menu">
+      <button className={`hamburger-menu-btn ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
+      <div className={`menu-items ${isOpen ? 'open' : ''}`}>
+        <button className="close-btn" onClick={toggleMenu}>×</button>
+        <div className='inner'><a href="#">Home</a></div>
+        <div className='inner'><a href="#">About</a></div>
+        <div className='inner'><a href="#">Services</a></div>
+        <div className='inner'><a href="#">Contact</a></div>
       </div>
-      <ul className={`absolute top-full right-0 bg-white ${isOpen ? 'block' : 'hidden'}`}>
-        <li><a href="#" className="text-black">Home</a></li>
-        <li><a href="#" className="text-black">About</a></li>
-        <li><a href="#" className="text-black">Services</a></li>
-        <li><a href="#" className="text-black">Contact</a></li>
-      </ul>
     </div>
   );
-}
+};
 
 export default HamburgerMenu;
