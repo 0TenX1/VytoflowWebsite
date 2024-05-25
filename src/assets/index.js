@@ -11,6 +11,9 @@ import backClouds2 from "./backClouds2.svg";
 import buildingsOne from "./buildingsOne.svg";
 import buildingsTwo from "./buildingsTwo.svg";
 import buildingsThree from "./buildingsThree.svg";
+import gdBanner2023 from "./eventBanners/gdBanner2023.png";
+import ppBanner2024 from "./eventBanners/ppBanner2024.png";
+
 export {
   vytoflowLogo,
   searchDay,
@@ -25,4 +28,6 @@ export {
   buildingsOne,
   buildingsThree,
   buildingsTwo,
+  gdBanner2023,
+  ppBanner2024,
 };
