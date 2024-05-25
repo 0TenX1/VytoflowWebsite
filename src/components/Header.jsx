@@ -20,7 +20,7 @@ const Header = ({ theme, setTheme }) => {
         <div className="flex py-4 items-center px-2 lg:px-8 xl:px-10 max-lg:py-4">
           <a
             className="block xl:mr-8 "
-            href="#hero"
+            href="/"
             style={{ marginTop: "-1rem", marginLeft: "-1rem" }}
           >
             <img

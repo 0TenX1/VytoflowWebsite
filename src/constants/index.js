@@ -19,4 +19,9 @@ export const navigation = [
     title: "Contact Us",
     url: "#contact",
   },
+  {
+    id: "4",
+    title: "Community",
+    url: "#community",
+  },
 ];
