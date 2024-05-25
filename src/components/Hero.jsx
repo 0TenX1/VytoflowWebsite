@@ -20,32 +20,32 @@ const Hero = () => {
         </h2>
         <img
           src={backClouds}
-          width={125}
+          width={95}
           height={34}
-          className="absolute top-[-16rem] right-[3rem] transform -translate-x-1/2 z-0 "
+          className="absolute top-[-14rem] right-[-8rem] transform -translate-x-1/2 z-2 "
         />
         <img
           src={backClouds2}
           width={95}
           height={34}
-          className="absolute top-[-9rem] left-[-1rem]  z-5 "
+          className="absolute top-[-9rem] left-[-7rem]  z-5 "
         />
       </div>
 
       <img
         src={buildingsTwo}
         alt=""
-        className="absolute w-full transform opacity-100 bottom-0 z-2 "
+        className="absolute w-full transform opacity-100 bottom-0 z-3 "
       />
       <img
         src={buildingsOne}
         alt=""
-        className="absolute w-full bottom-0 z-1 "
+        className="absolute w-full bottom-0 z-2 "
       />
       <img
         src={buildingsThree}
         alt=""
-        className="absolute z-0 transform top-[-5rem]  opacity-20"
+        className="absolute z-1 transform top-[-5rem]   opacity-20"
       />
     </section>
   );
