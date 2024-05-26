@@ -1,5 +1,6 @@
+// HamburgerMenu.jsx
 import React, { useState } from 'react';
-import './HamburgerMenu.css'; // Import your CSS file for styling
+import './HamburgerMenu.css';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,18 +11,20 @@ const HamburgerMenu = () => {
 
   return (
     <div className="hamburger-menu">
-      <button className={`hamburger-menu-btn ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
+      <button className="hamburger-icon" onClick={toggleMenu}>
+        <div className={`bar ${isOpen ? 'change' : ''}`}></div>
+        <div className={`bar ${isOpen ? 'change' : ''}`}></div>
+        <div className={`bar ${isOpen ? 'change' : ''}`}></div>
       </button>
-      <div className={`menu-items ${isOpen ? 'open' : ''}`}>
-        <button className="close-btn" onClick={toggleMenu}>×</button>
-        <div className='inner'><a href="#">Home</a></div>
-        <div className='inner'><a href="#">About</a></div>
-        <div className='inner'><a href="#">Services</a></div>
-        <div className='inner'><a href="#">Contact</a></div>
-      </div>
+      <nav className={`menu ${isOpen ? 'open' : ''}`}>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </nav>
     </div>
   );
 };
