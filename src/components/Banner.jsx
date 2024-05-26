@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { gdBanner2023, ppBanner2024 } from "../assets";
 
 const Banner = () => {
   const settings = {
@@ -10,7 +11,7 @@ const Banner = () => {
     speed: 200,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     swipeToSlide: true,
     appendDots: (dots) => <ul style={{ margin: 0 }}>{dots}</ul>,
@@ -34,7 +35,7 @@ const Banner = () => {
 
   return (
     <div className="p-3 h-screen bg-blue-50 flex items-center justify-center">
-      <div className="p-8 w-full h-full border-4 border-gray-200 backdrop-blur-xl rounded-3xl bg-white shadow-xl">
+      <div className="p-8 w-full h-full bg-transparent">
         <h1 className="text-6xl flex mt-20 text-neutral-900 font-bold mb-4">
           Event Registration:
         </h1>
@@ -54,43 +55,55 @@ const Banner = () => {
             prestigious awards.
           </p>
         </h4>
+        <style>
+          {`
+          .hover-slide-down img {
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            z-index: 10;
+          }
+
+          .hover-slide-down:hover img {
+            transform: translateY(60px);
+          }
+
+          .hover-slide-down button {
+            position: absolute;
+            top: 20px; 
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+            transition: opacity 0.2s ease-in-out;
+            opacity: 0;
+          }
+
+          .hover-slide-down:hover button {
+            opacity: 1; 
+          }
+        `}
+        </style>
 
         <Slider {...settings}>
-          <div className="p-4 h-96 mx-7 mb-12 mt-5 max-w-2xl bg-green-100 backdrop-blur-3xl rounded-3xl shadow-xl ">
-            <h2 className="text-3xl font-semibold mb-4">1001</h2>
-            <p className="text-xl mb-4">growth hacking cases</p>
-            <p className="text-base mb-6">
-              Dive into Our Treasury of Success Stories and Case Studies To Get
-              Insights for Your Own Startup
-            </p>
-            <p className="text-2xl font-bold">
-              $200 <span className="text-base font-normal">/ full access</span>
-            </p>
+          <div className="p-4 h-96 mx-7 mb-12 mt-5 max-w-2xl bg-cyan-100 backdrop-blur-3xl rounded-3xl shadow-xl hover-slide-down">
+            <img
+              src={gdBanner2023}
+              className="w-full h-full object-cover rounded-3xl"
+            />
+            <button className="bg-cyan-600 text-white px-4 py-2 backdrop-blur-3xl rounded-full shadow-xl">
+              View more
+            </button>
           </div>
 
-          <div className="p-4 h-96 mb-12 mt-5 max-w-2xl mx-7 backdrop-blur-3xl  bg-red-100 rounded-3xl shadow-xl">
-            <h2 className="text-3xl font-semibold mb-4">40</h2>
-            <p className="text-xl mb-4">experts</p>
-            <p className="text-base mb-6">
-              Meet Our Panel of Visionaries and Innovators Who are Here to Help
-              Your Grow Your Startup
-            </p>
-            <p className="text-2xl font-bold">
-              $100 <span className="text-base font-normal">/ one query</span>
-            </p>
+          <div className="p-4 h-96 mb-12 mt-5 max-w-2xl mx-7 backdrop-blur-3xl  bg-red-100 rounded-3xl hover-slide-down shadow-xl">
+            <img
+              src={ppBanner2024}
+              className="w-full h-full object-cover rounded-3xl"
+            />
+            <button className="bg-red-500 text-white px-4 py-2 backdrop-blur-3xl rounded-full shadow-xl">
+              View more
+            </button>
           </div>
-
-          <div className="p-4 h-96 mb-12 mt-5 max-w-2xl mx-7 backdrop-blur-3xl bg-yellow-100 rounded-3xl shadow-xl">
-            <h2 className="text-3xl font-semibold mb-4">500+</h2>
-            <p className="text-xl mb-4">strategic partners</p>
-            <p className="text-base mb-6">
-              Connect with Our Extensive Network of Strategic Partners to
-              Accelerate Your Business Growth
-            </p>
-            <p className="text-2xl font-bold">
-              $300 <span className="text-base font-normal">/ access</span>
-            </p>
-          </div>
+          {/*Add more items here*/}
         </Slider>
       </div>
     </div>
