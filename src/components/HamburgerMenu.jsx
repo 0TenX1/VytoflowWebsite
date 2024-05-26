@@ -22,7 +22,7 @@ const HamburgerMenu = () => {
           <li><a href="#explore">Explore</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="#community">Community</a></li>
+          {/* <li><a href="#community">Community</a></li> */}
         </ul>
       </nav>
     </div>
