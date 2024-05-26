@@ -13,6 +13,8 @@ import buildingsTwo from "./buildingsTwo.svg";
 import buildingsThree from "./buildingsThree.svg";
 import gdBanner2023 from "./eventBanners/gdBanner2023.png";
 import ppBanner2024 from "./eventBanners/ppBanner2024.png";
+import gdBg from "./eventBanners/bannerBg/gdBg.svg";
+import ppBg from "./eventBanners/bannerBg/ppBg.svg";
 
 export {
   vytoflowLogo,
@@ -30,4 +32,6 @@ export {
   buildingsTwo,
   gdBanner2023,
   ppBanner2024,
+  gdBg,
+  ppBg,
 };
