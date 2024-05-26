@@ -20,7 +20,7 @@ const Hero = () => {
   const buildingThreeY = useTransform(scrollY, [0, 300], [0, 100]);
 
   return (
-    <section className="flex h-screen bg-gradient-to-b from-blue-200 via-blue-200 to-white relative overflow-hidden items-center justify-center">
+    <section className="flex h-full bg-gradient-to-b from-blue-200 via-blue-200 to-white relative overflow-hidden items-center justify-center">
       <motion.div
         className="relative  mx-auto text-center "
         style={{ y: textY }}
