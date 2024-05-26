@@ -8,10 +8,10 @@ const Banner = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 200,
+    speed: 900,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     swipeToSlide: true,
     appendDots: (dots) => <ul style={{ margin: 0 }}>{dots}</ul>,
@@ -30,10 +30,11 @@ const Banner = () => {
         ></button>
       );
     },
+    arrows: false,
   };
 
   return (
-    <div className="p-3 h-screen bg-blue-50 flex items-center justify-center">
+    <div className="p-3 h-screen bg-gradient-to-t from-[50rem] from-blue-50 to-white flex items-center justify-center">
       <div className="p-8 w-full h-full bg-transparent">
         <h1 className="text-6xl flex mt-20 text-neutral-900 font-bold mb-4">
           Event Registration:
@@ -42,20 +43,34 @@ const Banner = () => {
           Engage In The Buzz, Become Involved!
         </h1>
 
-        <h4 className="text-black -mt-[8.3rem] py-12 ml:9 flex justify-end mr-10 ml-[65rem]">
-          <p
+        <h4 className="-mt-[12.14rem] py-12 ml:9 flex justify-end mr-10 ml-[65rem]">
+          <div
             style={{
-              maxHeight: "7rem",
-              overflow: "hidden",
-              lineHeight: "1.5",
+              border: "2px solid #03045e",
+              padding: "13px",
+              borderRadius: "13px",
             }}
           >
-            Dive into vibrant experiences, and position yourself to win
-            prestigious awards.
-          </p>
+            <p
+              style={{
+                maxHeight: "7rem",
+                overflow: "hidden",
+                lineHeight: "1.5",
+                color: "#161a1d",
+              }}
+            >
+              Dive into vibrant experiences, and position yourself to win
+              prestigious awards.
+            </p>
+          </div>
         </h4>
-        <style>
-          {`
+
+        <Slider {...settings}>
+          <div className="p-4 h-96 mx-7 mb-12 mt-5 max-w-2xl bg-transparent rounded-3xl shadow-xl relative">
+            <div className="hover-slide-down">
+              <img src={gdBanner2023} className="w-full h-full  rounded-3xl" />
+              <style>
+                {`
           .hover-slide-down img {
             transition: transform 0.2s ease-in-out;
           }
@@ -90,12 +105,7 @@ const Banner = () => {
             z-index: -1;
           }
           `}
-        </style>
-
-        <Slider {...settings}>
-          <div className="p-4 h-96 mx-7 mb-12 mt-5 max-w-2xl bg-transparent rounded-3xl shadow-xl relative">
-            <div className="hover-slide-down">
-              <img src={gdBanner2023} className="w-full h-full  rounded-3xl" />
+              </style>
 
               <button className="bg-gradient-to-br from-red-500 via-red-400 to-red-300 font-semibold text-white px-4 py-2 backdrop-blur-3xl rounded-full shadow-xl">
                 View more
@@ -111,7 +121,7 @@ const Banner = () => {
             <div className="hover-slide-down">
               <img
                 src={ppBanner2024}
-                className=" w-full h-[22.4rem] shadow-lg object-cover rounded-3xl"
+                className=" w-full h-[22.4rem] object-cover rounded-3xl"
               />
 
               <button className="bg-gradient-to-br from-blue-500 via-blue-300 to-blue-200 font-semibold text-white px-4 py-2 backdrop-blur-3xl rounded-full shadow-xl">
@@ -123,6 +133,7 @@ const Banner = () => {
               className="w-full h-full object-cover shadow-xl rounded-3xl extra-image"
             />
           </div>
+
           {/* Add more items here */}
         </Slider>
       </div>

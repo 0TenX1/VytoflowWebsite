@@ -1,8 +1,5 @@
 import React from "react";
 import {
-  gearBot,
-  gearMid,
-  gearFront,
   backClouds,
   backClouds2,
   buildingsOne,
