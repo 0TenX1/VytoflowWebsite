@@ -58,7 +58,7 @@ const Banner = () => {
         <h1 className="text-6xl flex mt-20 text-neutral-900 font-bold mb-4">
           Event Registration:
         </h1>
-        <h1 className="py-5 text-5xl text-neutral-900 font-bold mb-4">
+        <h1 className="py-8 text-5xl text-neutral-900 font-bold mb-4">
           Engage In The Buzz, Become Involved!
         </h1>
 
