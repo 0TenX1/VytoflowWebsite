@@ -121,7 +121,7 @@ const Banner = () => {
           </div>
           </motion.div>
         </h4>
-
+      
         <Slider {...settings}>
           <motion.div
             className="p-4 h-96 mx-7 mb-12 mt-5 max-w-2xl bg-transparent rounded-3xl shadow-xl relative"
@@ -138,7 +138,7 @@ const Banner = () => {
                   .hover-slide-down:hover img {
                     transform: translateY(20px);
                   }
-
+                  
                   .hover-slide-down button {
                     position: absolute;
                     top: 13px; 
@@ -214,6 +214,7 @@ const Banner = () => {
           {/* Add more items here */}
         </Slider>
       </div>
+   
     </div>
   );
 };
