@@ -1,5 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,6 +13,17 @@ import {
 } from "../assets";
 
 const Banner = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -54,15 +66,40 @@ const Banner = () => {
         }}
       ></motion.div>
 
-      <div className="relative p-8 w-full h-full bg-transparent">
-        <h1 className="text-6xl flex mt-20 text-neutral-900 font-bold mb-4">
+      <div className="relative p-8 w-full h-full bg-transparent" ref={ref}>
+        <motion.h1
+          className="text-6xl flex mt-15 text-neutral-900 font-bold"
+          initial="hidden"
+          animate={controls}
+          variants={{
+            visible: { opacity: 1, y: -0, transition: { duration: 0.9 } }, // Adjust duration here
+            hidden: { opacity: 0, y: -50, transition: { duration: 0.9 } }, // Adjust duration here
+          }}
+        >
           Event Registration:
-        </h1>
-        <h1 className="py-8 text-5xl text-neutral-900 font-bold mb-4">
+        </motion.h1>
+        <motion.h1
+          className="mt-10 text-5xl text-neutral-900 font-bold mb-36"
+          initial="hidden"
+          animate={controls}
+          variants={{
+            visible: { opacity: 1, y: -0, transition: { duration: 0.6 } }, // Adjust duration here
+            hidden: { opacity: 0, y: -50, transition: { duration: 0.6 } }, // Adjust duration here
+          }}
+        >
           Engage In The Buzz, Become Involved!
-        </h1>
+        </motion.h1>
 
-        <h4 className="-mt-[12.14rem] py-12 ml:9 flex justify-end mr-10 ml-[65rem]">
+        <h4 className="-mt-[9.6rem] py-12 ml-10 flex justify-end mr-0 ">
+        <motion.div
+          className="-mt-[12.14rem] py-12 ml:9 flex justify-end mr-10 ml-[65rem]"
+          initial="hidden"
+          animate={controls}
+          variants={{
+            visible: { opacity: 1, x: 0, transition: { delay: 0.1, duration: 1 } }, // Slide in animation
+            hidden: { opacity: 0, x: 100, transition: { duration: 1 } }, // Adjust duration here
+          }}
+        >
           <div
             style={{
               border: "2px solid #03045e",
@@ -82,6 +119,7 @@ const Banner = () => {
               prestigious awards.
             </p>
           </div>
+          </motion.div>
         </h4>
 
         <Slider {...settings}>
@@ -134,6 +172,11 @@ const Banner = () => {
                   .spinning-background {
                     animation: spin 190s linear infinite;
                     will-change: transform;
+                  }
+
+                  .fade-in {
+                    opacity: 1;
+                    transition: opacity 1s ease-in-out;
                   }
                 `}
               </style>
