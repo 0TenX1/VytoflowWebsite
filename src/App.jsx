@@ -11,6 +11,7 @@ const App = () => {
 
   const appStyle = {
     backgroundImage: `url(${bgVytoflowLogo})`,
+    backgroundRepeat: "no-repeat",
   };
   return (
     <>
@@ -18,7 +19,9 @@ const App = () => {
         <Header theme={theme} setTheme={setTheme} />
         <Hero />
         <Banner />
+        <Events/>
         <HamburgerMenu />
+
       </div>
     </>
   );
