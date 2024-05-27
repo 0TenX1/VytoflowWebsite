@@ -40,7 +40,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative p-3 h-full bg-gradient-to-t from-[50rem] from-blue-50 to-white flex items-center justify-center">
+    <div className="relative p-3 h-screen bg-gradient-to-t from-[51rem] from-blue-50 to-white flex items-center justify-center">
       <div
         className="absolute left-[1rem] top-[5rem] w-[37rem] h-[37rem] spinning-background"
         style={{
