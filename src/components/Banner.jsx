@@ -33,16 +33,20 @@ const Banner = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     swipeToSlide: true,
-    appendDots: (dots) => <ul style={{ margin: 0 }}>{dots}</ul>,
+    appendDots: (dots) => (
+      <div style={{ position: 'relative', bottom: '20px' }}>
+        <ul style={{ margin: 0 }}>{dots}</ul>
+      </div>
+    ),
     customPaging: function (i) {
       return (
         <button
           style={{
             width: "10px",
             height: "10px",
-            borderRadius: "90%",
+            borderRadius: "100%",
             backgroundColor: "#dee2e6",
-            margin: "5px 5px",
+            margin: "5px 5px",   
             border: "none",
             cursor: "pointer",
           }}
@@ -68,7 +72,7 @@ const Banner = () => {
 
       <div className="relative p-8 w-full h-full bg-transparent" ref={ref}>
         <motion.h1
-          className="text-6xl flex mt-15 text-neutral-900 font-bold"
+          className="text-6xl flex mt-20 text-neutral-900 font-bold"
           initial="hidden"
           animate={controls}
           variants={{
@@ -79,7 +83,7 @@ const Banner = () => {
           Event Registration:
         </motion.h1>
         <motion.h1
-          className="mt-10 text-5xl text-neutral-900 font-bold mb-36"
+          className="mt-7 text-5xl text-neutral-900 font-bold mb-32"
           initial="hidden"
           animate={controls}
           variants={{
