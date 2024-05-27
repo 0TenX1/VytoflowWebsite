@@ -55,7 +55,7 @@ const Banner = () => {
   return (
     <div className="relative p-3 h-screen bg-gradient-to-t from-[50rem] from-blue-50 to-white flex items-center justify-center">
       <motion.div
-        className="absolute top-[3rem] left-[0rem] w-[35rem] h-[35rem] spinning-background"
+        className="absolute top-[1rem] left-[0rem] w-[35rem] h-[35rem] spinning-background"
         style={{
           backgroundImage: `url(${bgVytoflowLogo})`,
           backgroundAttachment: "fixed",
@@ -97,7 +97,7 @@ const Banner = () => {
           animate={controls}
           variants={{
             visible: { opacity: 1, x: 0, transition: { delay: 0.1, duration: 1 } }, // Slide in animation
-            hidden: { opacity: 0, x: 100, transition: { duration: 1 } }, // Adjust duration here
+            hidden: { opacity: 0, x: 84, transition: { duration: 1 } }, // Adjust duration here
           }}
         >
           <div
