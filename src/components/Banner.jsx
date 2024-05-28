@@ -11,7 +11,13 @@ import {
   ppBg,
   bgVytoflowLogo,
   ButtonBg,
+  gdOne,
+  gdThree,
+  gdTwo,
+  pqOne,
+  pqTwo,
 } from "../assets";
+
 
 const Banner = () => {
   const controls = useAnimation();
@@ -67,12 +73,13 @@ const Banner = () => {
     arrows: false,
   };
   const items = [
-    { id: 1, content: 'Event 1' },
-    { id: 2, content: 'Event 2' },
-    { id: 3, content: 'Event 3' },
-    { id: 4, content: 'Event 4' },
-    { id: 5, content: 'Event 5' },
+    { id: 1, image: gdOne },
+    { id: 2, image: gdThree },
+    { id: 3, image: gdTwo },
+    { id: 4, image: pqOne },
+    { id: 5, image: pqTwo },
   ];
+
 
   return (
     <div className="relative p-3 h-screen bg-gradient-to-t from-[50rem] from-blue-50 to-white flex items-center justify-center">
@@ -88,7 +95,7 @@ const Banner = () => {
           borderRadius: "50%",
         }}
       ></motion.div>
-      <div className="absolute bottom-40 right-[8rem] text-2xl text-n-7 p-3">
+      <div className="absolute bottom-40 right-[10rem] text-2xl text-n-7 p-3">
         <motion.button
           className="bg-gradient-to-br absolute right-[31.5.5rem] top-3  z-10 ml-0 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
           whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
@@ -195,7 +202,7 @@ const Banner = () => {
               whileHover={{ scale: 1.1 }}
             >
               <div className="hover-slide-down">
-                <img src={gdBanner2023} className="w-full shadow-xl h-[13rem] rounded-3xl" />
+                <img src={gdBanner2023} className="w-full shadow-xl h-[13rem] rounded-2xl" />
                 <style>
                   {`
                     .hover-slide-down img {
@@ -282,7 +289,7 @@ const Banner = () => {
               <div className="hover-slide-down">
                 <img
                   src={ppBanner2024}
-                  className=" w-full h-[13rem] object-cover rounded-3xl"
+                  className=" w-full h-[13rem] object-cover rounded-2xl"
                 />
 
                 <button className="bg-gradient-to-br text-xs from-blue-500 via-blue-300 to-blue-200 font-semibold text-white px-4 py-2 rounded-full ">
@@ -297,16 +304,21 @@ const Banner = () => {
           </Slider>
           <div className="absolute bottom-0 -left-15 w-full flex justify-start p-3">
             <div className="w-3/4 md:w-2/3 lg:w-[44rem] h-96 md:h-128 lg:h-36">
-              <Slider {...settings2} className="carousel2-container">
-                {items.map(item => (
-                  <div key={item.id} className="p-4 h-[30rem]">
-                    <div className="bg-white p-6 rounded-3xl shadow-lg w-[40rem] h-full flex flex-col justify-center">
-                      <h3 className="text-xl font-semibold mb-4">{item.content}</h3>
-                      <p className="text-gray-600">Details about {item.content}</p>
-                    </div>
-                  </div>
-                ))}
-              </Slider>
+            <Slider {...settings2} className="carousel2-container">
+  {items.map(item => (
+    <div key={item.id} className="p-4 h-[30rem]">
+      <div className="bg-gradient-to-b from-blue-200  to-slate-200 p-6 rounded-3xl shadow-lg w-[40rem] h-full flex flex-col justify-center">
+        {/* Render image here */}
+        <img
+          src={item.image}
+          alt={item.content}
+          className="w-full h-full rounded-xl object-cover"
+          style={{ maxHeight: "100%", maxWidth: "100%" }} // Added style for autofitting
+        />
+      </div>
+    </div>
+  ))}
+</Slider>
             </div>
           </div>
         </div>

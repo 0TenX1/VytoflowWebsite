@@ -17,6 +17,11 @@ import gdBg from "./eventBanners/bannerBg/gdBg.svg";
 import ppBg from "./eventBanners/bannerBg/ppBg.svg";
 import bgVytoflowLogo from "./bgVytoflowLogo.svg";
 import ButtonBg from "./ButtonBg.svg";
+import gdOne  from "./eventNorm/gdOne.JPG";
+import gdThree from "./eventNorm/gdThree.jpg";
+import gdTwo from "./eventNorm/gdTwo.jpg";
+import pqOne from "./eventNorm/pqOne.JPG";
+import pqTwo from "./eventNorm/pqTwo.JPG";
 
 export {
   vytoflowLogo,
@@ -38,4 +43,9 @@ export {
   ppBg,
   bgVytoflowLogo,
   ButtonBg,
+  gdOne,
+  gdThree,
+  gdTwo,
+  pqOne,
+  pqTwo,
 };
