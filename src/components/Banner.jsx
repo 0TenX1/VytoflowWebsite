@@ -137,27 +137,33 @@ const Banner = () => {
           Our Events
         </motion.h1>
 
-        <h4 className="-mt-[9.6rem] py-12 ml-14 flex justify-end -mr-7 ">
+        <h4 className="-mt-[9.6rem] py-12 ml-10 -mr-1 ">
           <motion.div
-            className="-mt-[12.14rem] py-12 ml:9 flex justify-end  ml-[40rem]"
+            className="-mt-[12.14rem] py-12  ml-[40rem]"
             initial="hidden"
             animate={controls}
             variants={{
-              visible: { opacity: 1, x: 0, transition: { delay: 0.1, duration: 1 } },
-              hidden: { opacity: 0, x: 84, transition: { duration: 1 } },
+              visible: { opacity: 1, y: 0, transition: { delay: 0.1, duration: 2 } },
+              hidden: { opacity: 0, y: 84, transition: { duration: 1 } },
             }}
           >
             <div
               style={{
-                padding: "13px",
+                padding: "19px",
+                border: "2px solid rgba(3, 4, 94, 0.1)",
+                borderRadius: "10px",
+              
+                
               }}
             >
+              
               <p
                 style={{
                   maxHeight: "7rem",
                   overflow: "none",
                   lineHeight: "1.5",
                   color: "#161a1d",
+                  
                 }}
               >
                 Immerse Yourself In Vibrant Experiences And Position Yourself To Win Prestigious Awards By Actively Participating In An Extensive Array Of Exciting, Diverse, And Enriching Events Designed To Showcase Your Talents And Achievements.
