@@ -118,7 +118,7 @@ const Banner = () => {
 
       <div className="relative p-8 w-full h-full bg-transparent" ref={ref}>
         <motion.h1
-          className="text-6xl flex mt-20 text-red-400 font-extralight"
+          className="text-6xl flex mt-20 text-black font-semibold"
           initial="hidden"
           animate={controls}
           variants={{
@@ -129,7 +129,7 @@ const Banner = () => {
           Through The Lens: 
         </motion.h1>
         <motion.h1
-          className="mt-7 text-5xl text-red-900 font-bold font-grotesk mb-32"
+          className="mt-7 text-5xl text-black font-bold font-grotesk mb-32"
           initial="hidden"
           animate={controls}
           variants={{
@@ -142,7 +142,7 @@ const Banner = () => {
 
         <h4 className="-mt-[9.6rem] py-12 ml-14 flex justify-end -mr-7 ">
         <motion.div
-          className="-mt-[12.14rem] py-12 ml:9 flex justify-end mr-10 ml-[65rem]"
+          className="-mt-[12.14rem] py-12 ml:9 flex justify-end  ml-[40rem]"
           initial="hidden"
           animate={controls}
           variants={{
@@ -152,21 +152,21 @@ const Banner = () => {
         >
           <div
             style={{
-              border: "2px solid #03045e",
+           
               padding: "13px",
-              borderRadius: "13px",
+          
             }}
           >
             <p
               style={{
                 maxHeight: "7rem",
-                overflow: "hidden",
+                overflow: "none",
                 lineHeight: "1.5",
                 color: "#161a1d",
               }}
             >
-              Dive into vibrant experiences, and position yourself to win
-              prestigious awards.
+              
+Immerse Yourself In Vibrant Experiences And Position Yourself To Win Prestigious Awards By Actively Participating In An Extensive Array Of Exciting, Diverse, And Enriching Events Designed To Showcase Your Talents And Achievements.
             </p>
           </div>
           </motion.div>
