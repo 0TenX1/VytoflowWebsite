@@ -90,9 +90,9 @@ const Banner = () => {
           borderRadius: "50%",
         }}
       ></motion.div>
-    <div className="absolute bottom-40 right-[9rem] text-2xl text-n-7 p-3">
+    <div className="absolute bottom-40 right-[8rem] text-2xl text-n-7 p-3">
     <button
-        className="bg-gradient-to-br absolute right-[27.5rem] top-3  z-10 ml-0 font-sans text-white px-6 py-[0.6rem] backdrop-blur-sm rounded-2xl shadow-xl"
+        className="bg-gradient-to-br absolute right-[31.5.5rem] top-3  z-10 ml-0 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
         style={{
           marginTop: '92px',
         
@@ -101,14 +101,14 @@ const Banner = () => {
       >
         <span className="absolute inset-0 bg-gradient-to-br from-red-500 via-red-400 to-red-300 rounded-2xl" />
         <span
-          className="absolute inset-1 bg-cover bg-no-repeat left-0"
+          className="absolute inset-1 bg-cover bg-no-repeat left-[0.1rem]"
           style={{
             backgroundImage: `url(${ButtonBg})`,
             backgroundSize: 'contain',
             backgroundPosition: 'left',
           }}
         />
-        <span style={{ left: '20px' }} className="relative z-20 text-[1.2rem]">Discover Events</span>
+        <span style={{ left: '20px' }} className="relative z-20 text-[1.2rem]">Register</span>
       </button >
   <h2>
     <span className="block">Claim Your Seat At The Table: </span>
