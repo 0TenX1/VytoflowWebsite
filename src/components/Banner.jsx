@@ -117,7 +117,7 @@ const Banner = () => {
 >
   <span className="block">Claim Your Seat At The Table: </span>
   <motion.span
-    className="block py-3"
+    className="block py-2"
     initial="hidden"
     animate={controls}
     variants={{
