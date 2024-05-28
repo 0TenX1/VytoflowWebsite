@@ -63,7 +63,7 @@ const Banner = () => {
     arrows: false,
   };
   const settings2 = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 2000,
     slidesToShow: 1,
@@ -212,7 +212,10 @@ const Banner = () => {
                     .hover-slide-down:hover img {
                       transform: translateY(-40px);
                     }
-
+                    .slick-dots {
+                      bottom: 70px; /* Adjust the value as needed */
+                    }
+                    
                     .hover-slide-down button {
                       position: absolute;
                       bottom: 10px; 
