@@ -107,10 +107,27 @@ const Banner = () => {
           />
           <span style={{ left: '20px' }} className="relative z-20 text-[1.2rem]">Register</span>
         </motion.button>
-        <h2>
-          <span className="block">Claim Your Seat At The Table: </span>
-          <span className="block py-3">Don't Miss Out, Register Today for the Unforgettable</span>
-        </h2>
+        <motion.h2
+  initial="hidden"
+  animate={controls}
+  variants={{
+    visible: { opacity: 1, y: 0, transition: { duration: 0.9, delay: 0.5 } },
+    hidden: { opacity: 0, y: -50, transition: { duration: 0.9 } },
+  }}
+>
+  <span className="block">Claim Your Seat At The Table: </span>
+  <motion.span
+    className="block py-3"
+    initial="hidden"
+    animate={controls}
+    variants={{
+      visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, delay: 0.7 } },
+      hidden: { opacity: 0, y: -20, scale: 0.8, transition: { duration: 0.6 } },
+    }}
+  >
+    Don't Miss Out, Register Today for the Unforgettable
+  </motion.span>
+</motion.h2>
       </div>
 
       <div className="relative p-8 w-full h-full bg-transparent" ref={ref}>
