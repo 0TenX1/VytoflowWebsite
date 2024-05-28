@@ -19,7 +19,6 @@ const App = () => {
         <Header theme={theme} setTheme={setTheme} />
         <Hero />
         <Banner />
-        <Events/>
         <HamburgerMenu />
 
       </div>

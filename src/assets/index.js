@@ -16,6 +16,7 @@ import ppBanner2024 from "./eventBanners/ppBanner2024.png";
 import gdBg from "./eventBanners/bannerBg/gdBg.svg";
 import ppBg from "./eventBanners/bannerBg/ppBg.svg";
 import bgVytoflowLogo from "./bgVytoflowLogo.svg";
+import ButtonBg from "./ButtonBg.svg";
 
 export {
   vytoflowLogo,
@@ -36,4 +37,5 @@ export {
   gdBg,
   ppBg,
   bgVytoflowLogo,
+  ButtonBg,
 };
