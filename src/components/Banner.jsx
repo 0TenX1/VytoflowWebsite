@@ -143,8 +143,8 @@ const Banner = () => {
           initial="hidden"
           animate={controls}
           variants={{
-            visible: { opacity: 1, y: 0, transition: { duration: 0.9 } },
-            hidden: { opacity: 0, y: -50, transition: { duration: 0.9 } },
+            visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
+            hidden: { opacity: 0, y: -150, transition: { duration: 0.9 } },
           }}
         >
           Through The Lens: 
@@ -307,7 +307,7 @@ const Banner = () => {
             <Slider {...settings2} className="carousel2-container">
   {items.map(item => (
     <div key={item.id} className="p-4 h-[30rem]">
-      <div className="bg-gradient-to-b from-blue-200  to-slate-200 p-6 rounded-3xl shadow-lg w-[40rem] h-full flex flex-col justify-center">
+      <div className="bg-gradient-to-b from-slate-200 via-slate-100 to-slate-200 p-6 rounded-3xl shadow-lg w-[40rem] h-full flex flex-col justify-center">
         {/* Render image here */}
         <img
           src={item.image}
