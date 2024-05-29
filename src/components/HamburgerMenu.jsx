@@ -1,6 +1,6 @@
 // HamburgerMenu.jsx
 import React, { useState } from 'react';
-import './HamburgerMenu.css';
+import './css/HamburgerMenu.css';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
