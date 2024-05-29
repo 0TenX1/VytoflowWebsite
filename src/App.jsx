@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Hero from "./components/Hero"; 
+import Partners from "./components/Partners.jsx";
 import HamburgerMenu from "./components/HamburgerMenu.jsx";
 
 import { bgVytoflowLogo } from "./assets";
@@ -19,6 +20,7 @@ const App = () => {
         <Header theme={theme} setTheme={setTheme} />
         <Hero />
         <Events />
+        <Partners />
         <HamburgerMenu />
 
       </div>
