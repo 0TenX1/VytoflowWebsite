@@ -72,7 +72,7 @@ const Events = () => {
     autoplaySpeed: 4000,
     arrows: false,
    appendDots: (dots) => (
-      <div style={{ position: 'relative', bottom: '95px' }}>
+      <div style={{ position: 'relative', bottom: '90px' }}>
         <ul style={{ margin: 0 }}>{dots}</ul>
       </div>
     ),
