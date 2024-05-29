@@ -150,7 +150,7 @@ const Events = () => {
     initial="hidden"
     animate={controls}
     variants={{
-      visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, delay: 0.7 } },
+      visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, delay: 1 } },
       hidden: { opacity: 0, y: -20, scale: 0.8, transition: { duration: 0.6 } },
     }}
   >
