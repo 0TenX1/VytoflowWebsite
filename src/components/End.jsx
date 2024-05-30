@@ -12,33 +12,20 @@ export default function App() {
         </div>
         {/* <!-- Social network icons container --> */}
         <div className="flex justify-center">
-          <a className="mr-6 text-neutral-600 dark:text-neutral-200">
-            <img src={github} className="h-6 w-6"          
-            ></img>
+          <a className="mr-6 text-neutral-600 dark:text-neutral-200" href="https://github.com">
+            <img src={github} className="h-6 w-6" alt="GitHub"></img>
           </a>
-          <a className="mr-6 text-neutral-600 dark:text-neutral-200">
-            <img
-            src={instagram}
-              className="h-6 w-6"
-            
-            ></img>
+          <a className="mr-6 text-neutral-600 dark:text-neutral-200" href="https://instagram.com">
+            <img src={instagram} className="h-6 w-6" alt="Instagram"></img>
           </a>
-          <a className="mr-6 text-neutral-600 dark:text-neutral-200">
-            <img src={linkedin}
-             
-              className="h-6 w-6"
-             ></img>
+          <a className="mr-6 text-neutral-600 dark:text-neutral-200" href="https://linkedin.com">
+            <img src={linkedin} className="h-6 w-6" alt="LinkedIn"></img>
           </a>
-          <a className="mr-6 text-neutral-600 dark:text-neutral-200">
-            <img
-               src={whatsapp}
-              className="h-6 w-6"
-              ></img>
+          <a className="mr-6 text-neutral-600 dark:text-neutral-200" href="https://whatsapp.com">
+            <img src={whatsapp} className="h-6 w-6" alt="WhatsApp"></img>
           </a>
-          <a className="mr-6 text-neutral-600 dark:text-neutral-200">
-            <img src={youtube}
-              className="h-6 w-6"
-              ></img>
+          <a className="mr-6 text-neutral-600 dark:text-neutral-200" href="https://youtube.com">
+            <img src={youtube} className="h-6 w-6" alt="YouTube"></img>
           </a>
         </div>
       </div>
