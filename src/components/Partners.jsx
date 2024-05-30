@@ -37,7 +37,7 @@ const Partners = () => {
             variants={itemVariants}
             transition={spring}
           >
-            <img src={image} alt={`Partner College ${index + 1}`} className="h-52 w-52 object-contain" />
+            <img src={image} alt={`Partner College ${index + 1}`} className="h-52 w-52 object-cover rounded-lg" />
           </motion.div>
         ))}
       </div>
@@ -53,7 +53,7 @@ const Partners = () => {
             variants={itemVariants}
             transition={spring}
           >
-            <img src={image} alt={`Partner Company ${index + 1}`} className="h-52 w-52 object-contain" />
+            <img src={image} alt={`Partner Company ${index + 1}`} className="h-52 w-52 object-cover rounded-lg" />
           </motion.div>
         ))}
       </div>
