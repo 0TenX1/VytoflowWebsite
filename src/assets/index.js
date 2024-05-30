@@ -40,7 +40,13 @@ import gitHub from "./partners/companies/gitHub.png";
 import internshala from "./partners/companies/internshala.png";
 import microsoft from "./partners/companies/microsoft.png";
 import samsung from "./partners/companies/samsung.png";
-
+import abesec from "./partners/colleges/abesec.png";
+import akgec from "./partners/colleges/akgec.png";
+import glbajaj from "./partners/colleges/glbajaj.png";
+import iec from "./partners/colleges/iec.png";
+import ims from "./partners/colleges/ims.png";
+import niet from "./partners/colleges/niet.png";
+import sharda from "./partners/colleges/sharda.png";
 export {
   vytoflowLogo,
   searchDay,
@@ -84,4 +90,11 @@ export {
   internshala,
   microsoft,
   samsung,
+  abesec,
+  akgec,
+  glbajaj,
+  iec,
+  ims,
+  niet,
+  sharda,
 };

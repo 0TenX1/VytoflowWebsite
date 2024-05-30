@@ -1,15 +1,40 @@
-import React from 'react'
+import React from 'react';
+import { agratas, cetpa, gitHub, internshala, microsoft, samsung } from "../assets";
+import { abesit, akhilesh, dme, drona, gcet, gniot, iimt, its, km, mewar, srm, zk, akgec, glbajaj, iec, ims, niet, sharda, abesec } from "../assets";
 
-const partners = () => {
+const Partners = () => {
+  // Array containing existing images
+  const Colleges = [
+    abesit, akhilesh, dme, drona, gcet, gniot, iimt, its, km, mewar, srm, zk, abesec,
+    akgec, glbajaj, ims, niet, sharda
+  ];
+
+  const Company = [ microsoft, samsung , gitHub, internshala,agratas,cetpa ] ;
+
   return (
-    <div className="relative p-3 h-auto bg-blue-50 flex items-center justify-center">
-       <div  className="border-r-[0.1rem] border-n-2 border-l-[0.1rem] border-b-[0.1rem] h-auto overflow-hidden" style={{margin:"5px",borderRadius: "1%"}}>
-          <div>
-            <h4>title</h4>
+    <div className="relative h-auto w-full bg-gray-800 p-8">
+      <h2 className="text-center text-5xl mt-4 text-white font-bold mb-8 ">
+        Our Collaborative Network: Partner Colleges
+      </h2>
+      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6">
+        {Colleges.map((image, index) => (
+          <div key={index} className="flex justify-center items-center">
+            <img src={image} alt={`Partner College ${index + 1}`} className="h-52 w-52 object-contain" />
           </div>
-       </div>
+        ))}
+      </div>
+      <h2 className="text-center lg:mt-9 text-5xl text-white font-bold mb-8 ">
+      Partners in Progress: Our Collaborative Companies
+      </h2>
+      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6">
+        {Company.map((image, index) => (
+          <div key={index} className="flex justify-center items-center">
+            <img src={image} alt={`Partner College ${index + 1}`} className="h-52 w-52 object-contain" />
+          </div>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default partners
+export default Partners;
