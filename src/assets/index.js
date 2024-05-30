@@ -48,6 +48,12 @@ import ims from "./partners/colleges/ims.png";
 import niet from "./partners/colleges/niet.png";
 import sharda from "./partners/colleges/sharda.png";
 import partnerBack from "./partnerBack.svg";
+import github from "./footerLogo/github.svg";
+import instagram from "./footerLogo/instagram.svg";
+import linkedin from "./footerLogo/linkedin.svg"
+import whatsapp from "./footerLogo/whatsapp.svg";
+import youtube from "./footerLogo/youtube.svg";
+import footerlogo from "./footerLogo/footerlogo.svg";
 export {
   vytoflowLogo,
   searchDay,
@@ -99,4 +105,10 @@ export {
   niet,
   sharda,
   partnerBack,
+  github,
+  instagram,
+  linkedin,
+  whatsapp,
+  youtube,
+  footerlogo,
 };

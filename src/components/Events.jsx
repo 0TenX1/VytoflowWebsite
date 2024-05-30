@@ -317,7 +317,7 @@ const Events = () => {
                   src={ppBanner2024}
                   className=" w-full h-[13rem] object-cover rounded-2xl"
                 />
-
+ 
                 <button className="bg-gradient-to-br text-xs from-blue-500 via-blue-300 to-blue-200 font-semibold text-white px-4 py-2 rounded-full ">
                   View more
                 </button>
