@@ -47,6 +47,7 @@ import iec from "./partners/colleges/iec.png";
 import ims from "./partners/colleges/ims.png";
 import niet from "./partners/colleges/niet.png";
 import sharda from "./partners/colleges/sharda.png";
+import partnerBack from "./partnerBack.svg";
 export {
   vytoflowLogo,
   searchDay,
@@ -97,4 +98,5 @@ export {
   ims,
   niet,
   sharda,
+  partnerBack,
 };
