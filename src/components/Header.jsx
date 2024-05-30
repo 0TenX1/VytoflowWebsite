@@ -27,7 +27,7 @@ const Header = ({ theme, setTheme }) => {
           </a>
           <nav className="hidden fixed top-[5rem] lg:static lg:flex lg:mx-auto justify-center lg:bg-transparent">
             <div
-              className="relative bg-gradient-to-r from-slate-100 via-slate-50 to-slate-50 shadow-md justify-center rounded-3xl h-12 backdrop-blur-3xl z-90 flex flex-col items-center mx-auto lg:flex-row"
+              className="relative  border-x-cyan-600 border-r-4 border-l-4 bg-gradient-to-r from-slate-100 via-slate-50 to-slate-50 shadow-md justify-center rounded-2xl h-12 backdrop-blur-3xl z-90 flex flex-col items-center mx-auto lg:flex-row"
               style={{ marginTop: "-20px" }}
             >
               {navigation.map((item) => (
@@ -39,7 +39,7 @@ const Header = ({ theme, setTheme }) => {
                     item.onlyMobile && "lg:hidden",
                     item.url === pathname.hash
                       ? "z-2 lg:text-cyan-700"
-                      : "lg:text-n-4",
+                      : "lg:text-black",
                     "group"
                   )}
                 >
@@ -50,7 +50,7 @@ const Header = ({ theme, setTheme }) => {
             </div>
           </nav>
           <div
-            className="hidden lg:flex items-center backdrop-blur-3xl bg-gradient-to-r h-12 from-slate-100 via-slate-50 to-slate-50 shadow-md p-6 px-4 py-0 rounded-3xl ml-2 text-black"
+            className="hidden lg:flex items-center backdrop-blur-3xl border-b-cyan-600 border-b-2 border-r-cyan-600 border-r-4 bg-gradient-to-r h-12 from-slate-100 via-slate-50 to-slate-50 shadow-md p-6 px-4 py-0 rounded-2xl ml-2 text-black"
             style={{ marginTop: "-22px" }}
           >
             <input

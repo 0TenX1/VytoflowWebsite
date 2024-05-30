@@ -22,17 +22,36 @@ const Partners = () => {
     stiffness: 500,
     damping: 30
   };
+  <styles>
+          {`.glassy {
+  position: relative;
+  overflow: hidden;
+}
+
+.glassy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+`}
+        </styles>
 
   return (
-    <div className="relative h-auto w-full bg-gray-800 p-8">
+    <div className="relative h-auto w-full bg-gray-700 p-8">
       <h2 className="text-center text-5xl mt-4 text-white font-bold mb-8 ">
         Our Collaborative Network: Partner Colleges
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6">
+        
         {Colleges.map((image, index) => (
           <motion.div 
             key={index} 
-            className="flex justify-center items-center"
+            className="flex justify-center items-center glassy"
             whileHover="hover"
             variants={itemVariants}
             transition={spring}
@@ -48,7 +67,7 @@ const Partners = () => {
         {Company.map((image, index) => (
           <motion.div 
             key={index} 
-            className="flex justify-center items-center"
+            className="flex justify-center items-center glassy"
             whileHover="hover"
             variants={itemVariants}
             transition={spring}

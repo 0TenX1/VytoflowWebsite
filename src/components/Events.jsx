@@ -19,6 +19,7 @@ import {
 } from "../assets";
 
 
+
 const Events = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
@@ -104,7 +105,7 @@ const Events = () => {
 
   return (
     <div className="relative h-screen bg-gradient-to-t from-[50rem] from-blue-50 to-white flex items-center justify-center">
-      <div  className="border-r-[0.1rem] border-n-2 border-l-[0.1rem] border-b-[0.1rem] h-screen overflow-hidden" style={{margin:"5px",borderRadius: "1%"}}>
+      <div  className=" h-screen overflow-hidden" style={{margin:"5px",borderRadius: "1%"}}>
       
       <motion.div
         className="absolute top-[1rem] left-[0rem] w-[35rem] h-[35rem] spinning-background"
