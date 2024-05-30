@@ -22,6 +22,24 @@ import gdThree from "./eventNorm/gdThree.jpg";
 import gdTwo from "./eventNorm/gdTwo.jpg";
 import pqOne from "./eventNorm/pqOne.JPG";
 import pqTwo from "./eventNorm/pqTwo.JPG";
+import abesit from "./partners/colleges/abesit.png";
+import akhilesh from "./partners/colleges/akhilesh.png";
+import dme from "./partners/colleges/dme.png";
+import drona from "./partners/colleges/drona.png";
+import gcet from "./partners/colleges/gcet.png";
+import gniot from "./partners/colleges/gniot.png";
+import iimt from "./partners/colleges/iimt.png";
+import its from "./partners/colleges/its.png";
+import km from "./partners/colleges/km.png";
+import mewar from "./partners/colleges/mewar.png";
+import srm from "./partners/colleges/srm.png";
+import zk from "./partners/colleges/zk.png";
+import agratas from "./partners/companies/agratas.png";
+import cetpa from "./partners/companies/cetpa.png";
+import gitHub from "./partners/companies/gitHub.png";
+import internshala from "./partners/companies/internshala.png";
+import microsoft from "./partners/companies/microsoft.png";
+import samsung from "./partners/companies/samsung.png";
 
 export {
   vytoflowLogo,
@@ -48,4 +66,22 @@ export {
   gdTwo,
   pqOne,
   pqTwo,
+  abesit,
+  akhilesh,
+  dme,
+  drona,
+  gcet,
+  gniot,
+  iimt,
+  its,
+  km,
+  mewar,
+  srm,
+  zk,
+  agratas,
+  cetpa,
+  gitHub,
+  internshala,
+  microsoft,
+  samsung,
 };
