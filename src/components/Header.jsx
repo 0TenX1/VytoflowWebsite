@@ -31,7 +31,7 @@ const Header = ({ theme, setTheme }) => {
   max-width: 0;
   width: 0;
   width: auto;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -87,7 +87,7 @@ const Header = ({ theme, setTheme }) => {
                   {item.title === "Explore" && (
                     <div
                       className={clsx(
-                        "mega-menu absolute border-2 border-cyan-700 top-full left-0 bg-white shadow-lg p-6 z-50 transition-opacity duration-300",
+                        "mega-menu absolute border-2 border-cyan-700 border-opacity-60 top-full left-0 bg-white shadow-lg p-6 z-50 transition-opacity duration-300",
                         isMegaMenuVisible && "visible"
                       )}
                     >
