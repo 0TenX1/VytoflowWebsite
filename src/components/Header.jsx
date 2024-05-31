@@ -3,24 +3,33 @@ import { vytoflowLogo, searchDay, searchNight, night, day } from "../assets";
 import { navigation } from "../constants";
 import { useLocation } from "react-router-dom";
 import clsx from "clsx";
+import { gitHub,gmail,instagram,linkedin,phone,whatsapp,youtube } from "../assets";
 
 const Header = ({ theme, setTheme }) => {
   const pathname = useLocation();
-  const [isMegaMenuVisible, setIsMegaMenuVisible] = useState(false);
+  const [isExploreMenuVisible, setIsExploreMenuVisible] = useState(false);
+  const [isContactMenuVisible, setIsContactMenuVisible] = useState(false);
 
   const toggle_mode = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
 
-  const handleMouseEnter = () => {
-    setIsMegaMenuVisible(true);
+  const handleExploreMouseEnter = () => {
+    setIsExploreMenuVisible(true);
   };
 
-  const handleMouseLeave = () => {
-    setIsMegaMenuVisible(false);
+  const handleExploreMouseLeave = () => {
+    setIsExploreMenuVisible(false);
   };
 
-  
+  const handleContactMouseEnter = () => {
+    setIsContactMenuVisible(true);
+  };
+
+  const handleContactMouseLeave = () => {
+    setIsContactMenuVisible(false);
+  };
+
   return (
     <div className="flex flex-col">
       <style>
@@ -67,9 +76,8 @@ const Header = ({ theme, setTheme }) => {
               {navigation.map((item) => (
                 <div
                   key={item.id}
-                  onMouseEnter={item.title === "Explore" && "Contact Us"? handleMouseEnter : null}
-                  onMouseLeave={item.title === "Explore" && "Contact US"? handleMouseLeave : null}
-
+                  onMouseEnter={item.title === "Explore" ? handleExploreMouseEnter : item.title === "Contact Us" ? handleContactMouseEnter : null}
+                  onMouseLeave={item.title === "Explore" ? handleExploreMouseLeave : item.title === "Contact Us" ? handleContactMouseLeave : null}
                   className="relative"
                 >
                   <span
@@ -81,7 +89,6 @@ const Header = ({ theme, setTheme }) => {
                         : "lg:text-black",
                       "group"
                     )}
-                    
                   >
                     {item.title}
                     <span className="absolute top-[3.09rem] left-[1.6rem] w-full h-[0.2rem] bg-cyan-800 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-50"></span>
@@ -91,11 +98,10 @@ const Header = ({ theme, setTheme }) => {
                     <div
                       className={clsx(
                         "mega-menu absolute border-2 border-cyan-700 border-opacity-60 top-full left-0 bg-white shadow-lg p-6 z-50 transition-opacity duration-300",
-                        isMegaMenuVisible && "visible"
+                        isExploreMenuVisible && "visible"
                       )}
                     >
-                      {/* Mega Menu Content */}
-                      <div className="text-black flex">
+                     <div className="text-black flex">
       {/* Third Category */}
       <div className="mr-8">
         <h3 className="font-bold">Projects</h3>
@@ -130,7 +136,41 @@ const Header = ({ theme, setTheme }) => {
         </ul>
       </div>
     </div>
-  </div>
+                    </div>
+                  )}
+
+                  {item.title === "Contact Us" && (
+                    <div
+                      className={clsx(
+                        "mega-menu absolute border-2 border-cyan-700 border-opacity-60 top-full left-0 bg-white shadow-lg p-6 z-50 transition-opacity duration-300",
+                        isContactMenuVisible && "visible"
+                      )}
+                    >
+                      <div className="text-black flex">
+                        {/* Instagram */}
+                        <div className="mr-8">
+                          <img src={instagram} alt="Instagram" className="w-8 h-8 mr-2 inline-block" />
+                          <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        </div>
+                        {/* WhatsApp */}
+                        <div className="mr-8">
+                          <img src={whatsapp} alt="WhatsApp" className="w-8 h-8 mr-2 inline-block" />
+                          <a href="https://wa.me/your_phone_number" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                        </div>
+                        {/* Gmail */}
+                        <div className="mr-8">
+                          <img src={gmail} alt="Gmail" className="w-8 h-8 mr-2 inline-block" />
+                          <a href="mailto:your_email@example.com" target="_blank" rel="noopener noreferrer">Email</a>
+                        </div>
+                        {/* Phone Number */}
+                        <div>
+                          <img src={phone} className="h-8 w-8 mr-2 inline-block" >
+                           
+                          </img>
+                          <a href="tel:your_phone_number">Phone Number</a>
+                        </div>
+    </div>
+                    </div>
                   )}
                 </div>
               ))}

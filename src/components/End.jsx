@@ -41,7 +41,7 @@ export default function App() {
               Why Choose Us?
             </h6>
             <p>
-            we at VytoFlow Tech specialize in full-stack development and product management. With expertise and innovation at our core, we craft tailored solutions to propel your business forward. Let's collaborate to bring your vision to life, one line of code at a time.
+            We at VytoFlow Tech specialize in full-stack development and product management. With expertise and innovation at our core, we craft tailored solutions to propel your business forward. Let's collaborate to bring your vision to life, one line of code at a time.
             </p>
           </div>
     
