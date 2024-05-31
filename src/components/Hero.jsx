@@ -7,6 +7,7 @@ import {
   buildingsTwo,
 } from "../assets";
 import { motion, useScroll, useTransform } from "framer-motion";
+import  CountUp  from "react-countup";
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -16,18 +17,26 @@ const Hero = () => {
   const buildingTwoY = useTransform(scrollY, [0, 100], [0, 10]);
   const buildingThreeY = useTransform(scrollY, [0, 300], [0, 100]);
 
+  
+
   return (
     <section className="flex h-full bg-gradient-to-b from-blue-200 via-blue-200 to-white relative overflow-hidden items-center justify-center">
       <motion.div
         className="relative  mx-auto text-center "
         style={{ y: textY }}
       >
+        
         <h1 className="h1 lg:top-60 relative opacity-100 text-8xl z-10">
           VytoFlow Tech
         </h1>
         <h2 className="h2 lg:top-[17rem] relative lg:py-6 text-4xl z-10">
           Connect The Virtual
+          Value:{"0"}
+          <CountUp end={1000} duration={5} />
+          
         </h2>
+        
+        
         <img
           src={backClouds}
           width={75}
