@@ -3,7 +3,7 @@ import { vytoflowLogo, searchDay, searchNight, night, day } from "../assets";
 import { navigation } from "../constants";
 import { useLocation } from "react-router-dom";
 import clsx from "clsx";
-import { gitHub,gmail,instagram,linkedin,phone,whatsapp,youtube } from "../assets";
+import { hinstagram,hgmail,hphone,hwhatsapp } from "../assets";
 
 const Header = ({ theme, setTheme }) => {
   const pathname = useLocation();
@@ -33,7 +33,7 @@ const Header = ({ theme, setTheme }) => {
   return (
     <div className="flex flex-col">
       <style>
-        {`.mega-menu {
+        {`.mega-menu1 {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s, max-height 0.3s ease-in-out, max-width 0.3s ease-in-out;
@@ -42,16 +42,47 @@ const Header = ({ theme, setTheme }) => {
   width: 0;
   width: auto;
   border-radius: 10px;
+  background: linear-gradient(180deg, rgba(0, 180, 216, 0.9), rgba(0, 190, 255, 0.8)); /* Adjust the RGBA values and alpha (transparency) as needed */
+  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+  opacity: 0.3; /* Adjust the opacity as needed */
   overflow: hidden;
 }
 
-.mega-menu.visible {
+.mega-menu1.visible {
   opacity: 1;
   visibility: visible;
   max-height: 500px; /* A large enough value to accommodate the content */
-  max-width: 500px;  /* A large enough value to accommodate the content */
+  max-width: 700px;  /* A large enough value to accommodate the content */
   width: auto;
+  opacity: 1;
 }
+.logo-link:hover img {
+  scale: 1.3; /* Adjust brightness to change the hover effect */
+}
+.mega-menu2 {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, max-height 0.3s ease-in-out, max-width 0.3s ease-in-out;
+  max-height: 0;
+  max-width: 0;
+  width: 0;
+  width: auto;
+  border-radius: 10px;
+  
+  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+  opacity: 0.3; /* Adjust the opacity as needed */
+  overflow: hidden;
+}
+
+.mega-menu2.visible {
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px; /* A large enough value to accommodate the content */
+  max-width: 700px;  /* A large enough value to accommodate the content */
+  width: auto;
+  opacity: 1;
+}
+
 `}
       </style>
       <div className="fixed bg-transparent z-50 lg:top-0 -top-1 left-0 lg:w-full lg:h-[4.56rem]">
@@ -97,7 +128,7 @@ const Header = ({ theme, setTheme }) => {
                   {item.title === "Explore" && (
                     <div
                       className={clsx(
-                        "mega-menu absolute border-2 border-cyan-700 border-opacity-60 top-full left-0 bg-white shadow-lg p-6 z-50 transition-opacity duration-300",
+                        "mega-menu2 absolute border-2 border-cyan-700 border-opacity-60 top-full left-0 bg-white shadow-lg p-6 z-50 transition-opacity duration-300",
                         isExploreMenuVisible && "visible"
                       )}
                     >
@@ -142,32 +173,34 @@ const Header = ({ theme, setTheme }) => {
                   {item.title === "Contact Us" && (
                     <div
                       className={clsx(
-                        "mega-menu absolute border-2 border-cyan-700 border-opacity-60 top-full left-0 bg-white shadow-lg p-6 z-50 transition-opacity duration-300",
+                        "mega-menu1 absolute  top-full left-0 bg-white shadow-lg p-6 z-50 transition-opacity duration-300",
                         isContactMenuVisible && "visible"
                       )}
                     >
                       <div className="text-black flex">
                         {/* Instagram */}
-                        <div className="mr-8">
-                          <img src={instagram} alt="Instagram" className="w-8 h-8 mr-2 inline-block" />
-                          <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer">Instagram</a>
-                        </div>
+                        <div className="mr-8 ml-5 logo-link">
+    <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer">
+      <img src={hinstagram} alt="Instagram" className="w-10 h-10 mr-9 inline-block" />
+    </a>
+  </div>
                         {/* WhatsApp */}
-                        <div className="mr-8">
-                          <img src={whatsapp} alt="WhatsApp" className="w-8 h-8 mr-2 inline-block" />
-                          <a href="https://wa.me/your_phone_number" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-                        </div>
+                        <div className="mr-10 logo-link">
+    <a href="https://wa.me/your_phone_number" target="_blank" rel="noopener noreferrer">
+      <img src={hwhatsapp} alt="WhatsApp" className="w-10 h-10 mr-9 inline-block" />
+    </a>
+  </div>
                         {/* Gmail */}
-                        <div className="mr-8">
-                          <img src={gmail} alt="Gmail" className="w-8 h-8 mr-2 inline-block" />
-                          <a href="mailto:your_email@example.com" target="_blank" rel="noopener noreferrer">Email</a>
-                        </div>
+                        <div className="mr-8 logo-link">
+    <a href="mailto:your_email@example.com" target="_blank" rel="noopener noreferrer">
+      <img src={hgmail} alt="Gmail" className="w-10 h-10 mr-9 inline-block" />
+    </a>
+  </div>
                         {/* Phone Number */}
-                        <div>
-                          <img src={phone} className="h-8 w-8 mr-2 inline-block" >
-                           
-                          </img>
-                          <a href="tel:your_phone_number">Phone Number</a>
+                        <div className="mr-8 logo-link">
+                          <a href="" target="blank" rel="noopener noreferrer">
+                          <img src={hphone} alt="Phone" className="w-10 h-10 mr-9 inline-block" />                               
+                          </a>
                         </div>
     </div>
                     </div>
