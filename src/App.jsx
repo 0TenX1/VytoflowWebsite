@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero"; 
 import Partners from "./components/Partners.jsx";
 import End from "./components/End.jsx";
+import Community from "./components/Community.jsx";
 import HamburgerMenu from "./components/HamburgerMenu.jsx";
 
 import { bgVytoflowLogo } from "./assets";
@@ -23,6 +24,7 @@ const App = () => {
         <Events />
         <Partners />
         <End/>
+        <Community/>
         <HamburgerMenu />
 
       </div>
