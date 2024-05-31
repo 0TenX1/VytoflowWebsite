@@ -54,6 +54,8 @@ import linkedin from "./footerLogo/linkedin.svg"
 import whatsapp from "./footerLogo/whatsapp.svg";
 import youtube from "./footerLogo/youtube.svg";
 import footerlogo from "./footerLogo/footerlogo.svg";
+import gmail from "./footerLogo/gmail.svg";
+import phone from "./footerLogo/phone.svg";
 export {
   vytoflowLogo,
   searchDay,
@@ -111,4 +113,6 @@ export {
   whatsapp,
   youtube,
   footerlogo,
+  gmail,
+  phone,
 };
