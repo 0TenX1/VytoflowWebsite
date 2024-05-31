@@ -20,6 +20,7 @@ const Header = ({ theme, setTheme }) => {
     setIsMegaMenuVisible(false);
   };
 
+  
   return (
     <div className="flex flex-col">
       <style>
@@ -66,8 +67,9 @@ const Header = ({ theme, setTheme }) => {
               {navigation.map((item) => (
                 <div
                   key={item.id}
-                  onMouseEnter={item.title === "Explore" ? handleMouseEnter : null}
-                  onMouseLeave={item.title === "Explore" ? handleMouseLeave : null}
+                  onMouseEnter={item.title === "Explore" && "Contact Us"? handleMouseEnter : null}
+                  onMouseLeave={item.title === "Explore" && "Contact US"? handleMouseLeave : null}
+
                   className="relative"
                 >
                   <span
@@ -84,6 +86,7 @@ const Header = ({ theme, setTheme }) => {
                     {item.title}
                     <span className="absolute top-[3.09rem] left-[1.6rem] w-full h-[0.2rem] bg-cyan-800 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-50"></span>
                   </span>
+                  
                   {item.title === "Explore" && (
                     <div
                       className={clsx(
