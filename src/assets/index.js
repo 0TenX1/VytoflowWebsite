@@ -60,6 +60,10 @@ import hgmail from "./headerLogo/gmail.svg";
 import hinstagram from "./headerLogo/instagram.svg";
 import hphone from "./headerLogo/phone.svg";
 import hwhatsapp from "./headerLogo/whatsapp.svg";
+import ansh from "./people/ansh.jpg";
+import suraj from "./people/suraj.jpg";
+import siddhant from "./people/siddhant.jpg";
+import shapeani from "../assets/shapeani.svg";
 export {
   vytoflowLogo,
   searchDay,
@@ -123,4 +127,8 @@ export {
   hinstagram,
   hphone,
   hwhatsapp,
+  ansh,
+  suraj,
+  siddhant,
+  shapeani,
 };
