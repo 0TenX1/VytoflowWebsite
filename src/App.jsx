@@ -12,6 +12,7 @@ import Events from "./components/Events.jsx";
 const App = () => {
   const [theme, setTheme] = useState("light");
 
+  
   const appStyle = {
     backgroundImage: `url(${bgVytoflowLogo})`,
     backgroundRepeat: "no-repeat",
