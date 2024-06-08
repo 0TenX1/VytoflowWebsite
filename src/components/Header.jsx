@@ -2,7 +2,7 @@
   import { vytoflowLogo, searchDay,comingSoon, hinstagram, hgmail, hphone, hwhatsapp } from "../assets";
   import { useLocation, Link } from "react-router-dom";
   import clsx from "clsx";
-
+import { motion } from "framer-motion";
   const Header = ({ theme, setTheme }) => {
     const pathname = useLocation();
     const [isExploreMenuVisible, setIsExploreMenuVisible] = useState(false);
@@ -139,14 +139,20 @@
               </Link>
               {/* Show image only when hovering over Coming Soon */}
               {isComingSoonHovered && (
-                <img
-                  src={comingSoon}
-                  alt="Coming Soon"
-                  className="absolute left-1/2 transform -translate-x-1/2 mb-4"
-                  style={{ maxWidth: "400px", maxHeight: "400px" }}
-                />
-              )}
-            </div>
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.3 }}
+    className="absolute left-1/2 transform -translate-x-1/2 mb-4"
+  >
+    <img
+      src={comingSoon}
+      alt="Coming Soon"
+      style={{ maxWidth: "400px", maxHeight: "400px" }}
+    />
+  </motion.div>
+)}
+</div>
 
                 {/* Community */}
                 <Link
