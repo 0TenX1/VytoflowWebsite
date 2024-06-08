@@ -271,7 +271,7 @@ const Events = () => {
                     }
 
                     .spinning-background {
-                      animation: spin 190s linear infinite;
+                      animation: spin 100s linear infinite;
                       will-change: transform;
                     }
 

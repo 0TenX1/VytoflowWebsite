@@ -121,7 +121,7 @@ const Header = ({ theme, setTheme }) => {
                   to="/explore"
                   className={clsx("block relative font-mono text-2xl bg- text-n-1 transition-colors px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:text-cyan-800", pathname === "/explore" ? "z-2 lg:text-cyan-700" : "lg:text-black", "group")}
                 >
-                  Explore
+                  Coming Soon
                   <span className="absolute top-[3.09rem] left-[1.6rem] w-full h-[0.2rem] bg-cyan-800 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-50"></span>
                 </Link>
                 <div
