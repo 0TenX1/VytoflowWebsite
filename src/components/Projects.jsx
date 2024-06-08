@@ -128,14 +128,14 @@ const Events = () => {
         >
           <span className="absolute inset-0 bg-gradient-to-br from-red-500 via-red-400 to-red-300 rounded-2xl" />
           <span
-            className="absolute inset-1 bg-cover bg-no-repeat left-[0.1rem]"
+            className="absolute inset-2 bg-cover bg-no-repeat left-[0.50rem]"
             style={{
               backgroundImage: `url(${ButtonBg})`,
               backgroundSize: 'contain',
               backgroundPosition: 'left',
             }}
           />
-          <span style={{ left: '20px' }} className="relative z-20 text-[1.2rem]">Register</span>
+          <span style={{ left: '17px' }} className="relative z-20 text-[1.2rem]">Work With Us</span>
         </motion.button>
         <motion.h2
   initial="hidden"
@@ -145,7 +145,7 @@ const Events = () => {
     hidden: { opacity: 0, y: -50, transition: { duration: 0.9 } },
   }}
 >
-  <span className="block">Claim Your Seat At The Table: </span>
+  <span className="block">Secure Your Spot In The Tech Arena: </span>
   <motion.span
     className="block py-2"
     initial="hidden"
@@ -170,10 +170,10 @@ const Events = () => {
             hidden: { opacity: 0, y: -150, transition: { duration: 0.9 } },
           }}
         >
-          Through The Lens: 
+          Our Offerings: 
         </motion.h1>
         <motion.h1
-          className="mt-7 text-5xl text-black font-bold font-grotesk mb-32"
+          className="mt-7 text-4xl text-black font-bold font-grotesk mb-32"
           initial="hidden"
           animate={controls}
           variants={{
@@ -181,12 +181,12 @@ const Events = () => {
             hidden: { opacity: 0, y: -50, transition: { duration: 0.6 } },
           }}
         >
-          Our Events
+          Services We Provide
         </motion.h1>
 
         <h4 className="-mt-[9.6rem] py-12 ml-10 -mr-1 ">
           <motion.div
-            className="-mt-[12.14rem] py-12  ml-[40rem]"
+            className="-mt-[12.14rem] py-12  ml-[41rem]"
             initial="hidden"
             animate={controls}
             variants={{
@@ -213,7 +213,10 @@ const Events = () => {
                   
                 }}
               >
-                Immerse Yourself In Vibrant Experiences And Position Yourself To Win Prestigious Awards By Actively Participating In An Extensive Array Of Exciting, Diverse, And Enriching Events Designed To Showcase Your Talents And Achievements.
+                Discover our extensive suite of IT solutions and services,
+Crafted to empower your business with cutting-edge technology.
+From software development to network security, we've got you covered,
+Unlocking your potential for digital transformation and success.
               </p>
             </div>
           </motion.div>

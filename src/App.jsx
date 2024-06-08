@@ -6,7 +6,7 @@ import End from "./components/End.jsx";
 import Community from "./components/Community.jsx";
 import HamburgerMenu from "./components/HamburgerMenu.jsx";
 import { bgVytoflowLogo } from "./assets";
-import Events from "./components/Events.jsx";
+import Projects from "./components/Projects.jsx";
 
 const App = () => {
   const [theme, setTheme] = useState("light");
@@ -19,7 +19,7 @@ const App = () => {
       <div style={appStyle}>
         <Header/>
         <Hero />
-        <Events />
+        <Projects />
         <Partners />
         <End/>
         <Community/>
