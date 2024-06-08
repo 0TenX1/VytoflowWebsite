@@ -64,6 +64,8 @@ import ansh from "./people/ansh.jpg";
 import suraj from "./people/suraj.jpg";
 import siddhant from "./people/siddhant.jpg";
 import shapeani from "../assets/shapeani.svg";
+import Meteor from "../assets/futureUse/Explore/Meteor.svg";
+import arrow from "../assets/futureUse/Explore/arrow.svg";
 export {
   vytoflowLogo,
   searchDay,
@@ -131,4 +133,6 @@ export {
   suraj,
   siddhant,
   shapeani,
+  Meteor,
+  arrow,
 };
