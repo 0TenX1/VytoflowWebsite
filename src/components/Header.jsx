@@ -10,9 +10,6 @@ const Header = ({ theme, setTheme }) => {
   const [isContactMenuVisible, setIsContactMenuVisible] = useState(false);
   const [isComingSoonHovered, setIsComingSoonHovered] = useState(false);
 
-  const toggle_mode = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
-  };
 
   const handleExploreMouseEnter = () => {
     setIsExploreMenuVisible(true);
