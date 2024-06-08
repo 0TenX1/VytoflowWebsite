@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <div style={appStyle}>
-        <Header theme={theme} setTheme={setTheme} />
+        <Header/>
         <Hero />
         <Events />
         <Partners />

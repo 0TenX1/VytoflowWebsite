@@ -228,27 +228,21 @@ const Header = ({ theme, setTheme }) => {
 </div>
 </nav>
 <div
-className="hidden lg:flex items-center backdrop-blur-3xl border-l-cyan-600 border-r-cyan-600 border-l-4 border-r-4 bg-gradient-to-r h-12 from-slate-100 via-slate-50 to-slate-50 shadow-md p-6 px-4 py-0 rounded-2xl ml-2 text-black"
+className="hidden lg:flex items-center backdrop-blur-3xl border-l-cyan-600 border-r-cyan-600 border-l-4 border-r-4 bg-gradient-to-r h-12 from-slate-100 via-slate-50 to-slate-50 shadow-md p-6 px-4 py-0  rounded-2xl text-black"
 style={{ marginTop: "-22px" }}
 >
+
 <input
 type="text"
 placeholder=""
 className="p-1 bg-transparent backdrop-blur-3xl lg:max-w-36 lg:h-10 outline-0 text-[0.99rem] font-sans h-10"
 />
 <img
-src={theme === "light" ? searchDay : searchNight}
+src={searchDay}
 alt="Search_Icon"
-className="hidden lg:flex w-[1.8rem] cursor-pointer -mr-2"
+className="hidden lg:flex w-[1.8rem] "
 />
 </div>
-<img
-onClick={toggle_mode}
-src={theme === "light" ? night : day}
-alt=""
-className="hidden z-87 lg:flex w-[2rem] cursor-pointer lg:-mr-4 ml-1"
-style={{ marginTop: "-25px", marginRight: "-1.5rem" }}
-/>
 </div>
 </div>
 <div className="lg:hidden border-b-2 mt-[-17px] w-full border-gray-200"></div>
