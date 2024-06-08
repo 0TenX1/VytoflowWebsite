@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { vytoflowLogo, searchDay, searchNight, night, day, hinstagram, hgmail, hphone, hwhatsapp } from "../assets";
+import { vytoflowLogo, searchDay,comingSoon, hinstagram, hgmail, hphone, hwhatsapp } from "../assets";
 import { useLocation, Link } from "react-router-dom";
 import clsx from "clsx";
 
@@ -131,39 +131,7 @@ const Header = ({ theme, setTheme }) => {
                   )}
                 >
                   <div className="text-black flex">
-                    {/* Third Category */}
-                    <div className="mr-8">
-                      <h3 className="font-bold">Projects</h3>
-                      <ul className="mt-4">
-                        <li style={{ marginBottom: '0.5rem' }}>Item 1</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 2</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 3</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 4</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 5</li>
-                      </ul>
-                    </div>
-                    {/* First Category */}
-                    <div className="mr-8">
-                      <h3 className="font-bold">Events</h3>
-                      <ul className="mt-4">
-                        <li style={{ marginBottom: '0.5rem' }}>Item 1</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 2</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 3</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 4</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 5</li>
-                      </ul>
-                    </div>
-                    {/* Second Category */}
-                    <div className="mr-8 ">
-                      <h3 className="font-bold">Learning</h3>
-                      <ul className="mt-4">
-                        <li style={{ marginBottom: '0.5rem' }}>Item 1</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 2</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 3</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 4</li>
-                        <li style={{ marginBottom: '0.5rem' }}>Item 5</li>
-                      </ul>
-                    </div>
+                   <img src={comingSoon}/>
                   </div>
                 </div>
               </div>
