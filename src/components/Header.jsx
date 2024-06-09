@@ -89,6 +89,33 @@ const Header = ({ theme, setTheme }) => {
           display: flex;
           flex-direction: column; /* Change to column */
         }
+          ::-webkit-scrollbar {
+  width: 10px;
+}
+/* scrollbar.css */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #bde0fe; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0077b6; 
+  border-radius: 4px;
+  width: 6px; /* Adjust the width to make the thumb thinner */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
         `}
       </style>
       <div className="fixed bg-transparent z-50 lg:top-0 -top-1 left-0 lg:w-full lg:h-[4.56rem]">

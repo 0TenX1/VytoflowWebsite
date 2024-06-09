@@ -1,6 +1,6 @@
 import React from 'react';
 import { github,instagram,linkedin,whatsapp,youtube } from '../assets';
-
+import { NavLink } from 'react-router-dom';
 
 export default function App() {
   return (
@@ -62,20 +62,24 @@ export default function App() {
               Useful Links:
             </h6>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Events</a>
+              <NavLink className="text-neutral-600 dark:text-neutral-200" to="/events"
+              >Events
+              </NavLink>
             </p>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Learning</a>
+              <NavLink className="text-neutral-600 dark:text-neutral-200 " to="/learning"
+              >Learning
+              </NavLink>
             </p>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Work With Us</a>
+              <NavLink className="text-neutral-600 dark:text-neutral-200" to="/projects"
+              >Work With Us
+              </NavLink>
             </p>
             <p>
-              <a className="text-neutral-600 dark:text-neutral-200"
-              >Community</a>
+              <NavLink className="text-neutral-600 dark:text-neutral-200" to="/community"
+              >Community
+              </NavLink>
             </p>
           </div>
        
