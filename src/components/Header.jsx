@@ -182,22 +182,23 @@ const Header = ({ theme, setTheme }) => {
                   )}
                 >
                   <div className="flex flex-col"> {/* Change to flex-col */}
-                    {/* Instagram */}
-                    <div className="mb-4 logo-link">
-                      <a href="https://www.instagram.com/vytoflow_tech/" target="_blank" rel="noopener noreferrer">
-                        <img src={hinstagram} alt="Instagram" className="w-10 h-10 mr-9 inline-block" />
+                      {/* Gmail */}
+                      <div className="mb-4 logo-link">
+                      <a href="mailto:vytoflow.community@its.edu.in" target="_blank" rel="noopener noreferrer">
+                        <img src={hgmail} alt="Gmail" className="w-10 h-10 mr-9 inline-block" />
                       </a>
                     </div>
+                  
                     {/* WhatsApp */}
                     <div className="mb-4 logo-link">
                       <a href="https://wa.me/+918700745848" target="_blank" rel="noopener noreferrer">
                         <img src={hwhatsapp} alt="WhatsApp" className="w-10 h-10 mr-9 inline-block" />
                       </a>
                     </div>
-                    {/* Gmail */}
+                    {/* Instagram */}
                     <div className="logo-link">
-                      <a href="mailto:vytoflow.community@its.edu.in" target="_blank" rel="noopener noreferrer">
-                        <img src={hgmail} alt="Gmail" className="w-10 h-10 mr-9 inline-block" />
+                      <a href="https://www.instagram.com/vytoflow_tech/" target="_blank" rel="noopener noreferrer">
+                        <img src={hinstagram} alt="Instagram" className="w-10 h-10 mr-9 inline-block" />
                       </a>
                     </div>
             
