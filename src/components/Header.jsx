@@ -107,7 +107,7 @@ const Header = ({ theme, setTheme }) => {
                 className="relative"
               >
                 <NavLink
-                  to="/events"
+                  
                   className={clsx(
                     "block relative font-mono text-2xl bg- text-n-1 transition-colors px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:text-cyan-800",
                     pathname === "/explore" ? "z-2 lg:text-cyan-700" : "lg:text-black",
@@ -150,7 +150,7 @@ const Header = ({ theme, setTheme }) => {
                 className="relative"
               >
                 <NavLink
-                  to="/contact"
+                 
                   className={clsx("block relative font-mono text-2xl bg- text-n-1 transition-colors px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:text-cyan-800", pathname === "/contact" ? "z-2 lg:text-cyan-700" : "lg:text-black", "group")}
                 >
                   Contact Us
