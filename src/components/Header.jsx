@@ -212,7 +212,7 @@ const Header = ({ theme, setTheme }) => {
         onClick={() => copyToClipboard("+91 87007 45848")}
         className={clsx(
           "hidden lg:flex items-center backdrop-blur-3xl border-l-4 border-r-4 bg-gradient-to-r h-12 from-slate-100 via-slate-50 to-slate-50 shadow-md p-6 px-4 py-0 rounded-2xl text-black cursor-pointer",
-          borderColor === "cyan-600" ? "border-cyan-600" : "border-green-600"
+          borderColor === "cyan-600" ? "border-cyan-600" : "border-green-700"
         )}
         style={{ marginTop: "-22px", borderTop: "none", borderBottom: "none" }}
       >
