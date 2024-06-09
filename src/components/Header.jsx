@@ -106,13 +106,12 @@ const Header = ({ theme, setTheme }) => {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #0077b6; 
-  border-radius: 4px;
   width: 6px; /* Adjust the width to make the thumb thinner */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #023e8a; 
 }
 
 
