@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { vytoflowLogo, searchDay, comingSoon, hinstagram, hgmail, hphone, hwhatsapp } from "../assets";
+import { vytoflowLogo, searchDay,sphone, comingSoon, hinstagram, hgmail, hphone, hwhatsapp } from "../assets";
 import { useLocation, NavLink } from "react-router-dom";
 import clsx from "clsx";
 import { motion } from "framer-motion";
@@ -9,8 +9,17 @@ const Header = ({ theme, setTheme }) => {
   const [isExploreMenuVisible, setIsExploreMenuVisible] = useState(false);
   const [isContactMenuVisible, setIsContactMenuVisible] = useState(false);
   const [isComingSoonHovered, setIsComingSoonHovered] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
 
-
+  const copyToClipboard = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 500); // Show "Copied!" for 2 seconds
+    } catch (err) {
+      console.error("Failed to copy text: ", err);
+    }
+  };
   const handleExploreMouseEnter = () => {
     setIsExploreMenuVisible(true);
   };
@@ -189,16 +198,21 @@ const Header = ({ theme, setTheme }) => {
           </nav>
           {/* search bar*/}
           <div
-            className="hidden lg:flex items-center backdrop-blur-3xl border-l-cyan-600 border-r-cyan-600 border-l-4 border-r-4 bg-gradient-to-r h-12 from-slate-100 via-slate-50 to-slate-50 shadow-md p-6 px-4 py-0  rounded-2xl text-black"
+            onClick={() => copyToClipboard("+91 87007 45848")}
+            className="hidden lg:flex items-center backdrop-blur-3xl border-l-cyan-600 border-r-cyan-600 border-l-4 border-r-4 bg-gradient-to-r h-12 from-slate-100 via-slate-50 to-slate-50 shadow-md p-6 px-4 py-0  rounded-2xl text-black cursor-pointer"
             style={{ marginTop: "-22px" }}
           >
-           <input type="text" id="search" name="search" placeholder="Search..." className="p-1 bg-transparent backdrop-blur-3xl lg:max-w-36 lg:h-10 outline-0 text-[0.99rem] font-sans h-10" autoComplete="on"/>
-
+            <h6 className="p-1 bg-transparent backdrop-blur-3xl lg:max-w-36 lg:h-8 outline-0 text-[0.99rem] font-sans h-10">
+              +91 87007 45848
+            </h6>
             <img
-              src={searchDay}
+              src={sphone}
               alt="Search_Icon"
-              className="hidden lg:flex w-[1.8rem] "
+              className="hidden lg:flex w-[1.8rem]"
             />
+            {isCopied && (
+              <span className="ml-2 text-md text-green-800">~ Copied!</span>
+            )}
           </div>
         </div>
       </div>

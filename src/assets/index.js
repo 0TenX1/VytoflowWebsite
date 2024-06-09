@@ -67,6 +67,7 @@ import siddhant from "./people/siddhant.jpg";
 import shapeani from "../assets/shapeani.svg";
 import Meteor from "../assets/futureUse/Explore/Meteor.svg";
 import arrow from "../assets/futureUse/Explore/arrow.svg";
+import sphone from "../assets/sphone.svg";
 export {
   vytoflowLogo,
   searchDay,
@@ -136,5 +137,6 @@ export {
   shapeani,
   Meteor,
   arrow,
+  sphone,
   comingSoon,
 };
