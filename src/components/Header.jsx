@@ -11,20 +11,25 @@ const Header = ({ theme, setTheme }) => {
   const [isComingSoonHovered, setIsComingSoonHovered] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
   const [borderColor, setBorderColor] = useState("cyan-600");
+  const [phoneNumberColor, setPhoneNumberColor] = useState("text-black"); // State for phone number color
 
   const copyToClipboard = async (text) => {
     try {
       await navigator.clipboard.writeText(text);
       setIsCopied(true);
       setBorderColor("green-600"); // Change border color to green when copied
+      setPhoneNumberColor("text-green-800"); // Change phone number color to green when copied
       setTimeout(() => {
         setIsCopied(false);
         setBorderColor("cyan-600"); // Reset border color after 2 seconds
+        setPhoneNumberColor("text-black"); // Reset phone number color after 2 seconds
       }, 500);
     } catch (err) {
       console.error("Failed to copy text: ", err);
     }
   };
+
+  
   const handleExploreMouseEnter = () => {
     setIsExploreMenuVisible(true);
   };
@@ -202,23 +207,24 @@ const Header = ({ theme, setTheme }) => {
             </div>
           </nav>
           {/* search bar*/}
-          <div
-  onClick={() => copyToClipboard("+91 87007 45848")}
-  className={clsx(
-    "hidden lg:flex items-center backdrop-blur-3xl border-l-4 border-r-4 bg-gradient-to-r h-12 from-slate-100 via-slate-50 to-slate-50 shadow-md p-6 px-4 py-0  rounded-2xl text-black cursor-pointer",
-    borderColor === "cyan-600" ? "border-cyan-600" : "border-green-700"
-  )}
-  style={{ marginTop: "-22px", borderTop: "none", borderBottom: "none" }}
->
-            <h6 className="p-1 bg-transparent backdrop-blur-3xl lg:max-w-36 lg:h-8 outline-0 text-[0.99rem] font-sans h-10">
-              +91 87007 45848
-            </h6>
-            <img
-              src={sphone}
-              alt="Search_Icon"
-              className="hidden lg:flex w-[1.8rem]"
-            />         
-          </div>
+           {/* Your existing code */}
+      <div
+        onClick={() => copyToClipboard("+91 87007 45848")}
+        className={clsx(
+          "hidden lg:flex items-center backdrop-blur-3xl border-l-4 border-r-4 bg-gradient-to-r h-12 from-slate-100 via-slate-50 to-slate-50 shadow-md p-6 px-4 py-0 rounded-2xl text-black cursor-pointer",
+          borderColor === "cyan-600" ? "border-cyan-600" : "border-green-600"
+        )}
+        style={{ marginTop: "-22px", borderTop: "none", borderBottom: "none" }}
+      >
+        <h6 className={`p-1 bg-transparent backdrop-blur-3xl lg:max-w-36 lg:h-8 outline-0 text-[0.99rem] font-sans h-10 ${phoneNumberColor}`}>
+          +91 87007 45848
+        </h6>
+        <img
+          src={sphone}
+          alt="Search_Icon"
+          className="hidden lg:flex w-[1.8rem]"
+        />
+      </div>
         </div>
       </div>
       <div className="lg:hidden border-b-2 mt-[-17px] w-full border-gray-200"></div>
@@ -227,4 +233,3 @@ const Header = ({ theme, setTheme }) => {
 };
 
 export default Header;
-
