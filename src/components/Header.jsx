@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { vytoflowLogo, searchDay, comingSoon, hinstagram, hgmail, hphone, hwhatsapp } from "../assets";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 
@@ -92,13 +92,13 @@ const Header = ({ theme, setTheme }) => {
               style={{ marginTop: "-20px" }}
             >
               {/* Home */}
-              <Link
-                to="/"
+              <NavLink
+                to="/home"
                 className={clsx("block relative font-mono text-2xl bg- text-n-1 transition-colors px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:text-cyan-800", pathname === "/" ? "z-2 lg:text-cyan-700" : "lg:text-black", "group")}
               >
                 Home
                 <span className="absolute top-[3.09rem] left-[1.6rem] w-full h-[0.2rem] bg-cyan-800 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-50"></span>
-              </Link>
+              </NavLink>
 
               {/* Coming Soon */}
               <div
@@ -106,8 +106,8 @@ const Header = ({ theme, setTheme }) => {
                 onMouseLeave={handleComingSoonMouseLeave}
                 className="relative"
               >
-                <Link
-                  to="/explore"
+                <NavLink
+                  to="/events"
                   className={clsx(
                     "block relative font-mono text-2xl bg- text-n-1 transition-colors px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:text-cyan-800",
                     pathname === "/explore" ? "z-2 lg:text-cyan-700" : "lg:text-black",
@@ -116,7 +116,7 @@ const Header = ({ theme, setTheme }) => {
                 >
                   Coming Soon
                   <span className="absolute top-[3.09rem] left-[1.6rem] w-full h-[0.2rem] bg-cyan-800 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-50"></span>
-                </Link>
+                </NavLink>
                 {/* Show image only when hovering over Coming Soon */}
                 {isComingSoonHovered && (
                   <motion.div
@@ -135,13 +135,13 @@ const Header = ({ theme, setTheme }) => {
               </div>
 
               {/* Community */}
-              <Link
+              <NavLink
                 to="/community"
                 className={clsx("block relative font-mono text-2xl bg- text-n-1 transition-colors px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:text-cyan-800", pathname === "/community" ? "z-2 lg:text-cyan-700" : "lg:text-black", "group")}
               >
                 Community
                 <span className="absolute top-[3.09rem] left-[1.6rem] w-full h-[0.2rem] bg-cyan-800 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-50"></span>
-              </Link>
+              </NavLink>
 
               {/* Contact Us */}
               <div
@@ -149,13 +149,13 @@ const Header = ({ theme, setTheme }) => {
                 onMouseLeave={handleContactMouseLeave}
                 className="relative"
               >
-                <Link
+                <NavLink
                   to="/contact"
                   className={clsx("block relative font-mono text-2xl bg- text-n-1 transition-colors px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:text-cyan-800", pathname === "/contact" ? "z-2 lg:text-cyan-700" : "lg:text-black", "group")}
                 >
                   Contact Us
                   <span className="absolute top-[3.09rem] bg-cyan-800 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-50"></span>
-                </Link>
+                </NavLink>
                 <div
                   className={clsx(
                     "mega-menu1 absolute top-full left-0 bg-white shadow-lg p-6 z-50 transition-opacity duration-300",

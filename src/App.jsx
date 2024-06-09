@@ -7,6 +7,7 @@ import Community from "./components/Community.jsx";
 import HamburgerMenu from "./components/HamburgerMenu.jsx";
 import { bgVytoflowLogo } from "./assets";
 import Projects from "./components/Projects.jsx";
+import { BrowserRouter as Router,Route,Routes } from "react-router-dom";
 
 const App = () => {
   const [theme, setTheme] = useState("light");
@@ -14,11 +15,28 @@ const App = () => {
     backgroundImage: `url(${bgVytoflowLogo})`,
     backgroundRepeat: "no-repeat",
   };
+const Home = () => {
   return (
-    <>
-      <div style={appStyle}>
-        <Header/>
+    <div>
+    <Hero/>
+    <Projects/>
+    <Partners/>
+    </div>
+  )
+}
 
+
+  return (
+    <>  
+      <div >   
+          <Header/>
+          <Routes>      
+            <Route path="/home" element={<Home/>}/>
+            <Route path="/community" element={<Community/>}/>
+          </Routes>
+          <End/>
+        
+       
       </div>
     </>
   );
