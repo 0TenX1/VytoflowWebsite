@@ -68,6 +68,7 @@ import shapeani from "../assets/shapeani.svg";
 import Meteor from "../assets/futureUse/Explore/Meteor.svg";
 import arrow from "../assets/futureUse/Explore/arrow.svg";
 import sphone from "../assets/sphone.svg";
+import linkedinBlue from "../assets/footerLogo/linkedinBlue.svg";
 export {
   vytoflowLogo,
   searchDay,
@@ -139,4 +140,5 @@ export {
   arrow,
   sphone,
   comingSoon,
+  linkedinBlue,
 };
