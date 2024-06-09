@@ -187,6 +187,7 @@ const Header = ({ theme, setTheme }) => {
               </div>
             </div>
           </nav>
+          {/* search bar*/}
           <div
             className="hidden lg:flex items-center backdrop-blur-3xl border-l-cyan-600 border-r-cyan-600 border-l-4 border-r-4 bg-gradient-to-r h-12 from-slate-100 via-slate-50 to-slate-50 shadow-md p-6 px-4 py-0  rounded-2xl text-black"
             style={{ marginTop: "-22px" }}
