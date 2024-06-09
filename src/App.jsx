@@ -18,12 +18,7 @@ const App = () => {
     <>
       <div style={appStyle}>
         <Header/>
-        <Hero />
-        <Projects />
-        <Partners />
-        <End/>
-        <Community/>
-        <HamburgerMenu />
+
       </div>
     </>
   );
