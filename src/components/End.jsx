@@ -62,17 +62,22 @@ export default function App() {
               Useful Links:
             </h6>
             <p className="mb-4">
+              <NavLink className="text-neutral-600 dark:text-neutral-200" to="/home"
+              >Home
+              </NavLink>
+            </p>
+            <p className="mb-4">
               <NavLink className="text-neutral-600 dark:text-neutral-200" to="/events"
               >Events
               </NavLink>
             </p>
             <p className="mb-4">
-              <NavLink className="text-neutral-600 dark:text-neutral-200 " to="/learning"
+              <a className="text-neutral-600 dark:text-neutral-200 " href='https://chat.whatsapp.com/IOhhnEWX8eG8tvFZMtMDvj'
               >Learning
-              </NavLink>
+              </a>
             </p>
             <p className="mb-4">
-              <NavLink className="text-neutral-600 dark:text-neutral-200" to="/projects"
+              <NavLink className="text-neutral-600 dark:text-neutral-200" to="/home/projects"
               >Work With Us
               </NavLink>
             </p>

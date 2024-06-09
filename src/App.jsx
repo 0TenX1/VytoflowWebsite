@@ -33,6 +33,7 @@ const Home = () => {
           <Routes>      
             <Route path="/home" element={<Home/>}/>
             <Route path="/community" element={<Community/>}/>
+            <Route path="/home/projects" element={<Projects/>}/>
           </Routes>
           <End/>
         
