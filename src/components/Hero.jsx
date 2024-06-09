@@ -24,18 +24,21 @@ const Hero = () => {
         <h2 className="h2 lg:top-[12rem] relative lg:py-6 text-4xl z-10">
           Connect The Virtual
           </h2>
-          <div className="relative top-96">
-          <div style={{ zIndex: 50 }} className="absolute -left-2/4 right-0 bottom-1/3 text-3xl text-center">
-            <h2>Partner Companies</h2>
-            <CountUp end={1000} duration={5} />
+          <div className="relative top-[27rem]">
+          <div style={{ zIndex: 50 }} className="absolute -left-2/4 -right-44 bottom-1/3 text-3xl text-center">
+            <h2>Collaborators:</h2>
+            <CountUp end={50} duration={5} />
+            +
             </div>
             <div style={{ zIndex: 50 }} className="absolute left-0 right-0 bottom-1/3 text-3xl text-center">
-            <h2>Partner Companies</h2>
-            <CountUp end={1000} duration={5} />
+            <h2>Trusted Members:</h2>
+            <CountUp end={2000} duration={5} />
+            +
             </div>
-            <div style={{ zIndex: 50 }} className="absolute left-2/3 right-50 bottom-1/3 text-3xl text-center">
-            <h2>Partner Companies</h2>
-            <CountUp end={1000} duration={5} />
+            <div style={{ zIndex: 50 }} className="absolute left-1/3 right-0 bottom-1/3 text-3xl text-center">
+            <h2>Projects:</h2>
+            <CountUp end={60} duration={5} />
+            +
             </div>
             </div>
           
