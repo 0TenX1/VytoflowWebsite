@@ -17,8 +17,10 @@ const App = () => {
   };
 const Home = () => {
   return (
-    <div>
+    <div >
+      <div className="-mb-3">
     <Hero/>
+    </div>
     <Projects/>
     <Partners/>
     </div>
