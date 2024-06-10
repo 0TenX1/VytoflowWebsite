@@ -73,16 +73,16 @@ const Community = () => {
     <Container className="h-auto w-auto bg-white flex flex-col justify-start items-center">
       {/* Row of 5 white boxes */}
       <div className="relative top-28 text-n-5 text-7xl">Previous Events Glimpses</div>
-      <div className="relative top-32 text-n-5 mt-10  text-6xl">Programming Quiz</div>
+      <div className="relative top-32 text-n-5 mt-10  text-4xl">Programming Quiz Competition</div>
       <div className="flex justify-between w-full px-8 mt-52">
         {/* Image 1 */}
         <ImageContainer>
-          <Image src={pqOne} alt="Image 1" whileHover={{ scale: 1.2 }} />
+          <Image src={pqOne} alt="Image 1" whileHover={{ scale: 1.3 }} />
         </ImageContainer>
 
         {/* Image 2 */}
         <ImageContainer>
-          <Image src={pqTwo} alt="Image 2"whileHover={{ scale: 1.5 }} />
+          <Image src={pqTwo} alt="Image 2"whileHover={{ scale: 1.3 }} />
         </ImageContainer>
 
         {/* Image 3 */}
@@ -92,24 +92,24 @@ const Community = () => {
 
         {/* Image 4 */}
         <ImageContainer>
-          <Image src={pqThree} alt="Image 4" whileHover={{ scale: 1.5 }} />
+          <Image src={pqThree} alt="Image 4" whileHover={{ scale: 1.3 }} />
         </ImageContainer>
 
         {/* Image 5 */}
         <ImageContainer>
-          <Image src={pqFour} alt="Image 5" whileHover={{ scale: 1.2 }} />
+          <Image src={pqFour} alt="Image 5" whileHover={{ scale: 1.3 }} />
         </ImageContainer>
       </div>
-      <div className="relative top-32 text-n-5 -mt-10 text-6xl">Group Discussion</div>
+      <div className="relative top-32 text-n-5 -mt-10 text-4xl">Group Discussion Competition</div>
       <div className="flex justify-between w-full px-8 mt-52">
         {/* Image 1 */}
         <ImageContainer>
-          <Image src={pqOne} alt="Image 1" whileHover={{ scale: 1.2 }} />
+          <Image src={gdOne} alt="Image 1" whileHover={{ scale: 1.3 }} />
         </ImageContainer>
 
         {/* Image 2 */}
         <ImageContainer>
-          <Image src={pqTwo} alt="Image 2"whileHover={{ scale: 1.5 }} />
+          <Image src={gdTwo} alt="Image 2"whileHover={{ scale: 1.3 }} />
         </ImageContainer>
 
         {/* Image 3 */}
@@ -119,12 +119,12 @@ const Community = () => {
 
         {/* Image 4 */}
         <ImageContainer>
-          <Image src={pqThree} alt="Image 4" whileHover={{ scale: 1.5 }} />
+          <Image src={gdThree} alt="Image 4" whileHover={{ scale: 1.3 }} />
         </ImageContainer>
 
         {/* Image 5 */}
         <ImageContainer>
-          <Image src={pqFour} alt="Image 5" whileHover={{ scale: 1.2 }} />
+          <Image src={pqFour} alt="Image 5" whileHover={{ scale: 1.3 }} />
         </ImageContainer>
       </div>
 
