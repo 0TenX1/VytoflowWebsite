@@ -173,7 +173,7 @@ const Header = ({ theme, setTheme }) => {
                     <img
                       src={comingSoon}
                       alt="Coming Soon"
-                      style={{ maxWidth: "400px", maxHeight: "400px",opacity: 0.9,borderRadius: "10px" }}
+                      style={{ maxWidth: "400px", maxHeight: "400px",opacity: 1,borderRadius: "10px" }}
                     />
                   </motion.div>
                 )}
