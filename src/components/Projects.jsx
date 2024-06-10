@@ -240,10 +240,11 @@ Unlocking your potential for digital transformation and success.
                     .slick-dots {
                       bottom: 70px; /* Adjust the value as needed */
                     }
-                      @media (max-width: 1050px) {
+                      @media (max-width: 1480px) {
   .carousel1,
   .carousel2-container {
     display: none;
+    
   }
 }
   @media (max-width: 768px) {
