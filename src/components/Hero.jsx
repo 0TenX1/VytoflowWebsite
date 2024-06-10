@@ -23,20 +23,20 @@ const Hero = () => {
       <h1 className="relative opacity-100 text-5xl top-40 md:text-8xl z-10">VytoFlow Tech</h1>
       <h2 className="relative py-20 md:py-6 text-2xl top-24 md:top-44 lg:top-44 md:text-4xl z-10">Connect The Virtual</h2>
 
-          <div className="relative top-[27rem]">
-          <div style={{ zIndex: 50 }} className="absolute -left-2/4 -right-44 bottom-1/3 text-3xl text-center">
+          <div className="relative md:top-[17rem] top-[6rem] lg:top-[27rem]">
+          <div style={{ zIndex: 50 }} className="absolute md:-left-32 -left-32 right-1/3  bottom-1/3 text-md md:text-2xl lg:text-3xl text-center">
             <h2>Collaborators:</h2>
             <CountUp end={50} duration={5} />
             +
             </div>
-            <div style={{ zIndex: 50 }} className="absolute left-0 right-0 bottom-1/3 text-3xl text-center">
-            <h2>Trusted Members:</h2>
-            <CountUp end={2000} duration={5} />
-            +
-            </div>
-            <div style={{ zIndex: 50 }} className="absolute left-1/3 right-0 bottom-1/3 text-3xl text-center">
+            <div style={{ zIndex: 50 }} className="absolute md:left-0 md:right-0 left-0 right-0 lg:left-0 lg:right-0 bottom-1/3 text-md md:text-2xl lg:text-3xl text-center">
             <h2>Projects:</h2>
             <CountUp end={60} duration={5} />
+            +
+            </div>
+            <div style={{ zIndex: 50 }} className="absolute md:-right-32 -right-32 left-1/3  bottom-1/3 text-md md:text-2xl lg:text-3xl text-center">
+            <h2>Trusted Members:</h2>
+            <CountUp end={2000} duration={5} />
             +
             </div>
             </div>
