@@ -18,7 +18,7 @@ const Hero = () => {
   const buildingThreeY = useTransform(scrollY, [0, 300], [0, 100]);
 
   return (
-    <section className="flex h-full bg-gradient-to-b from-blue-200 via-blue-200 to-white relative overflow-hidden items-center justify-center">
+    <section className="flex h-auto bg-gradient-to-b from-blue-200 via-blue-200 to-white relative overflow-hidden items-center justify-center">
       <motion.div className="relative mx-auto text-center " style={{ y: textY }}>
       <h1 className="relative opacity-100 text-5xl top-40 md:text-8xl z-10">VytoFlow Tech</h1>
       <h2 className="relative py-20 md:py-6 text-2xl top-24 md:top-44 lg:top-44 md:text-4xl z-10">Connect The Virtual</h2>
@@ -47,30 +47,30 @@ const Hero = () => {
           src={backClouds}
           width={75}
           height={34}
-          className="absolute top-[4rem] left-[-50rem] z-2 animate-move-left-to-right"
+          className="absolute top-[4rem] left-[-50rem] md:w-[90px] z-2 w-[40px] animate-move-left-to-right"
         />
         <img
           src={backClouds2}
           width={65}
           height={34}
-          className="absolute top-[10rem] left-[-4rem] z-2 animate-move-left-to-right"
+          className="absolute top-[10rem]  left-[-4rem] md:w-[80px] w-[40px] z-2 animate-move-left-to-right"
         />
         <motion.img
           src={buildingsTwo}
           alt=""
-          className="absolute w-full bottom-0 z-3"
+          className="absolute bottom-[4rem] w-full lg:top-[30rem] md:top-[22rem] lg:bottom-0 z-3"
           style={{ y: buildingOneY }}
         />
         <motion.img
           src={buildingsOne}
           alt=""
-          className="absolute w-full bottom-0 z-2"
+          className="absolute top-[11rem] lg:top-[10rem] md:top-[10rem] w-full bottom-0 z-2"
           style={{ y: buildingTwoY }}
         />
         <motion.img
           src={buildingsThree}
           alt=""
-          className="relative top-[-15rem] z-1 opacity-20 "
+          className="relative top-[-10rem] md:top-[-12rem] lg:top-[-15rem] z-1 opacity-20 "
           style={{ y: buildingThreeY }}
         />
       </motion.div>
