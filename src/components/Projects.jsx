@@ -120,7 +120,7 @@ const Events = () => {
       ></motion.div>
       <div className="absolute bottom-40 right-[10rem] text-2xl text-n-7 p-3">
         <motion.button
-          className="bg-gradient-to-br absolute right-[31.5.5rem] top-3  z-10 ml-0 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
+          className="bg-gradient-to-br absolute lg:right-[31.5.5rem] lg:top-3 top-28 z-10 lg:ml-0 ml-32 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
           whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
           style={{
             marginTop: '92px',
@@ -145,9 +145,8 @@ const Events = () => {
     hidden: { opacity: 0, y: -50, transition: { duration: 0.9 } },
   }}
 >
-  <span className="block">Secure Your Spot In The Tech Arena: </span>
-  <motion.span
-    className="block py-2"
+  <span className="block mt-24 lg:mt-0">Secure Your Spot In The Tech Arena: </span>
+  <motion.span className="block -mt-40 -mr-36 lg:mr-0 lg:mt-0"
     initial="hidden"
     animate={controls}
     variants={{
@@ -162,7 +161,7 @@ const Events = () => {
 
       <div className="relative p-8 w-full h-full bg-transparent" ref={ref}>
         <motion.h1
-          className="text-6xl flex mt-20 text-black font-semibold"
+          className="lg:text-6xl md:text-6xl text-5xl flex mt-16 text-black font-semibold"
           initial="hidden"
           animate={controls}
           variants={{
@@ -173,7 +172,7 @@ const Events = () => {
           Our Offerings: 
         </motion.h1>
         <motion.h1
-          className="mt-7 text-4xl text-black font-bold font-grotesk mb-32"
+          className="mt-7 text-3xl lg:text-4xl text-black font-bold font-grotesk mb-32"
           initial="hidden"
           animate={controls}
           variants={{
@@ -222,7 +221,7 @@ Unlocking your potential for digital transformation and success.
           </motion.div>
         </h4>
         <div className="relative">
-          <Slider {...settings1} className="carousel-container">
+          <Slider {...settings1} className="absolute -top-48 lg:top-[-10rem] right-[-1.5rem] lg:right-[-2rem] w-[850px] lg:w-[830px] md:lg:w-[830px] h-[900px]">
             <motion.div
               className="p-4 h-96 mb-12 mt-5 carousel-item max-w-3xl rounded-3xl shadow-xl relative"
               whileHover={{ scale: 1.1 }}
@@ -241,6 +240,19 @@ Unlocking your potential for digital transformation and success.
                     .slick-dots {
                       bottom: 70px; /* Adjust the value as needed */
                     }
+                      @media (max-width: 900px) {
+  .carousel1,
+  .carousel2-container {
+    display: none;
+  }
+}
+  @media (max-width: 768px) {
+  .spinning-background {
+    display: none;
+  }
+}
+
+
                    
                     .hover-slide-down button {
                       position: absolute;
