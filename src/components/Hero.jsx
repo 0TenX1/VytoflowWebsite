@@ -23,8 +23,8 @@ const Hero = () => {
     
     <div className="flex h-auto bg-gradient-to-b from-blue-200 via-blue-200 to-white relative overflow-hidden items-center justify-center">
       <motion.div className="relative mx-auto text-center " style={{ y: textY }}>
-      <h1 className="relative opacity-100 text-6xl top-40 md:text-8xl stroke-text russo-one-font z-10">VytoFlow Tech</h1>
-      <h2 className="relative py-20 md:py-6 text-3xl top-24 md:top-44 lg:top-44 stroke-text font-bold saira-font md:text-6xl z-10">Connect The Virtual</h2>
+      <h1 className="relative opacity-100 text-6xl top-24 md:text-8xl stroke-text russo-one-font z-10">VytoFlow Tech</h1>
+      <h2 className="relative py-20 md:py-6 text-3xl top-16 md:top-44 lg:top-44 stroke-text font-bold saira-font md:text-6xl z-10">Connect The Virtual</h2>
      
           <div className="relative md:top-[17rem] top-[6rem] lg:top-[27rem]">
           <div style={{ zIndex: 50 }} className="absolute text-xl bebas-neue-regular md:-left-32 -left-32 right-1/3  bottom-1/3 text-md md:text-2xl lg:text-4xl text-center">
@@ -73,7 +73,7 @@ const Hero = () => {
         <motion.img
           src={buildingsThree}
           alt=""
-          className="relative top-[-10rem] md:top-[-12rem] lg:top-[-15rem] z-1 opacity-20 "
+          className="relative three top-[-10rem] md:top-[-12rem] lg:top-[-15rem] z-1 opacity-20 "
           style={{ y: buildingThreeY }}
         />
       </motion.div>
@@ -85,6 +85,14 @@ const Hero = () => {
 .vytoflow-font {
   font-family: 'DM Serif Text', serif;
 }
+
+@media (max-width: 700px) {
+  .three {
+    display: none;
+  }
+}
+  .three{
+  }
 
 .russo-one-font {
   font-family: 'Russo One', sans-serif;
