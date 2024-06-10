@@ -177,28 +177,36 @@ const Community = () => {
           
 
         {/* Image 1 */}
-        <ImageContainer2 href="">
+        <a href='https://chat.whatsapp.com/IOhhnEWX8eG8tvFZMtMDvj'>
+        <ImageContainer2>
           <Image2 src={squarewhat} alt="Image 1" className='relative -top-16 ml-14' />
           <h6 className='text-black relative left-5 -ml-44 mt-28'>Join Our Community On Whatsapp For Exclusive Sessions,Resources!</h6>
         </ImageContainer2>
+        </a>
 
         {/* Image 2 */}
-        <ImageContainer2 href="">
+        <a href='https://github.com/Vytoflow-Tech'>
+        <ImageContainer2 >
           <Image2 src={code3} alt="Image 1" className='relative -top-16 ml-14' />
           <h6 className='text-black relative left-5 -ml-44 mr-2 mt-28'>Join Our Github Community For Contributing In Projects!</h6>
         </ImageContainer2>
+        </a>
 
         {/* Image 3 */}
-        <ImageContainer2 href="">
+        <a href='https://www.linkedin.com/company/vytoflow-tech/'>
+        <ImageContainer2>
           <Image2 src={linkedinBlue} alt="Image 1" className='relative -top-16 ml-14' />
           <h6 className='text-black relative left-5 -ml-44 mr-2 mt-28'>Join Our Community On Linkedin To Be Updated About Us!</h6>
         </ImageContainer2>
+        </a>
 
         {/* Image 4 */}
-        <ImageContainer2 href="">
+        <a href='https://www.instagram.com/vytoflow_tech/'>
+        <ImageContainer2 >
           <Image2 src={hinstagram} alt="Image 1" className='relative -top-16 ml-14' />
           <h6 className='text-black relative left-5 -ml-44 mr-2 mt-28'>Join Our Community On Instagram! </h6>
         </ImageContainer2>
+        </a>
       </div>
         <div className="relative bottom-2 right-0 "></div>
       </div>
