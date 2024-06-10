@@ -120,7 +120,7 @@ const Events = () => {
       ></motion.div>
       <div className="absolute bottom-40 right-[10rem] text-2xl text-n-7 p-3">
         <motion.button
-          className="bg-gradient-to-br absolute lg:left-0   lg:top-3 top-28 z-10 lg:ml-0 ml-32 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
+          className="bg-gradient-to-br absolute lg:left-3   lg:-top-7 top-28 z-10 lg:ml-0 ml-32 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
           whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
           style={{
             marginTop: '92px',
@@ -145,12 +145,14 @@ const Events = () => {
     hidden: { opacity: 0, y: -50, transition: { duration: 0.9 } },
   }}
 >
-  <span className="block mt-24 lg:mt-0">Secure Your Spot In The Tech Arena: </span>
-  <motion.span className="block -mt-40 md:mt-3 lg:ml-0 md:ml-20 -mr-36 lg:mr-0 lg:mt-0"
+  <div className="relative mt-20 lg:mt-0">
+    Secure Your Spot In The Tech Arena: 
+    </div>
+  <motion.span className="block -mt-20 md:mt-3 lg:ml-0 md:ml-20 -mr-36 lg:mr-0 lg:mt-0"
     initial="hidden"
     animate={controls}
     variants={{
-      visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, delay: 1 } },
+      visible: { opacity: 1, y: -70, scale: 1, transition: { duration: 0.6, delay: 1 } },
       hidden: { opacity: 0, y: -20, scale: 0.8, transition: { duration: 0.6 } },
     }}
   >
