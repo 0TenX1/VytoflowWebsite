@@ -66,11 +66,7 @@ export default function App() {
               >Home
               </NavLink>
             </p>
-            <p className="mb-4">
-              <NavLink className="text-neutral-600 dark:text-neutral-200" to="/events"
-              >Events
-              </NavLink>
-            </p>
+            
             <p className="mb-4">
               <a className="text-neutral-600 dark:text-neutral-200 " href='https://chat.whatsapp.com/IOhhnEWX8eG8tvFZMtMDvj'
               >Learning
