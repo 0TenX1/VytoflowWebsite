@@ -74,8 +74,8 @@ const Community = () => {
   return (
     <Container className="h-auto w-auto bg-white flex flex-col justify-start items-center">
       {/* Row of 5 white boxes */}
-      <div className="relative top-28 text-n-5 text-7xl">Previous Events Glimpses</div>
-      <div className="relative top-32 text-n-5 mt-10 left-10 text-4xl">Programming Quiz Competition</div>
+      <div className="relative top-28 text-n-5 vytoflow-font text-7xl">Previous Events Glimpses</div>
+      <div className="relative top-32 text-n-5 mt-10 left-4 font-semibold dancing-script text-6xl">Programming Quiz Competition</div>
       <div className="flex justify-between flex-wrap lg:px-8 px-20 mt-52">
     {/* Image 1 */}
     <ImageContainer className="w-full mr-2 mb-2 lg:w-full">
@@ -103,7 +103,7 @@ const Community = () => {
     </ImageContainer>
 </div>
 
-      <div className="relative top-32 text-n-5 left-10 -mt-10 text-4xl">Group Discussion Competition</div>
+      <div className="relative top-32 text-n-5 left-8 dancing-script font-semibold -mt-10 text-6xl">Group Discussion Competition</div>
       <div className="flex justify-between flex-wrap lg:px-8 px-20 mt-52">
     {/* Image 1 */}
     <ImageContainer className="w-full sm:w-auto mb-2 mr-2  sm:mb-0">
@@ -133,7 +133,7 @@ const Community = () => {
 
 
       {/* Founder section */}
-      <div className="relative top-16 right-0 mb-8 text-n-5 text-6xl text-center">Founder:</div>
+      <div className="relative top-16 right-0 mb-8 text-n-5 dancing-script font-bold text-8xl text-center">Founder:</div>
 <div className="flex flex-col mt-24 ml-8 sm:flex-row sm:ml-0">
     <div className="flex flex-col items-center sm:items-start sm:w-56">
         <img src={ansh} alt="Founder" className="lg:w-full lg:mt-5 lg:ml-2 h-auto border-4 border-slate-300" />
@@ -146,17 +146,17 @@ const Community = () => {
     </div>
     <div className="ml-0 mt-5 sm:ml-5 sm:w-full max-w-full">
         <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="bg-gray-100 backdrop-blur-md bg-opacity-10 p-5 h-auto rounded-lg mr-7 text-black border-2 border-cyan-950 text-xl">
-            This is a large text box next to the image. You can add more content here as needed.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laborum est ipsa, labore error vel accusamus, obcaecati rerum dolorem sapiente fugit adipisci nam iusto quo cupiditate totam tenetur nostrum impedit. This is a large text box next to the image. You can add more content here as needed.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laborumrem ipsum dolor sit amet obcaecati rerum sapiente fugit adipisci nam iusto quo cupiditate totam tenetur nostrum impedit. This is est ipsa, labore error vel accusamus, obcaecati rerum dolorem sapiente fugit adipisci nam iusto quo cupiditate totam tenetur nostrum impedit. This is a large text box next to the image. You can add more content here as needed.
-            Loa large text box next to the image. You can add more content here as needed.
+            
+At VytoFlow Tech, we are the driving force behind cutting-edge technology solutions that propel businesses and individuals into the future. As a dynamic tech company, we specialize in crafting bespoke software development projects and engineering marvels that set industry benchmarks.
+ Our expertise encompasses software development, where we breathe life into ideas by developing robust, scalable, and innovative software applications that cater to your unique needs, and engineering excellence, where we are pioneers in creating groundbreaking solutions for complex challenges across various industries
+ . Additionally, we excel in hardware innovation, designing and developing IoT devices and hardware prototypes that redefine possibilities. We envision a world where technology knows no boundaries, with a mission to empower businesses with digital transformation and engineer solutions that enhance everyday life. We adopt a collaborative approach, working closely with our clients to understand their vision and goals.Connect with VytoFlow Tech today!
         </motion.div>
     </div>
 </div>
 
 
       {/* Core Members section */}
-      <div className="relative lg:right-[33rem] mb-8 mt-16 text-n-5 text-5xl">Core Members</div>
+      <div className="relative lg:right-[33rem] mb-8 mt-16 text-n-5 dancing-script font-bold  text-6xl">Core Members</div>
       <div class="w-full flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start mt-2 md:ml-8">
   <div class="flex flex-col  md:mr-8">
     <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={siddhant} alt="Siddhant" class="w-60 border-4 mt-3 h-full border-slate-300 mr-2" />
@@ -216,6 +216,49 @@ const Community = () => {
       </div>
         <div className="relative bottom-2 right-0 "></div>
       </div>
+      <style>
+      {`
+   /* Import the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Fjalla+One&family=Russo+One&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+.vytoflow-font {
+  font-family: 'DM Serif Text', serif;
+}
+
+.russo-one-font {
+  font-family: 'Russo One', sans-serif;
+}
+
+        
+
+    
+.saira-font {
+  font-family: 'Saira', sans-serif;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.stroke-text {
+
+  color: white; /* Text color */
+  -webkit-text-stroke: 0.5px #023e8a; /* Stroke size and color */
+  text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black; /* Shadow directions and color */
+}
+    .dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+    `}
+    </style>
     </Container>
   );
 };

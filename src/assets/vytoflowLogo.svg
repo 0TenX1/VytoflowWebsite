@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    width="626"
-   height="280"
+   height="229"
    preserveAspectRatio="xMidYMid"
    version="1.0"
    id="svg1"
@@ -46,12 +46,12 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.76173021"
-     inkscape:cx="177.8845"
-     inkscape:cy="246.15014"
+     inkscape:cx="333.45139"
+     inkscape:cy="265.84215"
      inkscape:window-width="1350"
      inkscape:window-height="861"
-     inkscape:window-x="214"
-     inkscape:window-y="101"
+     inkscape:window-x="234"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg1"
      showguides="true" />
@@ -60,7 +60,7 @@
   <g
      class="layer"
      id="g1"
-     transform="matrix(0.4280025,0,0,0.43054015,-0.91695269,32.709811)"
+     transform="matrix(0.37934145,0,0,0.39598044,-0.81270124,30.14126)"
      style="fill:#026e6e;fill-opacity:1">
     <title
        id="title1">Layer 1</title>
@@ -149,14 +149,14 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:81.5978px;font-family:Serif;-inkscape-font-specification:'Serif Bold';fill:#026e6e;fill-opacity:1;stroke:none;stroke-width:6.79987;stroke-opacity:1"
-     x="251.31447"
-     y="140.38078"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:73.6717px;font-family:Serif;-inkscape-font-specification:'Serif Bold';fill:#026e6e;fill-opacity:1;stroke:none;stroke-width:6.13935;stroke-opacity:1"
+     x="226.90263"
+     y="126.79147"
      id="text1"
-     transform="scale(0.83565144,1.1966712)"><tspan
+     transform="scale(0.82032724,1.2190257)"><tspan
        id="tspan1"
-       x="251.31447"
-       y="140.38078"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Serif;-inkscape-font-specification:'Serif Bold';fill:#026e6e;fill-opacity:1;stroke:none;stroke-width:6.79987;stroke-opacity:1"
+       x="226.90263"
+       y="126.79147"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Serif;-inkscape-font-specification:'Serif Bold';fill:#026e6e;fill-opacity:1;stroke:none;stroke-width:6.13935;stroke-opacity:1"
        sodipodi:role="line">VytoFlowTech</tspan></text>
 </svg>

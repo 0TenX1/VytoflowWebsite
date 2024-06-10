@@ -120,7 +120,7 @@ const Header = ({ theme, setTheme }) => {
       <div className="fixed md:bg-transparent md:backdrop-blur-none shadow-md lg:shadow-none md:shadow-none lg:backdrop-blur-none backdrop-blur-lg bg-slate-100 w-full lg:bg-transparent z-50 lg:top-0 -top-1 left-0 lg:w-full lg:h-[4.56rem]">
         <div className="flex py-4 items-center px-5 lg:px-8 xl:px-10 lg:py-4">
           <a
-            className="block  xl:mr-8"
+            className="block xl:mr-8"
             href="/"
             style={{ marginTop: "-1rem", marginLeft: "-1rem" }}
           >
