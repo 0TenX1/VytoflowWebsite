@@ -67,7 +67,7 @@ const Hero = () => {
         <motion.img
           src={buildingsOne}
           alt=""
-          className="absolute top-[11rem] lg:top-[10rem] md:top-[10rem] w-full bottom-0 z-2"
+          className="absolute top-[11rem] three lg:top-[10rem] md:top-[10rem] w-full bottom-0 z-2"
           style={{ y: buildingTwoY }}
         />
         <motion.img
