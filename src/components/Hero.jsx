@@ -19,11 +19,10 @@ const Hero = () => {
 
   return (
     <section className="flex h-full bg-gradient-to-b from-blue-200 via-blue-200 to-white relative overflow-hidden items-center justify-center">
-      <motion.div className="relative  mx-auto text-center " style={{ y: textY }}>
-        <h1 className="h1 lg:top-40 relative opacity-100 text-8xl z-10">VytoFlow Tech</h1>
-        <h2 className="h2 lg:top-[12rem] relative lg:py-6 text-4xl z-10">
-          Connect The Virtual
-          </h2>
+      <motion.div className="relative mx-auto text-center " style={{ y: textY }}>
+      <h1 className="relative opacity-100 text-5xl top-40 md:text-8xl z-10">VytoFlow Tech</h1>
+      <h2 className="relative py-20 md:py-6 text-2xl top-24 md:top-44 lg:top-44 md:text-4xl z-10">Connect The Virtual</h2>
+
           <div className="relative top-[27rem]">
           <div style={{ zIndex: 50 }} className="absolute -left-2/4 -right-44 bottom-1/3 text-3xl text-center">
             <h2>Collaborators:</h2>
