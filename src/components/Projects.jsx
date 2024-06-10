@@ -120,7 +120,7 @@ const Events = () => {
       ></motion.div>
       <div className="absolute bottom-40 right-[10rem] text-2xl text-n-7 p-3">
         <motion.button
-          className="bg-gradient-to-br absolute lg:right-[31.5.5rem] lg:top-3 top-28 z-10 lg:ml-0 ml-32 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
+          className="bg-gradient-to-br absolute lg:left-0   lg:top-3 top-28 z-10 lg:ml-0 ml-32 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
           whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
           style={{
             marginTop: '92px',
@@ -146,7 +146,7 @@ const Events = () => {
   }}
 >
   <span className="block mt-24 lg:mt-0">Secure Your Spot In The Tech Arena: </span>
-  <motion.span className="block -mt-40 -mr-36 lg:mr-0 lg:mt-0"
+  <motion.span className="block -mt-40 md:mt-3 lg:ml-0 md:ml-20 -mr-36 lg:mr-0 lg:mt-0"
     initial="hidden"
     animate={controls}
     variants={{
@@ -193,7 +193,7 @@ const Events = () => {
               hidden: { opacity: 0, y: 84, transition: { duration: 1 } },
             }}
           >
-            <div
+            <div className="paragraph overflow-auto"
               style={{
                 padding: "19px",
                 border: "2px solid rgba(3, 4, 94, 0.1)",
@@ -203,7 +203,7 @@ const Events = () => {
               }}
             >
               
-              <p
+              <p 
                 style={{
                   maxHeight: "7rem",
                   overflow: "none",
@@ -221,7 +221,7 @@ Unlocking your potential for digital transformation and success.
           </motion.div>
         </h4>
         <div className="relative">
-          <Slider {...settings1} className="absolute -top-48 lg:top-[-10rem] right-[-1.5rem] lg:right-[-2rem] w-[850px] lg:w-[830px] md:lg:w-[830px] h-[900px]">
+          <Slider {...settings1} className="absolute -top-36 lg:top-[-10rem] right-[-1.5rem] md:w-full lg:right-[-2rem] w-[850px] lg:w-[830px]  h-[900px]">
             <motion.div
               className="p-4 h-96 mb-12 mt-5 carousel-item max-w-3xl rounded-3xl shadow-xl relative"
               whileHover={{ scale: 1.1 }}
@@ -240,7 +240,7 @@ Unlocking your potential for digital transformation and success.
                     .slick-dots {
                       bottom: 70px; /* Adjust the value as needed */
                     }
-                      @media (max-width: 900px) {
+                      @media (max-width: 1050px) {
   .carousel1,
   .carousel2-container {
     display: none;
@@ -248,6 +248,11 @@ Unlocking your potential for digital transformation and success.
 }
   @media (max-width: 768px) {
   .spinning-background {
+    display: none;
+  }
+}
+  @media (max-width: 1000px) {
+  .paragraph {
     display: none;
   }
 }
@@ -295,18 +300,20 @@ Unlocking your potential for digital transformation and success.
                       transition: opacity 1s ease-in-out;
                     }
                     .carousel-container {
-                      position: absolute;
-                      top: -10rem;
-                      right: -2rem;
-                      width: 830px;
-                      height: 900px;
-                    }
+  position: absolute;
+  top: -10rem;
+  right: -2rem;
+  width: 100%; /* Make the carousel full width */
+  height: auto; /* Allow the height to adjust automatically */
+}
                     .carousel-item {
                       width: 100px; /* Adjust the width as needed */
                       height: 240px; /* Adjust the height as needed */
                     }
                     .carousel2-container {
-                    }
+  width: 100%; /* Make the carousel full width */
+  height: auto; /* Allow the height to adjust automatically */
+}
                     .slick-slide {
                       padding: 100px 20px; /* Adjust the padding around each slide */
                     }
@@ -348,7 +355,7 @@ Unlocking your potential for digital transformation and success.
             <Slider {...settings2} className="carousel2-container">
   {items.map(item => (
     <div key={item.id} className="p-4 h-[30rem]">
-      <div className="bg-gradient-to-b from-slate-200 via-slate-100 to-slate-200 p-6 rounded-3xl shadow-lg w-[40rem] h-full flex flex-col justify-center">
+      <div className="bg-gradient-to-b from-slate-200 via-slate-100 to-slate-200 p-6 rounded-3xl shadow-lg h-full w-auto flex flex-col justify-center">
         {/* Render image here */}
         <img
           src={item.image}
