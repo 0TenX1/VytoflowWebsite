@@ -73,7 +73,7 @@ const Events = () => {
     autoplaySpeed: 4000,
     arrows: false,
    appendDots: (dots) => (
-      <div style={{ position: 'relative', bottom: '90px' }}>
+      <div style={{ position: 'relative', bottom: '80px' }}>
         <ul style={{ margin: 0 }}>{dots}</ul>
       </div>
     ),
@@ -119,24 +119,28 @@ const Events = () => {
         }}
       ></motion.div>
       <div className="absolute bottom-40 right-[10rem] text-2xl text-n-7 p-3">
-        <motion.button
-          className="bg-gradient-to-br absolute lg:left-3   lg:-top-7 top-28 z-10 lg:ml-0 ml-32 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
-          whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+      <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+      <motion.button
+        className="bg-gradient-to-br absolute lg:left-3 lg:-top-7 top-28 z-10 lg:ml-0 ml-32 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
+        whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+        style={{
+          marginTop: '92px',
+        }}
+      >
+        <span className="absolute inset-0 bg-gradient-to-br from-red-500 via-red-400 to-red-300 rounded-2xl" />
+        <span
+          className="absolute inset-2 bg-cover bg-no-repeat left-[0.50rem]"
           style={{
-            marginTop: '92px',
+            backgroundImage: `url(${ButtonBg})`,
+            backgroundSize: 'contain',
+            backgroundPosition: 'left',
           }}
-        >
-          <span className="absolute inset-0 bg-gradient-to-br from-red-500 via-red-400 to-red-300 rounded-2xl" />
-          <span
-            className="absolute inset-2 bg-cover bg-no-repeat left-[0.50rem]"
-            style={{
-              backgroundImage: `url(${ButtonBg})`,
-              backgroundSize: 'contain',
-              backgroundPosition: 'left',
-            }}
-          />
-          <span style={{ left: '17px' }} className="relative z-20 text-[1.2rem]">Work With Us</span>
-        </motion.button>
+        />
+        <span style={{ left: '17px' }} className="relative z-20 text-[1.2rem]">
+          Work With Us
+        </span>
+      </motion.button>
+    </a>
         <motion.h2
   initial="hidden"
   animate={controls}

@@ -91,7 +91,7 @@ const Partners = () => {
       opacity: 0.9
     }}>
       
-      <motion.div className="text-center text-5xl mt-3 text-white font-bold mb-8 "   ref={textRef}
+      <motion.div className="text-center text-6xl mt-3 bebas-neue-regular text-white font-bold mb-8 "   ref={textRef}
         initial={{ opacity: 0, y: -110 }}
         animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -50 }} // Apply animation if isVisible is true
         transition={{ duration: 1 }}>
@@ -111,7 +111,7 @@ const Partners = () => {
         ))}
       </Slider>
       <motion.div 
-        className="text-center lg:-mt-32 text-5xl text-white border-t-white font-bold"
+        className="text-center lg:-mt-32 text-6xl bebas-neue-regular text-white border-t-white font-bold"
         ref={textRef}
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -100 }} // Apply animation if isVisible is true
@@ -132,6 +132,40 @@ const Partners = () => {
           </motion.div>
         ))}
       </Slider>
+      <style>
+      {`
+   /* Import the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Fjalla+One&family=Russo+One&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+.vytoflow-font {
+  font-family: 'DM Serif Text', serif;
+}
+
+.russo-one-font {
+  font-family: 'Russo One', sans-serif;
+}
+
+.saira-font {
+  font-family: 'Saira', sans-serif;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.stroke-text {
+
+  color: white; /* Text color */
+  -webkit-text-stroke: 0.5px #023e8a; /* Stroke size and color */
+  text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black; /* Shadow directions and color */
+}
+
+    `}
+    </style>
     </div>
   );
 };
