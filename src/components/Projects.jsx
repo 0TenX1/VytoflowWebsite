@@ -121,7 +121,7 @@ const Events = () => {
       <div className="absolute bottom-40 right-[10rem] text-2xl text-n-7 p-3">
       <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
       <motion.button
-        className="bg-gradient-to-br absolute lg:left-3 lg:-top-7 top-28 z-10 lg:ml-0 ml-32 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
+        className="bg-gradient-to-br absolute lg:left-3 lg:-top-7 z-10 lg:ml-0 -ml-28 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
         whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
         style={{
           marginTop: '92px',
@@ -149,10 +149,10 @@ const Events = () => {
     hidden: { opacity: 0, y: -50, transition: { duration: 0.9 } },
   }}
 >
-  <div className="relative mt-20 lg:mt-0">
+  <div className="relative three mt-20 lg:mt-0">
     Secure Your Spot In The Tech Arena: 
     </div>
-  <motion.span className="block -mt-20 md:mt-3 lg:ml-0 md:ml-20 -mr-36 lg:mr-0 lg:mt-0"
+  <motion.span className="block three -mt-20 md:mt-3 lg:ml-0 md:ml-20 -mr-36 lg:mr-0 lg:mt-0"
     initial="hidden"
     animate={controls}
     variants={{
@@ -263,6 +263,14 @@ Unlocking your potential for digital transformation and success.
     display: none;
   }
 }
+   @media (max-width: 700px) {
+  .three {
+    display: none;
+  }
+}
+  .three{
+  }
+
 
 
                    
