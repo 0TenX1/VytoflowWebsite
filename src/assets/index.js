@@ -69,6 +69,10 @@ import Meteor from "../assets/futureUse/Explore/Meteor.svg";
 import arrow from "../assets/futureUse/Explore/arrow.svg";
 import sphone from "../assets/sphone.svg";
 import linkedinBlue from "../assets/footerLogo/linkedinBlue.svg";
+import pqThree from "./eventNorm/pqThree.jpg";
+import pqFour from "./eventNorm/pqFour.jpg";
+import code3 from "./communityLogo/code2.svg";
+import squarewhat from "./communityLogo/squarewhat.svg";
 export {
   vytoflowLogo,
   searchDay,
@@ -141,4 +145,8 @@ export {
   sphone,
   comingSoon,
   linkedinBlue,
+  pqThree,
+  pqFour,
+  code3,
+  squarewhat,
 };

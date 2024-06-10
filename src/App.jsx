@@ -36,6 +36,7 @@ const Home = () => {
             <Route path="/home/projects" element={<Projects/>}/>
           </Routes>
           <End/>
+          <HamburgerMenu/>
         
        
       </div>
