@@ -21,7 +21,7 @@ import ButtonBg from "./ButtonBg.svg";
 import gdOne  from "./eventNorm/gdOne.JPG";
 import gdThree from "./eventNorm/gdThree.jpg";
 import gdFour from "./eventNorm/gdFour.jpg";
-import gdTwo from "./eventNorm/gdTwo.jpg";
+import gdTwo from "./eventNorm/gdTwo.JPG";
 import pqOne from "./eventNorm/pqOne.JPG";
 import pqTwo from "./eventNorm/pqTwo.JPG";
 import abesit from "./partners/colleges/abesit.png";
