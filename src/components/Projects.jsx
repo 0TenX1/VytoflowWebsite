@@ -132,7 +132,7 @@ const Events = () => {
       <div className="absolute bottom-40 right-[10rem] text-2xl text-n-7 p-3">
       <a href="https://forms.gle/JDjSDSNteSov5D4m9" target="_blank" rel="noopener noreferrer">
       <motion.button
-        className="bg-gradient-to-br absolute lg:left-3 lg:-top-7 z-10 lg:ml-0 -ml-28 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
+        className="bg-gradient-to-br relative lg:-left-36 lg:top-44 lg:auto z-10 lg:mr-20  -ml-28 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
         whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
         style={{
           marginTop: '92px',
@@ -160,10 +160,10 @@ const Events = () => {
     hidden: { opacity: 0, y: -50, transition: { duration: 0.9 } },
   }}
 >
-  <div className="relative three mt-20 lg:mt-0">
+  <div className="flex three mt-20 lg:mr-20 lg:-ml-96 lg:-mb-5">
     Secure Your Spot In The Tech Arena: 
     </div>
-  <motion.span className="block three -mt-20 md:mt-3 lg:ml-0 md:ml-20 -mr-36 lg:mr-0 lg:mt-0"
+  <motion.span className=" -mt-20 md:mt-3  md:ml-20 -mr-36 "
     initial="hidden"
     animate={controls}
     variants={{
@@ -171,7 +171,6 @@ const Events = () => {
       hidden: { opacity: 0, y: -20, scale: 0.8, transition: { duration: 0.6 } },
     }}
   >
-    Don't Miss Out, Register Today for the Unforgettable
   </motion.span>
 </motion.h2>
       </div>
