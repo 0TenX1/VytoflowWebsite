@@ -20,6 +20,7 @@ import bgVytoflowLogo from "./bgVytoflowLogo.svg";
 import ButtonBg from "./ButtonBg.svg";
 import gdOne  from "./eventNorm/gdOne.JPG";
 import gdThree from "./eventNorm/gdThree.jpg";
+import gdFour from "./eventNorm/gdFour.jpg";
 import gdTwo from "./eventNorm/gdTwo.jpg";
 import pqOne from "./eventNorm/pqOne.JPG";
 import pqTwo from "./eventNorm/pqTwo.JPG";
@@ -69,8 +70,8 @@ import Meteor from "../assets/futureUse/Explore/Meteor.svg";
 import arrow from "../assets/futureUse/Explore/arrow.svg";
 import sphone from "../assets/sphone.svg";
 import linkedinBlue from "../assets/footerLogo/linkedinBlue.svg";
-import pqThree from "./eventNorm/pqThree.jpg";
-import pqFour from "./eventNorm/pqFour.jpg";
+import pqThree from "./eventNorm/pqThree.JPG";
+import pqFour from "./eventNorm/pqFour.JPG";
 import code3 from "./communityLogo/code2.svg";
 import squarewhat from "./communityLogo/squarewhat.svg";
 import appD from "../assets/smallSlider/appD.png";
@@ -168,5 +169,6 @@ export {
   biguiux,
   bigweb,
   iotD,
-  gameD
+  gameD,
+  gdFour
 };

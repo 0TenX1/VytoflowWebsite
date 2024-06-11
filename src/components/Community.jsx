@@ -18,7 +18,8 @@ import {
   pqTwo,
   squarewhat,
   code3,
-  hinstagram
+  hinstagram,
+  gdFour
 } from "../assets";
 
 const Container = styled.div`
@@ -127,7 +128,7 @@ const Community = () => {
 
     {/* Image 5 */}
     <ImageContainer className="w-full sm:w-auto mb-2 mr-2 sm:mb-0">
-        <Image src={pqFour} alt="Image 5" whileHover={{ scale: 1.3 }} />
+        <Image src={gdFour} alt="Image 5" whileHover={{ scale: 1.3 }} />
     </ImageContainer>
 </div>
 
