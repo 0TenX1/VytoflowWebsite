@@ -16,6 +16,14 @@ import {
   gdTwo,
   pqOne,
   pqTwo,
+  appD,
+  webD,
+  uiux,
+  webDbg,
+  uiuxbg,
+  bigapp,
+  bigweb,
+  biguiux
 } from "../assets";
 
 
@@ -95,11 +103,10 @@ const Events = () => {
   };
   
   const items = [
-    { id: 1, image: gdOne },
-    { id: 2, image: gdThree },
-    { id: 3, image: gdTwo },
-    { id: 4, image: pqOne },
-    { id: 5, image: pqTwo },
+    { id: 1, image: bigapp  },
+    { id: 2, image: bigweb },
+    { id: 3, image: biguiux },
+
   ];
 
 
@@ -119,7 +126,7 @@ const Events = () => {
         }}
       ></motion.div>
       <div className="absolute bottom-40 right-[10rem] text-2xl text-n-7 p-3">
-      <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://forms.gle/JDjSDSNteSov5D4m9" target="_blank" rel="noopener noreferrer">
       <motion.button
         className="bg-gradient-to-br absolute lg:left-3 lg:-top-7 z-10 lg:ml-0 -ml-28 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
         whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
@@ -233,7 +240,7 @@ Unlocking your potential for digital transformation and success.
               whileHover={{ scale: 1.1 }}
             >
               <div className="hover-slide-down">
-                <img src={gdBanner2023} className="w-full shadow-xl h-[13rem] rounded-2xl" />
+                <img src={webD} className="w-full shadow-xl h-[13rem] rounded-2xl" />
                 <style>
                   {`
                     .hover-slide-down img {
@@ -334,13 +341,14 @@ Unlocking your potential for digital transformation and success.
                     }
                   `}
                 </style>
-
+                <a href="https://forms.gle/JDjSDSNteSov5D4m9">
                 <button className="bg-gradient-to-br text-xs shadow-xl from-red-500 via-red-400 to-red-300 font-semibold text-white max-w-xl px-4 py-2  rounded-full ">
                   View more
                 </button>
+                </a>
               </div>
               <img
-                src={gdBg}
+                src={webDbg}
                 className="w-full h-full shadow-xl object-cover rounded-3xl extra-image"
               />
             </motion.div>
@@ -351,16 +359,37 @@ Unlocking your potential for digital transformation and success.
             >
               <div className="hover-slide-down">
                 <img
-                  src={ppBanner2024}
+                  src={appD}
                   className=" w-full h-[13rem] object-cover rounded-2xl"
                 />
- 
+                 <a href="https://forms.gle/JDjSDSNteSov5D4m9">
                 <button className="bg-gradient-to-br text-xs from-blue-500 via-blue-300 to-blue-200 font-semibold text-white px-4 py-2 rounded-full ">
                   View more
                 </button>
+                </a>
               </div>
               <img
                 src={ppBg}
+                className="w-full h-full object-cover rounded-3xl extra-image"
+              />
+            </motion.div>
+            <motion.div
+              className="p-4 h-96 mb-12 mt-5 shadow-xl max-w-xl bg-transparent carousel-item rounded-3xl  relative"
+              whileHover={{ scale: 1.1 }}
+            >
+              <div className="hover-slide-down">
+                <img
+                  src={uiux}
+                  className=" w-full h-[13rem] object-cover rounded-2xl"
+                />
+                <a href="https://forms.gle/JDjSDSNteSov5D4m9">
+                <button className="bg-gradient-to-br text-xs from-orange-500 via-orange-300 to-orange-200 font-semibold text-white px-4 py-2 rounded-full ">
+                  View more
+                </button>
+                </a>
+              </div>
+              <img
+                src={uiuxbg}
                 className="w-full h-full object-cover rounded-3xl extra-image"
               />
             </motion.div>

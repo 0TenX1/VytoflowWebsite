@@ -73,6 +73,14 @@ import pqThree from "./eventNorm/pqThree.jpg";
 import pqFour from "./eventNorm/pqFour.jpg";
 import code3 from "./communityLogo/code2.svg";
 import squarewhat from "./communityLogo/squarewhat.svg";
+import appD from "../assets/smallSlider/appD.png";
+import uiux from "../assets/smallSlider/uiux.png";
+import webD from "../assets/smallSlider/webD.png";
+import webDbg from "../assets/smallSlider/webDbg.svg";
+import uiuxbg from "../assets/smallSlider/uiuxbg.svg";
+import bigapp from "../assets/smallSlider/bigapp.png";
+import bigweb from "../assets/smallSlider/bigweb.png";
+import biguiux from "../assets/smallSlider/biguiux.png";
 export {
   vytoflowLogo,
   searchDay,
@@ -149,4 +157,12 @@ export {
   pqFour,
   code3,
   squarewhat,
+  appD,
+  webD,
+  uiux,
+  webDbg,
+  uiuxbg,
+  bigapp,
+  biguiux,
+  bigweb
 };
