@@ -150,7 +150,7 @@ const Community = () => {
             
 At VytoFlow Tech, we are the driving force behind cutting-edge technology solutions that propel businesses and individuals into the future. As a dynamic tech company, we specialize in crafting bespoke software development projects and engineering marvels that set industry benchmarks.
  Our expertise encompasses software development, where we breathe life into ideas by developing robust, scalable, and innovative software applications that cater to your unique needs, and engineering excellence, where we are pioneers in creating groundbreaking solutions for complex challenges across various industries
- . Additionally, we excel in hardware innovation, designing and developing IoT devices and hardware prototypes that redefine possibilities. We envision a world where technology knows no boundaries, with a mission to empower businesses with digital transformation and engineer solutions that enhance everyday life. We adopt a collaborative approach, working closely with our clients to understand their vision and goals.Connect with VytoFlow Tech today!
+ . Additionally, we excel in hardware innovation, designing and developing IoT devices and hardware prototypes that redefine possibilities. We envision a world where technology knows no boundaries, with a mission to empower businesses with digital transformation and engineer solutions that enhance everyday life. We adopt a collaborative approach, working closely with our clients to understand their vision and goals.
         </motion.div>
     </div>
 </div>
