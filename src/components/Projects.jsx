@@ -23,7 +23,9 @@ import {
   uiuxbg,
   bigapp,
   bigweb,
-  biguiux
+  biguiux,
+  iotD,
+  gameD
 } from "../assets";
 
 
@@ -106,6 +108,8 @@ const Events = () => {
     { id: 1, image: bigapp  },
     { id: 2, image: bigweb },
     { id: 3, image: biguiux },
+    { id: 4, image: iotD },
+    { id: 5, image: gameD },
 
   ];
 

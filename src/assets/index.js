@@ -81,6 +81,8 @@ import uiuxbg from "../assets/smallSlider/uiuxbg.svg";
 import bigapp from "../assets/smallSlider/bigapp.png";
 import bigweb from "../assets/smallSlider/bigweb.png";
 import biguiux from "../assets/smallSlider/biguiux.png";
+import iotD from "../assets/smallSlider/iotD.png";
+import gameD from "../assets/smallSlider/gameD.png";
 export {
   vytoflowLogo,
   searchDay,
@@ -164,5 +166,7 @@ export {
   uiuxbg,
   bigapp,
   biguiux,
-  bigweb
+  bigweb,
+  iotD,
+  gameD
 };
