@@ -140,7 +140,7 @@ const Events = () => {
       >
         <span className="absolute inset-0 bg-gradient-to-br from-red-500 via-red-400 to-red-300 rounded-2xl" />
         <span
-          className="absolute inset-2 bg-cover bg-no-repeat left-[0.50rem]"
+          className="absolute  inset-2 bg-cover bg-no-repeat left-[0.50rem]"
           style={{
             backgroundImage: `url(${ButtonBg})`,
             backgroundSize: 'contain',
