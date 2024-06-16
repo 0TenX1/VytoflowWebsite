@@ -115,7 +115,7 @@ const Events = () => {
 
 
   return (
-    <div className="relative h-[40rem]  bg-gradient-to-t from-[50rem] from-blue-50 to-white flex items-center justify-center">
+    <div className="relative h-[40rem] lg:h-screen  bg-gradient-to-t from-[50rem] from-blue-50 to-white flex items-center justify-center">
       <div  className=" h-screen overflow-hidden" style={{margin:"5px",borderRadius: "1%"}}>
       
       <motion.div
