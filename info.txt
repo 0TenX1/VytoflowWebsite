@@ -1,0 +1,414 @@
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> npm install -g firebase-tools
+>> 
+npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm WARN deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm WARN deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+changed 620 packages in 15s
+
+66 packages are looking for funding
+  run `npm fund` for details
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> firebase login
+Already logged in as siddhantsinghssk789@gmail.com
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite
+
+? Are you ready to proceed? Yes
+? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices. Hosting:     
+Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Create a new project
+i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+? Please specify a unique project id (warning: cannot be modified afterward) [6-30 characters]:
+ vytoflow--tech
+? What would you like to call your project? (defaults to your project ID) VytoFlow Tech
+✔ Creating Google Cloud Platform project
+✔ Adding Firebase resources to Google Cloud Platform project
+
+=== Your Firebase project is ready! ===
+
+Project information:
+   - Project ID: vytoflow--tech
+   - Project Name: VytoFlow Tech
+
+Firebase console is available at
+https://console.firebase.google.com/project/vytoflow--tech/overview
+i  Using project vytoflow--tech (VytoFlow Tech)
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? dist
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? Yes
+? File dist/index.html already exists. Overwrite? Yes
++  Wrote dist/index.html
+
+i  Detected a .git folder at C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite
+i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store.
+
+Visit this URL on this device to log in:
+https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1063978992&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+
+Waiting for authentication...
+
++  Success! Logged into GitHub as 0TenX1
+
+? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) 0TenX1/VytoflowWebsite
+
++  Created service account github-action-803303094 with Firebase Hosting admin permissions.
++  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_VYTOFLOW__TECH.
+i  You can manage your secrets at https://github.com/0TenX1/VytoflowWebsite/settings/secrets.
+
+? Set up the workflow to run a build script before every deploy? Yes
+? What script should be run before every deploy? (npm ci && npm run build) npm run build
+? What script should be run before every deploy? npm ci && npm run build
+
++  Created workflow file C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite\.github/workflows/firebase-hosting-pull-request.yml
+? Set up automatic deployment to your site's live channel when a PR is merged? Yes
+? What is the name of the GitHub branch associated with your site's live channel? main
+
++  Created workflow file C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite\.github/workflows/firebase-hosting-merge.yml
+
+i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App:
+https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+i  Action required: Push any new workflow file(s) to your repo
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+
++  Firebase initialization complete!
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> npm install firebase
+
+up to date, audited 594 packages in 16s
+
+144 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> firebase deploy
+
+=== Deploying to 'vytoflow--tech'...
+
+i  deploying hosting
+i  hosting[vytoflow--tech]: beginning deploy...
+i  hosting[vytoflow--tech]: found 1 files in dist
++  hosting[vytoflow--tech]: file upload complete
+i  hosting[vytoflow--tech]: finalizing version...
++  hosting[vytoflow--tech]: version finalized
+i  hosting[vytoflow--tech]: releasing new version...
++  hosting[vytoflow--tech]: release complete
+
++  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/vytoflow--tech/overview
+Hosting URL: https://vytoflow--tech.web.app
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> npm run build
+
+> vytoflow-website@0.0.0 build
+> vite build
+
+vite v5.2.11 building for production...
+✓ 490 modules transformed.
+dist/index.html                                0.53 kB │ gzip:   0.33 kB
+dist/assets/slick-BlzDm7g2.svg                 2.15 kB │ gzip:   0.91 kB
+dist/assets/ajax-loader-BcnMEykj.gif           4.18 kB
+dist/assets/whatsapp-BE3XhT5b.svg              5.63 kB │ gzip:   2.86 kB
+dist/assets/buildingsTwo-CfswuhHz.svg          5.71 kB │ gzip:   2.35 kB
+dist/assets/instagram-Dyrjoqj7.svg             6.73 kB │ gzip:   3.28 kB
+dist/assets/vytoflowFavicon-NwQ0I7Jq.svg       7.12 kB │ gzip:   2.91 kB
+dist/assets/backClouds2-D2EbJqFs.svg           7.55 kB │ gzip:   3.65 kB
+dist/assets/bgVytoflowLogo-CbUyjFiG.svg        8.08 kB │ gzip:   3.67 kB
+dist/assets/footerlogo-DLJWgfng.svg            8.10 kB │ gzip:   2.96 kB
+dist/assets/vytoflowLogo-B4tmDTrt.svg          8.85 kB │ gzip:   3.22 kB
+dist/assets/backClouds-ejd0JOKW.svg            9.42 kB │ gzip:   4.62 kB
+dist/assets/shapeani-BByWmZhD.png             10.07 kB
+dist/assets/buildingsOne-Dz4hWmgl.svg         12.12 kB │ gzip:   4.45 kB
+dist/assets/webD-9Sj8JIkg.png                 47.17 kB
+dist/assets/biguiux-BacJ96hC.png              90.39 kB
+dist/assets/ansh-Dvfij-M6.jpg                 95.56 kB
+dist/assets/samsung-heRD81ac.png             122.97 kB
+dist/assets/buildingsThree-CA7_8JJB.svg      171.15 kB │ gzip:  80.01 kB
+dist/assets/gdFour-CyjEgavR.jpg              174.42 kB
+dist/assets/dme-CHTJaPfD.png                 213.81 kB
+dist/assets/appD-xrD9c84k.png                221.21 kB
+dist/assets/its-B4nuhC1d.png                 255.14 kB
+dist/assets/microsoft-DdEj_5nf.png           267.67 kB
+dist/assets/siddhant-CVSuRbKC.jpg            273.63 kB
+dist/assets/iec-DL26UZRx.png                 296.56 kB
+dist/assets/internshala-BTWpBTRX.png         299.39 kB
+dist/assets/gitHub-8bzcfBea.png              316.87 kB
+dist/assets/comingSoon-D1IUpiW4.png          318.29 kB
+dist/assets/uiux-BfBGxZot.png                329.11 kB
+dist/assets/iimt-BnO5xxK6.png                427.98 kB
+dist/assets/sharda-BsQtzrf1.png              496.77 kB
+dist/assets/gameD-BCLlb5rn.png               525.76 kB
+dist/assets/gcet-CeAVHz6g.png                567.36 kB
+dist/assets/srm-cp0_FpSV.png                 574.01 kB
+dist/assets/niet-DaLNrZ9G.png                595.80 kB
+dist/assets/agratas-CjgvQ0mF.png             631.87 kB
+dist/assets/bigweb-DL2t-sGo.png              669.04 kB
+dist/assets/akhilesh-Bxc_zG_0.png            688.61 kB
+dist/assets/iotD-D8dvKpDO.png                703.10 kB
+dist/assets/ims-BLbiztaF.png                 705.92 kB
+dist/assets/gdThree-BeSE2Abs.jpg             726.39 kB
+dist/assets/bigapp-DRExnd4o.png              810.42 kB
+dist/assets/abesec-Bh8iXhy3.png            1,045.28 kB
+dist/assets/cetpa-BFM0tpv0.png             1,122.16 kB
+dist/assets/suraj-DEYQS4yr.jpg             1,179.81 kB
+dist/assets/akgec-DfUpDi0C.png             1,185.28 kB
+dist/assets/zk-D-QCuNwh.png                1,362.86 kB
+dist/assets/glbajaj-rCY9YtHJ.png           1,389.82 kB
+dist/assets/mewar-BUdRFTB2.png             1,812.91 kB
+dist/assets/gdOne-CH0AvW5_.JPG             2,014.34 kB
+dist/assets/gniot-LFVX29xt.png             2,156.00 kB
+dist/assets/gdTwo-TBC-TQaa.jpg             2,315.75 kB
+dist/assets/km--NvkijEj.png                2,354.13 kB
+dist/assets/ppBanner2024-zMs2-CwE.png      3,284.50 kB
+dist/assets/drona-3FIGkuP4.png             3,625.46 kB
+dist/assets/abesit-Do0V-imt.png            6,441.59 kB
+dist/assets/pqOne-CQrzQbtC.JPG             7,971.17 kB
+dist/assets/pqThree-DLqHDjae.jpg           8,537.68 kB
+dist/assets/pqTwo-_dUCxe1B.JPG             8,644.17 kB
+dist/assets/pqFour-CPKdrhww.jpg            8,793.40 kB
+dist/assets/gdBanner2023-DdskiZut.png     12,012.80 kB
+dist/assets/index-DDl2U3Z7.css                48.33 kB │ gzip:  10.13 kB
+dist/assets/index-QUn2cnQU.js                457.93 kB │ gzip: 146.10 kB
+✓ built in 2.76s
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> firebse deploy
+firebse : The term 'firebse' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ firebse deploy
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (firebse:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> firebase deploy
+
+=== Deploying to 'vytoflow--tech'...
+
+i  deploying hosting
+i  hosting[vytoflow--tech]: beginning deploy...
+i  hosting[vytoflow--tech]: found 64 files in dist
+⠙  hosting: uploading new files [50/64] (78%)
+Error: Task 5f25222901c983c5cdd7dc737636bbc8b4007e8d79abd3c287f462bc896ebb74 failed: retries exhausted after 6 attempts, with error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+⠼  hosting: uploading new files [50/64] (78%)
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> firebase deploy
+
+=== Deploying to 'vytoflow--tech'...
+
+i  deploying hosting
+i  hosting[vytoflow--tech]: beginning deploy...
+i  hosting[vytoflow--tech]: found 64 files in dist
++  hosting[vytoflow--tech]: file upload complete
+i  hosting[vytoflow--tech]: finalizing version...
++  hosting[vytoflow--tech]: version finalized
+i  hosting[vytoflow--tech]: releasing new version...
++  hosting[vytoflow--tech]: release complete
+
++  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/vytoflow--tech/overview
+Hosting URL: https://vytoflow--tech.web.app
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite>  npm install -g firebase-tools
+npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm WARN deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm WARN deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+changed 620 packages in 1m
+
+66 packages are looking for funding
+  run `npm fund` for details
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> firebase login
+Already logged in as siddhantsinghssk789@gmail.com
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite
+
+? Are you ready to proceed? Yes
+? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices. Hosting:     
+Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: vytoflow--tech (VytoFlow Tech)
+i  Using project vytoflow--tech (VytoFlow Tech)
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? dist
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? Yes
+? File dist/index.html already exists. Overwrite? Yes
++  Wrote dist/index.html
+
+i  Detected a .git folder at C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite
+i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store.
+
+Visit this URL on this device to log in:
+https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=809547122&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+
+Waiting for authentication...
+
++  Success! Logged into GitHub as 0TenX1
+
+? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) 0TenX1/VytoflowWebsite
+
++  Created service account github-action-803303094 with Firebase Hosting admin permissions.
++  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_VYTOFLOW__TECH.
+i  You can manage your secrets at https://github.com/0TenX1/VytoflowWebsite/settings/secrets.
+
+? Set up the workflow to run a build script before every deploy? Yes
+? What script should be run before every deploy? (npm ci && npm run build) npm run build
+? What script should be run before every deploy? npm ci && npm run build
+
++  Created workflow file C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite\.github/workflows/firebase-hosting-pull-request.yml
+? Set up automatic deployment to your site's live channel when a PR is merged? Yes
+? What is the name of the GitHub branch associated with your site's live channel? main
+
++  Created workflow file C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite\.github/workflows/firebase-hosting-merge.yml
+
+i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App:
+https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+i  Action required: Push any new workflow file(s) to your repo
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+
++  Firebase initialization complete!
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> npm install firebase
+
+up to date, audited 594 packages in 21s
+
+144 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> npm run build
+
+> vytoflow-website@0.0.0 build
+> vite build
+
+vite v5.2.11 building for production...
+✓ 490 modules transformed.
+dist/index.html                                0.53 kB │ gzip:   0.33 kB
+dist/assets/slick-BlzDm7g2.svg                 2.15 kB │ gzip:   0.91 kB
+dist/assets/ajax-loader-BcnMEykj.gif           4.18 kB
+dist/assets/whatsapp-BE3XhT5b.svg              5.63 kB │ gzip:   2.86 kB
+dist/assets/buildingsTwo-CfswuhHz.svg          5.71 kB │ gzip:   2.35 kB
+dist/assets/instagram-Dyrjoqj7.svg             6.73 kB │ gzip:   3.28 kB
+dist/assets/vytoflowFavicon-NwQ0I7Jq.svg       7.12 kB │ gzip:   2.91 kB
+dist/assets/backClouds2-D2EbJqFs.svg           7.55 kB │ gzip:   3.65 kB
+dist/assets/bgVytoflowLogo-CbUyjFiG.svg        8.08 kB │ gzip:   3.67 kB
+dist/assets/footerlogo-DLJWgfng.svg            8.10 kB │ gzip:   2.96 kB
+dist/assets/vytoflowLogo-B4tmDTrt.svg          8.85 kB │ gzip:   3.22 kB
+dist/assets/backClouds-ejd0JOKW.svg            9.42 kB │ gzip:   4.62 kB
+dist/assets/shapeani-BByWmZhD.png             10.07 kB
+dist/assets/buildingsOne-Dz4hWmgl.svg         12.12 kB │ gzip:   4.45 kB
+dist/assets/webD-9Sj8JIkg.png                 47.17 kB
+dist/assets/biguiux-BacJ96hC.png              90.39 kB
+dist/assets/ansh-Dvfij-M6.jpg                 95.56 kB
+dist/assets/samsung-heRD81ac.png             122.97 kB
+dist/assets/buildingsThree-CA7_8JJB.svg      171.15 kB │ gzip:  80.01 kB
+dist/assets/gdFour-CyjEgavR.jpg              174.42 kB
+dist/assets/dme-CHTJaPfD.png                 213.81 kB
+dist/assets/appD-xrD9c84k.png                221.21 kB
+dist/assets/its-B4nuhC1d.png                 255.14 kB
+dist/assets/microsoft-DdEj_5nf.png           267.67 kB
+dist/assets/siddhant-CVSuRbKC.jpg            273.63 kB
+dist/assets/iec-DL26UZRx.png                 296.56 kB
+dist/assets/internshala-BTWpBTRX.png         299.39 kB
+dist/assets/gitHub-8bzcfBea.png              316.87 kB
+dist/assets/comingSoon-D1IUpiW4.png          318.29 kB
+dist/assets/uiux-BfBGxZot.png                329.11 kB
+dist/assets/iimt-BnO5xxK6.png                427.98 kB
+dist/assets/sharda-BsQtzrf1.png              496.77 kB
+dist/assets/gameD-BCLlb5rn.png               525.76 kB
+dist/assets/gcet-CeAVHz6g.png                567.36 kB
+dist/assets/srm-cp0_FpSV.png                 574.01 kB
+dist/assets/niet-DaLNrZ9G.png                595.80 kB
+dist/assets/agratas-CjgvQ0mF.png             631.87 kB
+dist/assets/bigweb-DL2t-sGo.png              669.04 kB
+dist/assets/akhilesh-Bxc_zG_0.png            688.61 kB
+dist/assets/iotD-D8dvKpDO.png                703.10 kB
+dist/assets/ims-BLbiztaF.png                 705.92 kB
+dist/assets/gdThree-BeSE2Abs.jpg             726.39 kB
+dist/assets/bigapp-DRExnd4o.png              810.42 kB
+dist/assets/abesec-Bh8iXhy3.png            1,045.28 kB
+dist/assets/cetpa-BFM0tpv0.png             1,122.16 kB
+dist/assets/suraj-DEYQS4yr.jpg             1,179.81 kB
+dist/assets/akgec-DfUpDi0C.png             1,185.28 kB
+dist/assets/zk-D-QCuNwh.png                1,362.86 kB
+dist/assets/glbajaj-rCY9YtHJ.png           1,389.82 kB
+dist/assets/mewar-BUdRFTB2.png             1,812.91 kB
+dist/assets/gdOne-CH0AvW5_.JPG             2,014.34 kB
+dist/assets/gniot-LFVX29xt.png             2,156.00 kB
+dist/assets/gdTwo-TBC-TQaa.jpg             2,315.75 kB
+dist/assets/km--NvkijEj.png                2,354.13 kB
+dist/assets/ppBanner2024-zMs2-CwE.png      3,284.50 kB
+dist/assets/drona-3FIGkuP4.png             3,625.46 kB
+dist/assets/abesit-Do0V-imt.png            6,441.59 kB
+dist/assets/pqOne-CQrzQbtC.JPG             7,971.17 kB
+dist/assets/pqThree-DLqHDjae.jpg           8,537.68 kB
+dist/assets/pqTwo-_dUCxe1B.JPG             8,644.17 kB
+dist/assets/pqFour-CPKdrhww.jpg            8,793.40 kB
+dist/assets/gdBanner2023-DdskiZut.png     12,012.80 kB
+dist/assets/index-DDl2U3Z7.css                48.33 kB │ gzip:  10.13 kB
+dist/assets/index-QUn2cnQU.js                457.93 kB │ gzip: 146.10 kB
+✓ built in 2.77s
+PS C:\Users\siddh\OneDrive\Desktop\VytoflowWebsite> firebase deploy
+
+=== Deploying to 'vytoflow--tech'...
+
+i  deploying hosting
+i  hosting[vytoflow--tech]: beginning deploy...
+i  hosting[vytoflow--tech]: found 64 files in dist
++  hosting[vytoflow--tech]: file upload complete
+i  hosting[vytoflow--tech]: finalizing version...
++  hosting[vytoflow--tech]: version finalized
+i  hosting[vytoflow--tech]: releasing new version...
++  hosting[vytoflow--tech]: release complete
+
++  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/vytoflow--tech/overview
+Hosting URL: https://vytoflow--tech.web.app

@@ -132,7 +132,7 @@ const Events = () => {
       <div className="absolute bottom-40 right-[10rem] text-2xl text-n-7 p-3">
       <a href="https://forms.gle/JDjSDSNteSov5D4m9" target="_blank" rel="noopener noreferrer">
       <motion.button
-        className="bg-gradient-to-br relative lg:-left-36 lg:top-44 lg:auto z-10 lg:mr-20  -ml-28 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
+        className="bg-gradient-to-br work relative lg:-left-36 lg:top-40 lg:auto z-10 lg:mr-20  -ml-28 -mr-32 font-sans font-semibold text-white px-6 py-[0.4rem] backdrop-blur-sm rounded-2xl shadow-xl"
         whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
         style={{
           marginTop: '92px',
@@ -160,7 +160,7 @@ const Events = () => {
     hidden: { opacity: 0, y: -50, transition: { duration: 0.9 } },
   }}
 >
-  <div className="flex three mt-150 lg:mr-20 lg:-ml-96 lg:-mb-5">
+  <div className="flex three mt-150 lg:mr-20 lg:-ml-96 lg:mb-10">
     <span className="flex three mt-15 lg:-ml-54 lg:-mb-14">Secure Your Spot In The Tech Arena!</span>
     </div>
   <motion.span className=" -mt-20 md:mt-3  md:ml-20 -mr-36 "
@@ -277,8 +277,13 @@ Unlocking your potential for digital transformation and success.
   .three {
     display: none;
   }
+    .work {
+    display: none;
+    }
 }
   .three{
+  }
+  .work{
   }
 
 
