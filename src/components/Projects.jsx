@@ -115,7 +115,7 @@ const Events = () => {
 
 
   return (
-    <div className="relative h-screen bg-gradient-to-t from-[50rem] from-blue-50 to-white flex items-center justify-center">
+    <div className="relative h-[30rem] lg:h-auto  bg-gradient-to-t from-[50rem] from-blue-50 to-white flex items-center justify-center">
       <div  className=" h-screen overflow-hidden" style={{margin:"5px",borderRadius: "1%"}}>
       
       <motion.div
@@ -175,9 +175,9 @@ const Events = () => {
 </motion.h2>
       </div>
 
-      <div className="relative p-8 w-full h-full bg-transparent" ref={ref}>
+      <div className="relative p-8  w-full h-full bg-transparent" ref={ref}>
         <motion.h1
-          className="lg:text-6xl md:text-6xl text-5xl flex mt-16 text-black font-semibold"
+          className="lg:text-6xl md:text-6xl text-5xl flex mt-44 lg:mt-16 text-black font-semibold"
           initial="hidden"
           animate={controls}
           variants={{
@@ -237,7 +237,7 @@ Unlocking your potential for digital transformation and success.
           </motion.div>
         </h4>
         <div className="relative">
-          <Slider {...settings1} className="absolute -top-36 lg:top-[-10rem] right-[-1.5rem] md:w-full lg:right-[-2rem] w-[850px] lg:w-[830px]  h-[900px]">
+          <Slider {...settings1} className="absolute -top-36 lg:top-[-10rem] right-[-1.5rem] md:w-full lg:right-[-2rem] w-[830px] lg:w-[830px]  h-[800px]">
             <motion.div
               className="p-4 h-96 mb-12 mt-5 carousel-item max-w-3xl rounded-3xl shadow-xl relative"
               whileHover={{ scale: 1.1 }}

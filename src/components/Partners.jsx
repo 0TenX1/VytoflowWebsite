@@ -91,12 +91,9 @@ const Partners = () => {
       opacity: 0.9
     }}>
       
-      <motion.div className="text-center text-6xl mt-3 bebas-neue-regular text-white font-bold mb-8 "   ref={textRef}
-        initial={{ opacity: 0, y: -110 }}
-        animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -50 }} // Apply animation if isVisible is true
-        transition={{ duration: 1 }}>
+      <div className="text-center text-6xl mt-3 bebas-neue-regular text-white font-bold mb-8 ">
         Our Collaborative Network: Partner Colleges
-      </motion.div>
+      </div>
       <Slider {...sliderSettings} className='lg:-top-20'>
         {Colleges.map((image, index) => (
           <motion.div 
@@ -110,15 +107,11 @@ const Partners = () => {
           </motion.div>
         ))}
       </Slider>
-      <motion.div 
+      <div 
         className="text-center lg:-mt-32 text-6xl bebas-neue-regular text-white border-t-white font-bold"
-        ref={textRef}
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -100 }} // Apply animation if isVisible is true
-        transition={{ duration: 0.6 }}
       >
         Partners In Progress: Our Collaborative Companies
-      </motion.div>
+      </div>
       <Slider {...sliderSettings} className='lg:-top-8 lg:-mb-20'>
         {Company.map((image, index) => (
           <motion.div 
