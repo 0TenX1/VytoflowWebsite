@@ -200,7 +200,7 @@ const Events = () => {
   <div class="flex flex-col items-center mt-2 md:mb-2 md:items-start">
     <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={aditya} class="w-44 h-full   border-4  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-6 backdrop-blur-md bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
-      Aditya Singh
+      Aditya
     </motion.div>
     <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Dhiya} class="w-44 h-full lg:mr-8 sm:mr-0 border-4 mt-3  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-6 backdrop-blur-md bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">

@@ -66,7 +66,7 @@ const HamburgerMenu = () => {
           <li><a href="/home">Home</a></li>
           <li><a href="/community">Community</a></li>
           <li><a href="/contact">Contact Us</a></li>
-          <li><a href="/events">Events</a></li>
+          <li><a href="/events">VytoBlitz</a></li>
         </ul>
       </nav>
     </div>
