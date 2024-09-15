@@ -84,6 +84,29 @@ import bigweb from "../assets/smallSlider/bigweb.png";
 import biguiux from "../assets/smallSlider/biguiux.png";
 import iotD from "../assets/smallSlider/iotD.png";
 import gameD from "../assets/smallSlider/gameD.png";
+import aditya from "../assets/coordinators/aditya.png";
+import Adi from "../assets/coordinators/Adi.png";
+import Dhiya from "../assets/coordinators/Dhiya.png";
+import Garvit from "../assets/coordinators/Garvit.png";
+import Harsh from "../assets/coordinators/Harsh.png";
+import Ishika from "../assets/coordinators/Ishika.png";
+import Lavi from "../assets/coordinators/Lavi.png";
+import Rahul from "../assets/coordinators/Rahul.png";
+import Ritik from "../assets/coordinators/Ritik.png";
+import Shubham from "../assets/coordinators/Shubham.png";
+import Swait from "../assets/coordinators/Swait.png";
+import Vaibhav from "../assets/coordinators/Vaibhav.png";
+import Vanshika from "../assets/coordinators/Vanshika.png";
+import artist from "../assets/events/artist.png";
+import combat from "../assets/events/combat.png";
+import culture from "../assets/events/culture.png";
+import vishal from "../assets/coordinators/vishal.png";
+import anshika from "../assets/coordinators/anshika.png";
+import hackClash from "../assets/events/hackClash.png";
+import quiz from "../assets/events/quiz.png";
+import register from "../assets/events/register.svg";
+
+
 export {
   vytoflowLogo,
   searchDay,
@@ -170,5 +193,10 @@ export {
   bigweb,
   iotD,
   gameD,
-  gdFour
+  gdFour,
+  aditya,
+  Adi,
+  Dhiya,
+  Garvit,Harsh,Ishika,Lavi,Rahul,Ritik,Shubham,Swait,Vaibhav,Vanshika,vishal,anshika,
+  artist,combat,culture,hackClash,quiz,register,
 };

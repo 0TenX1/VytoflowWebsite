@@ -195,39 +195,13 @@ const Header = ({ theme, setTheme }) => {
               </div>
 
               {/* Coming Soon */}
-              <div
-                onMouseEnter={handleComingSoonMouseEnter}
-                onMouseLeave={handleComingSoonMouseLeave}
-                className="relative"
+              <NavLink
+                to="/events"
+                className={clsx("block relative font-mono text-2xl bg- text-n-1 transition-colors px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:text-cyan-800", pathname === "/events" ? "z-2 lg:text-cyan-700" : "lg:text-black", "group")}
               >
-                <NavLink
-                  
-                  className={clsx(
-                    "block relative font-mono text-2xl bg- text-n-1 transition-colors px-6 py-6 md:py-8 lg:py-3 lg:-mr-0.25 text-[1.060rem] lg:font-serif hover:text-cyan-800",
-                    pathname === "/explore" ? "z-2 lg:text-cyan-700" : "lg:text-black",
-                    "group"
-                  )}
-                >
-                  Coming Soon
-                  <span className="absolute top-[3.09rem] left-[1.6rem] w-full h-[0.2rem] bg-cyan-800 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-50"></span>
-                </NavLink>
-                {/* Show image only when hovering over Coming Soon */}
-                {isComingSoonHovered && (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                    className="absolute left-1/2 transform -translate-x-1/2 mb-4"
-                  >
-                    <img
-                      src={comingSoon}
-                      alt="Coming Soon"
-                      style={{ maxWidth: "400px", maxHeight: "400px",opacity: 1,borderRadius: "10px" }}
-                    />
-                  </motion.div>
-                )}
-              </div>
-
+                VytoBlitz
+                <span className="absolute top-[3.09rem] left-[1.6rem] w-full h-[0.2rem] bg-cyan-800 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-50"></span>
+              </NavLink>
 
               {/* Contact Us */}
               

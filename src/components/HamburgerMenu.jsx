@@ -66,16 +66,9 @@ const HamburgerMenu = () => {
           <li><a href="/home">Home</a></li>
           <li><a href="/community">Community</a></li>
           <li><a href="/contact">Contact Us</a></li>
-          <li><a href="/event" onClick={handleComingSoonClick}>Coming Soon</a></li>
+          <li><a href="/events">Events</a></li>
         </ul>
       </nav>
-      {showImage && (
-        <div className="overlay">
-          <div ref={imageRef}>
-            <img className="coming-soon-image" src={comingSoon} alt="Coming Soon" />
-          </div>
-        </div>
-      )}
     </div>
   );
 };

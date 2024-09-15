@@ -7,6 +7,7 @@ import Community from "./components/Community.jsx";
 import HamburgerMenu from "./components/HamburgerMenu.jsx";
 import { bgVytoflowLogo } from "./assets";
 import Projects from "./components/Projects.jsx";
+import Events from "./components/Events.jsx";
 import { BrowserRouter as Router,Route,Routes } from "react-router-dom";
 
 const App = () => {
@@ -37,6 +38,7 @@ const Home = () => {
             <Route path="/home" element={<Home/>}/>
             <Route path="/community" element={<Community/>}/>
             <Route path="/home/projects" element={<Projects/>}/>
+            <Route path="/events" element={<Events/>}/>
           </Routes>
           <End/>
           <HamburgerMenu/>
