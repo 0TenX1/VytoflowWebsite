@@ -102,7 +102,7 @@ const Events = () => {
             </a>
         </motion.div>
     </div>
-    <div className=" mt-5 sm:ml-5 sm:w-full max-w-full">
+    <div className=" mt-5 ml-7 sm:w-full max-w-full">
         <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="bg-gray-100 backdrop-blur-md bg-opacity-10 p-5 h-auto rounded-lg mr-7 text-black border-2 border-cyan-950 text-xl">
             A Canva Designing Competition is an event where participants showcase their creativity and design skills using Canva, a popular graphic design platform. Competitors are typically tasked with creating visually appealing designs, such as posters, social media graphics, or presentations, within a set theme or criteria. Judging is based on creativity, originality, visual impact to the competition guidelines. This event will be conducted offline on device and will have individual participation, often with a time limit to add a challenge. It's a great way to challenge design abilities and compete for recognition or prizes.
         </motion.div>
@@ -120,9 +120,9 @@ const Events = () => {
             </a>
         </motion.div>
     </div>
-    <div className="ml-0 mt-5 sm:ml-5 sm:w-full max-w-full">
+    <div className="ml-7 mt-5 sm:ml-5 sm:w-full max-w-full">
         <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="bg-gray-100 backdrop-blur-md bg-opacity-10 p-5 h-auto rounded-lg mr-7 text-black border-2 border-cyan-950 text-xl">
-        Short description of the event: A programming quiz event is a competitive and engaging activity designed to test participants' knowledge and skills in programming concepts. Typically, participants answer a series of questions from languages such as C, Python, SQL, Java, JavaScript, and HTML/CSS. The questions range from basic to advanced levels and cover coding syntax and problem-solving techniques. The event is usually conducted offline and individually, often with a time limit to add a challenge. It provides an excellent opportunity for learners to assess their proficiency, improve their coding skills, and compete for recognition or prizes.
+        A programming quiz event is a competitive and engaging activity designed to test participants' knowledge and skills in programming concepts. Typically, participants answer a series of questions from languages such as C, Python, SQL, Java, JavaScript, and HTML/CSS. The questions range from basic to advanced levels and cover coding syntax and problem-solving techniques. The event is usually conducted offline and individually, often with a time limit to add a challenge. It provides an excellent opportunity for learners to assess their proficiency, improve their coding skills, and compete for recognition or prizes.
         </motion.div>
     </div>
     
@@ -137,7 +137,7 @@ const Events = () => {
             </a>
         </motion.div>
     </div>
-    <div className="ml-0 mt-5 sm:ml-5 sm:w-full max-w-full">
+    <div className="ml-7  mt-5 sm:ml-5 sm:w-full max-w-full">
         <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="bg-gray-100 backdrop-blur-md bg-opacity-10 p-5 h-auto rounded-lg mr-7 text-black border-2 border-cyan-950 text-xl">
 
         A PUBG gaming tournament is a competitive event where players or teams face off in PlayerUnknown's Battlegrounds (PUBG), a popular battle royale game. Participants aim to be the last player or team standing by outlasting and outgunning opponents in a shrinking battlefield. These tournaments often feature multiple rounds, with points awarded based on performance in each match. They can be held online or in-person, attracting both amateur and professional players, and often offer cash prizes or other rewards for top performers.
@@ -156,7 +156,7 @@ const Events = () => {
             </a>
         </motion.div>
     </div>
-    <div className="ml-0 mt-5 sm:ml-5 sm:w-full max-w-full">
+    <div className="ml-7  mt-5 sm:ml-5 sm:w-full max-w-full">
         <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="bg-gray-100 backdrop-blur-md bg-opacity-10 p-5 h-auto rounded-lg mr-7 text-black border-2 border-cyan-950 text-xl">
         Vyto HackClash is a 36-hour hackathon at ITS Engineering College, organized by the Vytoflow Community. It brings together students in teams of 2 to 4 to solve challenging problems through creativity and innovation. Participants work on projects judged on originality, complexity, feasibility, sustainability, and user experience. The event features an on-site competition where top teams present their solutions for prizes and recognition. Additionally, Vyto HackClash includes workshops and networking opportunities, providing a platform for learning, skill development, and building professional connections in a competitive yet supportive environment.
         </motion.div>
@@ -174,7 +174,7 @@ const Events = () => {
             </a>
         </motion.div>
     </div>
-    <div className="ml-0 mt-5 sm:ml-5 sm:w-full max-w-full">
+    <div className="ml-7  mt-5 sm:ml-5 sm:w-full max-w-full">
         <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="bg-gray-100 backdrop-blur-md bg-opacity-10 p-5 h-auto rounded-lg mr-7 text-black border-2 border-cyan-950 text-xl">
         The Cultural Carnival is a vibrant event hosted at ITS Engineering College, organized by the Vytoflow Community. It celebrates diverse cultures through a series of performances, exhibitions, and interactive activities. Participants can engage in dance, music , Singing and culinary showcases from various cultural backgrounds. The carnival aims to promote cultural exchange, creativity, and community spirit. Attendees have the opportunity to explore different traditions, enjoy live entertainment, and connect with fellow participants in a festive and inclusive environment.
         </motion.div>
@@ -202,7 +202,7 @@ const Events = () => {
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-6 backdrop-blur-md bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
       Aditya Singh
     </motion.div>
-    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Dhiya} class="w-44 h-full mr-8 border-4 mt-3  border-slate-300" />
+    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Dhiya} class="w-44 h-full lg:mr-8 sm:mr-0 border-4 mt-3  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-6 backdrop-blur-md bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
       Dhiya
     </motion.div>
@@ -210,48 +210,48 @@ const Events = () => {
 
 </div>
 <div class="flex flex-col items-center mt-2 md:mb-2 md:items-start">
-    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Swait} class="w-44 h-full mr-8 border-4  border-slate-300" />
+    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Swait} class="w-44  h-full lg:mr-8 sm:mr-0 border-4  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-2 backdrop-blur-md  bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
       Swati
     </motion.div>
-    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Shubham} class="w-44 h-full mr-8 mt-3 border-4  border-slate-300" />
+    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Shubham} class="w-44 h-full lg:mr-8 sm:mr-0 mt-3 border-4  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-2 backdrop-blur-md  bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
       Shubham
     </motion.div>
 
 </div>
 <div class="flex flex-col items-center mt-2 md:mb-2 md:items-start">
-    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Harsh} class="w-44 h-full mr-8 border-4  border-slate-300" />
+    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Harsh} class="w-44 h-full lg:mr-8 sm:mr-0 border-4  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-8 backdrop-blur-md  bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
       Harsh
     </motion.div>
-    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Vanshika} class="w-44 h-full mr-8 mt-3  border-4  border-slate-300" />
+    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Vanshika} class="w-44 h-full lg:mr-8 sm:mr-0 mt-3  border-4  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-8 backdrop-blur-md  bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
       Vanshika
     </motion.div>
 </div>
 <div class="flex flex-col items-center mt-2 md:mb-2 md:items-start">
-    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Garvit} class="w-44 h-full mr-8  border-4  border-slate-300" />
+    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Garvit} class="w-44 h-full lg:mr-8 sm:mr-0  border-4  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-8 backdrop-blur-md  bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
       Garvit
     </motion.div>
-    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Lavi} class="w-44 h-full mr-8 mt-3 border-4  border-slate-300" />
+    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Lavi} class="w-44 h-full lg:mr-8 sm:mr-0 mt-3 border-4  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-8 backdrop-blur-md  bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
       Lavi
     </motion.div>
 </div>
 <div class="flex flex-col items-center mt-2 md:mb-2 md:items-start">
-    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Rahul} class="w-44 mr-8 h-full border-4  border-slate-300" />
+    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Rahul} class="w-44 lg:mr-8 sm:mr-0 h-full border-4  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-8 backdrop-blur-md  bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
       Rahul
     </motion.div>
-    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Ritik} class="w-44 mr-8 h-full mt-3 border-4  border-slate-300" />
+    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Ritik} class="w-44 lg:mr-8 sm:mr-0 h-full mt-3 border-4  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-8 backdrop-blur-md  bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
       Ritik
     </motion.div>
 </div>
 <div class="flex flex-col items-center mt-2 md:mb-2 md:items-start">
-    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Vaibhav} class="w-44 mr-8 h-full  border-4  border-slate-300" />
+    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Vaibhav} class="w-44 lg:mr-8 sm:mr-0 h-full  border-4  border-slate-300" />
     <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-8 backdrop-blur-md  bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
       Vaibhav
     </motion.div>
