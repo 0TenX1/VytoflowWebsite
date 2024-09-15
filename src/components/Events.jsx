@@ -261,7 +261,13 @@ const Events = () => {
     </motion.div>
     
 </div>
-
+<div class="flex flex-col items-center mt-2 md:mb-2 md:items-start">
+    <motion.img initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} src={Adi} class="w-44 lg:mr-8 sm:mr-0 h-full  border-4  border-slate-300" />
+    <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} class="bg-gray-100 lg:ml-8 backdrop-blur-md  bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center">
+      Aditya
+    </motion.div>
+    
+</div>
 
 
         
