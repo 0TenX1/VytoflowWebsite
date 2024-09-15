@@ -151,7 +151,7 @@ const Events = () => {
         <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="bg-gray-100 backdrop-blur-md bg-opacity-10 p-3 h-auto rounded-lg mt-2 text-black border-2 border-cyan-950 text-lg flex items-center lg:ml-3 justify-center sm:justify-start">
             
             <a href="https://unstop.com/hackathons/vyto-hackclash-10-vyto-blitz-10-its-engineering-college-itsec-greater-noida-1148685?lb=wGNy1ZDh&utm_medium=Share&utm_source=shortUrl" target="_blank" rel="noopener noreferrer" className="flex items-center">
-            VytoFlow-HackClash
+            Vyto-HackClash
                 <img src={register} alt="LinkedIn" className="w-8 h-8" />
             </a>
         </motion.div>
